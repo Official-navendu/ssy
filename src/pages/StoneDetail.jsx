@@ -91,8 +91,10 @@ export default function StoneDetail() {
   if (!stone) {
     return (
       <div className="relative min-h-screen grid place-items-center bg-background px-6">
-        <CosmicBackground density={50} />
-        <div className="text-center z-10 glass rounded-2xl p-10 max-w-md border border-gold/20">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <CosmicBackground density={50} />
+        </div>
+        <div className="text-center z-10 glass rounded-2xl p-10 max-w-md border border-gold/20 relative">
           <h2 className="font-display text-3xl text-gradient-gold mb-4">Crystal Not Found</h2>
           <p className="text-sm text-muted-foreground/80 mb-6">
             The crystal details you are seeking have drifted back into the cosmos.
@@ -108,7 +110,9 @@ export default function StoneDetail() {
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-hidden">
       {/* Immersive Background Canvas */}
-      <CosmicBackground density={80} />
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <CosmicBackground density={80} />
+      </div>
 
       {/* Dynamic Backlight Aura matching the crystal */}
       <div 

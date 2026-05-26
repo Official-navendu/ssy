@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -14,66 +15,255 @@ import { StonesShowcase } from "@/components/home/StonesShowcase";
 import aboutPreviewImg from "@/assets/images/about_preview.webp";
 import testimonialClientImg from "@/assets/images/testimonial_client.webp";
 
+// Import premium spiritual image showcase assets
+import heroAstrologyImg from "@/assets/images/hero_astrology.png";
+import heroTarotImg from "@/assets/images/hero_tarot.png";
+import heroHealingImg from "@/assets/images/hero_healing.png";
+import heroPortalImg from "@/assets/images/hero_portal.png";
+
+const HERO_SLIDES = [
+  {
+    id: 0,
+    img: heroAstrologyImg,
+    label: "Celestial Intelligence",
+    heading: "Unlock Cosmic Clarity Through Ancient Wisdom",
+    subtitle: "Map your custom birth blueprint, explore planetary transits, and align your life path with the choreography of the cosmos.",
+    ctaText: "Explore Birth Chart",
+    ctaLink: "/booking",
+    secCtaText: "Explore Services",
+    secCtaLink: "/services"
+  },
+  {
+    id: 1,
+    img: heroTarotImg,
+    label: "Intuitive Divination",
+    heading: "Align Your Energy With Divine Guidance",
+    subtitle: "Gain immediate intuitive answers, decode hidden energetic path currents, and secure crystal clarity through premium tarot spreads.",
+    ctaText: "Book Tarot Spread",
+    ctaLink: "/booking",
+    secCtaText: "See Offerings",
+    secCtaLink: "/services"
+  },
+  {
+    id: 2,
+    img: heroHealingImg,
+    label: "Energetic Restoration",
+    heading: "Discover Your Spiritual Path & Inner Power",
+    subtitle: "Purify your aura, dissolve heavy emotional blocks, and awaken your inner vital force through deep, custom chakra alignment.",
+    ctaText: "Align Your Energy",
+    ctaLink: "/booking",
+    secCtaText: "Healing Guide",
+    secCtaLink: "/services"
+  },
+  {
+    id: 3,
+    img: heroPortalImg,
+    label: "Sacred Transformation",
+    heading: "Transform Your Journey Through Astrology & Tarot",
+    subtitle: "Step across the celestial threshold of self-realization, merging centuries-old Vedic lineage with modern spiritual alchemy.",
+    ctaText: "Begin Alchemy",
+    ctaLink: "/booking",
+    secCtaText: "Explore Courses",
+    secCtaLink: "/courses"
+  }
+];
+
+function renderHeading(heading) {
+  if (heading.includes("Cosmic Clarity")) {
+    return (
+      <>
+        Unlock <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Cosmic Clarity</span>
+        <br /> Through Ancient Wisdom
+      </>
+    );
+  }
+  if (heading.includes("Divine Guidance")) {
+    return (
+      <>
+        Align Your Energy
+        <br /> With <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Divine Guidance</span>
+      </>
+    );
+  }
+  if (heading.includes("Inner Power")) {
+    return (
+      <>
+        Discover Your Path
+        <br /> & <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Inner Power</span>
+      </>
+    );
+  }
+  if (heading.includes("Astrology & Tarot")) {
+    return (
+      <>
+        Transform Your Journey
+        <br /> Through <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Astrology & Tarot</span>
+      </>
+    );
+  }
+  return heading;
+}
 
 export default function Home() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  // Auto-scroll loop every 7 seconds for a calmer cinematic pacing
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 7000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
       {/* HERO */}
-      <section className="relative flex min-h-screen items-center overflow-hidden pt-24">
-        <CosmicBackground density={90} />
-        {/* glowing rings */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50">
-          <div className="h-[600px] w-[600px] rounded-full border border-gold/5 animate-spin-slow" />
-          <div className="absolute inset-12 rounded-full border border-purple/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "40s" }} />
+      <section className="relative flex min-h-[75vh] lg:min-h-[80vh] items-center overflow-hidden pt-36 pb-16 lg:pt-44 lg:pb-20">
+        {/* Galaxy Background Layer (z-0) */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <CosmicBackground density={60} />
         </div>
 
-        <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-6 md:px-8">
-          <div className="mx-auto max-w-4xl text-center relative">
-            {/* Cinematic Divine Text Spotlights */}
-            <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple/10 blur-[120px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "9s" }} />
-            <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[180px] h-[180px] bg-gold/5 blur-[95px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "13s" }} />
+        {/* Concentric Rotating Astrolabe & Celestial Rings Layer (z-[5]) */}
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 flex items-center justify-center z-[5]">
+          {/* Outer Gold Astrolabe Ring */}
+          <div className="absolute h-[680px] w-[680px] rounded-full border border-gold/10 animate-spin-slow" style={{ animationDuration: "50s" }} />
+          {/* Dashed Gold Orbit Ring */}
+          <div className="absolute h-[620px] w-[620px] rounded-full border border-dashed border-gold/15 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "35s" }} />
+          {/* Purple Energy Ring */}
+          <div className="absolute h-[520px] w-[520px] rounded-full border border-purple/10 animate-spin-slow" style={{ animationDuration: "25s" }} />
+          {/* Fine Outer Gold Ring */}
+          <div className="absolute h-[420px] w-[420px] rounded-full border border-gold/5 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "60s" }} />
+        </div>
 
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.3em] text-gold"
-            >
-              <Sparkles className="h-3 w-3" /> Spiritual Yatri · Est. 2020
-            </motion.span>
+        {/* Cinematic Dark Overlay Layer (z-10) */}
+        <div className="absolute inset-0 bg-black/35 z-10 pointer-events-none" />
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15, duration: 0.8 }}
-              className="mt-8 font-display text-4xl leading-[1.18] md:text-5xl lg:text-6xl tracking-wider font-medium"
-            >
-              Unlock Your <span className="text-gradient-cosmic">Destiny</span>
-              <br /> With Tarot & Astrology
-            </motion.h1>
+        {/* Hero Content Layer (z-20) */}
+        <div className="relative z-20 mx-auto w-full max-w-7xl px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            {/* LEFT COLUMN: Hero content */}
+            <div className="col-span-1 lg:col-span-6 min-h-[340px] lg:min-h-[380px] flex flex-col justify-center relative">
+              {/* Cinematic Divine Text Spotlights */}
+              <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple/15 blur-[100px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "8s" }} />
+              <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] bg-gold/8 blur-[80px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "12s" }} />
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="mx-auto mt-8 max-w-2xl text-sm md:text-base text-muted-foreground/80 leading-relaxed tracking-wide"
-            >
-              Guiding your life journey through spiritual wisdom and cosmic energy — authentic Vedic insight, intuitive tarot, and energy healing rooted in ancient tradition.
-            </motion.p>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeSlide}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
+                  className="flex flex-col items-start text-left"
+                >
+                  <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.3em] text-gold text-glow-subtle">
+                    <Sparkles className="h-3.5 w-3.5 animate-pulse text-gold" />
+                    {HERO_SLIDES[activeSlide].label}
+                  </span>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.45 }}
-              className="mt-10 flex flex-wrap items-center justify-center gap-5"
-            >
-              <Link to="/booking" className="group inline-flex items-center gap-2.5 rounded-full btn-gold px-8 py-3.5 text-sm font-semibold">
-                Book Appointment
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link to="/services" className="inline-flex items-center gap-2.5 rounded-full btn-outline-gold px-8 py-3.5 text-sm font-semibold">
-                Explore Services
-              </Link>
-            </motion.div>
+                  <h1 className="mt-4 font-display text-2.5xl leading-[1.35] md:text-3.5xl lg:text-[2.45rem] tracking-[0.08em] font-medium text-glow-portal text-foreground uppercase">
+                    {renderHeading(HERO_SLIDES[activeSlide].heading)}
+                  </h1>
+
+                  <p className="mt-4 max-w-lg text-[14px] md:text-[15px] text-muted-foreground leading-relaxed tracking-widest font-light text-glow-subtle">
+                    {HERO_SLIDES[activeSlide].subtitle}
+                  </p>
+
+                  <div className="mt-7 flex flex-wrap items-center gap-4 sm:gap-6">
+                    <Link to={HERO_SLIDES[activeSlide].ctaLink} className="group inline-flex items-center gap-2.5 rounded-full px-8 py-3.5 text-sm font-semibold tracking-widest uppercase btn-premium-glow">
+                      {HERO_SLIDES[activeSlide].ctaText}
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                    <Link to={HERO_SLIDES[activeSlide].secCtaLink} className="inline-flex items-center gap-2.5 rounded-full px-8 py-3.5 text-sm font-semibold tracking-widest uppercase btn-outline-premium">
+                      {HERO_SLIDES[activeSlide].secCtaText}
+                    </Link>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            {/* RIGHT COLUMN: Premium Image Showcase */}
+            <div className="col-span-1 lg:col-span-6 w-full">
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2, duration: 0.9 }}
+                className="relative w-full"
+              >
+                {/* Glowing Aura behind the image showcase */}
+                <div className="absolute -inset-4 bg-gradient-to-tr from-purple/20 via-purple-deep/15 to-gold/10 rounded-2xl blur-3xl opacity-60 pointer-events-none" />
+
+                <div className="flex flex-col sm:flex-row gap-4 items-center w-full h-[320px] sm:h-[380px] lg:h-[410px]">
+                  
+                  {/* Large Main Image with Auto Carousel */}
+                  <div className="relative w-full sm:flex-1 h-[260px] sm:h-full rounded-2xl overflow-hidden border border-gold/30 shadow-[0_20px_50px_rgba(0,0,0,0.8)] bg-black/40 backdrop-blur-sm group">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent z-10 pointer-events-none" />
+                    
+                    <AnimatePresence mode="wait">
+                      <motion.img
+                        key={activeSlide}
+                        src={HERO_SLIDES[activeSlide].img}
+                        alt={HERO_SLIDES[activeSlide].label}
+                        initial={{ opacity: 0, scale: 1.08 }}
+                        animate={{ opacity: 1, scale: 1.02 }}
+                        exit={{ opacity: 0, scale: 0.98 }}
+                        transition={{ duration: 1.8, ease: [0.25, 1, 0.5, 1] }}
+                        className="w-full h-full object-cover"
+                      />
+                    </AnimatePresence>
+
+                    {/* Minimal Corner badge */}
+                    <div className="absolute bottom-5 left-5 z-20 flex flex-col gap-0.5">
+                      <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold/90 text-glow-subtle bg-black/45 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold/15">
+                        {HERO_SLIDES[activeSlide].label}
+                      </span>
+                    </div>
+
+                    {/* Corner highlights */}
+                    <div className="absolute top-4 left-4 w-3.5 h-3.5 border-t border-l border-gold/45 pointer-events-none z-20" />
+                    <div className="absolute top-4 right-4 w-3.5 h-3.5 border-t border-r border-gold/45 pointer-events-none z-20" />
+                    <div className="absolute bottom-4 left-4 w-3.5 h-3.5 border-b border-l border-gold/45 pointer-events-none z-20" />
+                    <div className="absolute bottom-4 right-4 w-3.5 h-3.5 border-b border-r border-gold/45 pointer-events-none z-20" />
+                  </div>
+
+                  {/* 4 Smaller Side Images */}
+                  <div className="flex flex-row sm:flex-col gap-3 w-full sm:w-[90px] md:w-[100px] shrink-0 justify-between h-[70px] sm:h-full">
+                    {HERO_SLIDES.map((slide, idx) => {
+                      const isActive = idx === activeSlide;
+                      return (
+                        <button
+                          key={slide.id}
+                          onClick={() => setActiveSlide(idx)}
+                          className={`relative flex-1 sm:flex-initial sm:w-full sm:h-[22%] h-full rounded-xl overflow-hidden border transition-all duration-500 cursor-pointer group ${
+                            isActive
+                              ? "border-gold bg-gold/15 shadow-[0_0_20px_rgba(212,175,55,0.4)] scale-105 z-20"
+                              : "border-gold/15 hover:border-gold/45 bg-black/45 hover:scale-102"
+                          }`}
+                        >
+                          <img
+                            src={slide.img}
+                            alt={slide.label}
+                            className={`w-full h-full object-cover transition-transform duration-[1.2s] ease-[0.16,1,0.3,1] ${
+                              isActive ? "scale-110 opacity-100" : "opacity-45 group-hover:opacity-85 group-hover:scale-105"
+                            }`}
+                          />
+                          {isActive && (
+                            <div className="absolute inset-0 bg-gold/5 backdrop-blur-[0.5px] mix-blend-overlay z-10" />
+                          )}
+                          <div className="absolute inset-0 bg-black/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-1 text-[8px] font-bold text-gold text-center leading-tight uppercase tracking-widest z-20">
+                            {slide.label.split(" ")[0]}
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                  
+                </div>
+              </motion.div>
+            </div>
+
           </div>
         </div>
       </section>

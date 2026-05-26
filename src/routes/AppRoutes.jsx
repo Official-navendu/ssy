@@ -6,6 +6,7 @@ import { MainLayout } from "@/layouts/MainLayout";
 const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
 const Services = lazy(() => import("@/pages/Services"));
+const Courses = lazy(() => import("@/pages/Courses"));
 const Booking = lazy(() => import("@/pages/Booking"));
 const Products = lazy(() => import("@/pages/Products"));
 const Contact = lazy(() => import("@/pages/Contact"));
@@ -32,6 +33,7 @@ export function AppRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/book" element={<Navigate to="/booking" replace />} />
           <Route path="/products" element={<Products />} />

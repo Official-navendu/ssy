@@ -4,8 +4,10 @@ import { CosmicBackground } from "./CosmicBackground";
 export function PageHero({ eyebrow, title, subtitle }) {
   return (
     <section className="relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-24">
-      <CosmicBackground density={40} />
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <CosmicBackground density={40} />
+      </div>
+      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         {eyebrow && (
           <motion.span
             initial={{ opacity: 0, y: 10 }}

@@ -31,14 +31,17 @@ export function CosmicBackground({ density = 95 }) {
 
     // Crisp display scaling parameters (cap DPR at 1.5 on mobile, 2.0 on desktop to prevent rendering lag)
     let dpr = Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2);
-    let width = canvas.parentElement ? canvas.parentElement.clientWidth : window.innerWidth;
-    let height = canvas.parentElement ? canvas.parentElement.clientHeight : window.innerHeight;
+    const getParentWidth = () => canvas.parentElement && canvas.parentElement.clientWidth > 100 ? canvas.parentElement.clientWidth : window.innerWidth;
+    const getParentHeight = () => canvas.parentElement && canvas.parentElement.clientHeight > 100 ? canvas.parentElement.clientHeight : window.innerHeight;
+
+    let width = getParentWidth();
+    let height = getParentHeight();
 
     // Apply high-DPI scaling
     const adjustScale = () => {
       dpr = Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2);
-      width = canvas.parentElement ? canvas.parentElement.clientWidth : window.innerWidth;
-      height = canvas.parentElement ? canvas.parentElement.clientHeight : window.innerHeight;
+      width = getParentWidth();
+      height = getParentHeight();
       
       canvas.width = width * dpr;
       canvas.height = height * dpr;
@@ -56,11 +59,15 @@ export function CosmicBackground({ density = 95 }) {
     const fgBokeh = [];      // Translucent atmospheric bokeh (Layer 4)
     const shootingStars = [];// Rare meteor events
 
+    // Always use stable screen coordinates for particle/star initialization to prevent early mount collapse trap
+    const initWidth = window.innerWidth > 0 ? window.innerWidth : 1920;
+    const initHeight = window.innerHeight > 0 ? window.innerHeight : 1080;
+
     // 1. GALAXY CLUSTERS INITIALIZATION (Realistic galaxy density)
     const clusterCenters = [
-      { x: width * 0.25, y: height * 0.3, radius: Math.max(width * 0.18, 160) },
-      { x: width * 0.72, y: height * 0.25, radius: Math.max(width * 0.22, 200) },
-      { x: width * 0.5, y: height * 0.65, radius: Math.max(width * 0.2, 180) }
+      { x: initWidth * 0.25, y: initHeight * 0.3, radius: Math.max(initWidth * 0.18, 160) },
+      { x: initWidth * 0.72, y: initHeight * 0.25, radius: Math.max(initWidth * 0.22, 200) },
+      { x: initWidth * 0.5, y: initHeight * 0.65, radius: Math.max(initWidth * 0.2, 180) }
     ];
 
     // Generate dense tiny background stars (dynamically scaled for mobile)
@@ -72,20 +79,20 @@ export function CosmicBackground({ density = 95 }) {
         const cluster = clusterCenters[Math.floor(Math.random() * clusterCenters.length)];
         const angle = Math.random() * Math.PI * 2;
         const dist = Math.random() * cluster.radius;
-        sx = (cluster.x + Math.cos(angle) * dist + width) % width;
-        sy = (cluster.y + Math.sin(angle) * dist + height) % height;
+        sx = (cluster.x + Math.cos(angle) * dist + initWidth) % initWidth;
+        sy = (cluster.y + Math.sin(angle) * dist + initHeight) % initHeight;
       } else {
-        sx = Math.random() * width;
-        sy = Math.random() * height;
+        sx = Math.random() * initWidth;
+        sy = Math.random() * initHeight;
       }
 
       bgStars.push({
         x: sx,
         y: sy,
-        size: Math.random() * 0.65 + 0.1,
+        size: Math.random() * 1.5 + 0.5,
         twinkleSpeed: Math.random() * 0.008 + 0.002,
         phase: Math.random() * Math.PI * 2,
-        alpha: Math.random() * 0.75 + 0.15,
+        alpha: Math.random() * 0.6 + 0.4,
         colorType: Math.random() > 0.88 ? "gold" : (Math.random() > 0.88 ? "blue" : "white")
       });
     }
@@ -94,12 +101,12 @@ export function CosmicBackground({ density = 95 }) {
     const heroStarCount = isMobile ? 12 : 38;
     for (let i = 0; i < heroStarCount; i++) {
       heroStars.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        size: Math.random() * 0.8 + 1.2, // 1.2px to 2.0px
+        x: Math.random() * initWidth,
+        y: Math.random() * initHeight,
+        size: Math.random() * 1.2 + 1.6, // 1.6px to 2.8px
         pulseSpeed: Math.random() * 0.01 + 0.004,
         phase: Math.random() * Math.PI * 2,
-        alpha: Math.random() * 0.4 + 0.5,
+        alpha: Math.random() * 0.4 + 0.6,
         colorType: Math.random() > 0.65 ? "gold" : "white",
         hasFlare: Math.random() > 0.45
       });
@@ -109,16 +116,16 @@ export function CosmicBackground({ density = 95 }) {
     const particleCount = isMobile ? 32 : Math.max(density * 1.3, 120);
     for (let i = 0; i < particleCount; i++) {
       midParticles.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
+        x: Math.random() * initWidth,
+        y: Math.random() * initHeight,
         vx: (Math.random() - 0.5) * 0.08 + (Math.random() > 0.5 ? 0.03 : -0.03), // diagonal drift bias
         vy: -Math.random() * 0.09 - 0.02, // upward drift
-        size: Math.random() * 2.0 + 0.6,
+        size: Math.random() * 2.5 + 1.0,
         pulseSpeed: Math.random() * 0.007 + 0.002,
         phase: Math.random() * Math.PI * 2,
         wiggleFreq: Math.random() * 0.02 + 0.005,
         wiggleAmp: Math.random() * 0.35 + 0.1,
-        alpha: Math.random() * 0.55 + 0.25,
+        alpha: Math.random() * 0.4 + 0.6,
         color: Math.random() > 0.4 ? "212, 175, 55" : "147, 51, 234" // Gold or Violet
       });
     }
@@ -127,8 +134,8 @@ export function CosmicBackground({ density = 95 }) {
     const bokehCount = isMobile ? 5 : 15;
     for (let i = 0; i < bokehCount; i++) {
       fgBokeh.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
+        x: Math.random() * initWidth,
+        y: Math.random() * initHeight,
         vx: (Math.random() - 0.5) * 0.05,
         vy: (Math.random() - 0.5) * 0.05,
         size: Math.random() * (isMobile ? 45 : 85) + 30,
@@ -179,6 +186,13 @@ export function CosmicBackground({ density = 95 }) {
 
     window.addEventListener("resize", handleResize);
 
+    const resizeObserver = new ResizeObserver(() => {
+      adjustScale();
+    });
+    if (canvas.parentElement) {
+      resizeObserver.observe(canvas.parentElement);
+    }
+
     // Premium radial glow drawing helper for Nebulae and Bokeh
     const drawRadialGlow = (ctx, x, y, size, rgb, alpha) => {
       const grad = ctx.createRadialGradient(x, y, 0, x, y, size);
@@ -212,8 +226,9 @@ export function CosmicBackground({ density = 95 }) {
       // ==========================================
       const bgGrad = ctx.createLinearGradient(0, 0, 0, height);
       bgGrad.addColorStop(0, "#010103");
-      bgGrad.addColorStop(0.35, "#05030b");
-      bgGrad.addColorStop(0.7, "#0b0516");
+      bgGrad.addColorStop(0.25, "#040209");
+      bgGrad.addColorStop(0.5, "#0a0414");
+      bgGrad.addColorStop(0.75, "#0d051c");
       bgGrad.addColorStop(1, "#020104");
       ctx.fillStyle = bgGrad;
       ctx.fillRect(0, 0, width, height);
@@ -227,29 +242,37 @@ export function CosmicBackground({ density = 95 }) {
       const nXa = width * 0.28 + Math.sin(time * 0.2) * 90;
       const nYa = height * 0.32 + Math.cos(time * 0.16) * 70;
       const rA = Math.max(width * (isMobile ? 0.45 : 0.58), isMobile ? 320 : 480);
-      drawRadialGlow(ctx, nXa, nYa, rA, "99, 10, 180", 0.32);
+      drawRadialGlow(ctx, nXa, nYa, rA, "99, 10, 180", 0.45 + Math.sin(time * 0.3) * 0.07);
 
       // B. Dreamy Golden Haze (Skipped on Mobile for rendering performance)
       if (!isMobile) {
         const nXb = width * 0.68 + Math.cos(time * 0.15) * 100;
         const nYb = height * 0.38 + Math.sin(time * 0.22) * 80;
         const rB = Math.max(width * 0.52, 430);
-        drawRadialGlow(ctx, nXb, nYb, rB, "212, 175, 55", 0.12);
+        drawRadialGlow(ctx, nXb, nYb, rB, "212, 175, 55", 0.20 + Math.sin(time * 0.4) * 0.04);
       }
 
       // C. Cosmic Midnight Blue Fog (Bottom-Right)
       const nXc = width * 0.78 + Math.sin(time * 0.12) * 110;
       const nYc = height * 0.68 + Math.cos(time * 0.24) * 80;
       const rC = Math.max(width * (isMobile ? 0.45 : 0.52), isMobile ? 320 : 440);
-      drawRadialGlow(ctx, nXc, nYc, rC, "18, 62, 195", 0.22);
+      drawRadialGlow(ctx, nXc, nYc, rC, "18, 62, 195", 0.32 + Math.cos(time * 0.2) * 0.05);
 
       // D. Amethyst Fog Aura (Top-Center behind heading - Skipped on Mobile)
       if (!isMobile) {
         const nXd = width * 0.5 + Math.cos(time * 0.18) * 50;
         const nYd = height * 0.16 + Math.sin(time * 0.11) * 35;
         const rD = Math.max(width * 0.48, 400);
-        drawRadialGlow(ctx, nXd, nYd, rD, "147, 51, 234", 0.20);
+        drawRadialGlow(ctx, nXd, nYd, rD, "147, 51, 234", 0.30 + Math.sin(time * 0.3) * 0.05);
       }
+
+      // E. Center Portal Gold Bloom Glow (Directly behind astrolabe/heading)
+      const rE = Math.max(width * (isMobile ? 0.35 : 0.45), isMobile ? 220 : 380);
+      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rE, "212, 175, 55", 0.14 + Math.sin(time * 0.5) * 0.03);
+
+      // F. Center Portal Purple/Indigo Glow
+      const rF = Math.max(width * (isMobile ? 0.38 : 0.48), isMobile ? 240 : 410);
+      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rF, "109, 40, 217", 0.20 + Math.cos(time * 0.4) * 0.04);
 
       // ==========================================
       // 3. ANEMIC CELESTIAL LIGHT RAYS
@@ -288,7 +311,9 @@ export function CosmicBackground({ density = 95 }) {
       const R3 = isMobile ? 170 : 230; // Outer circle radius
       const R4 = isMobile ? 174 : 235; // Outer dotted ring
 
-      ctx.strokeStyle = "rgba(212, 175, 55, 0.045)";
+      const ringPulse = 0.02 + Math.abs(Math.sin(time * 0.5)) * 0.035;
+      const wheelRotation = time * 0.018; // Very slow majestic rotate
+      ctx.strokeStyle = `rgba(212, 175, 55, ${ringPulse})`;
       ctx.lineWidth = 0.65;
 
       // Draw Concentric Rings
@@ -304,17 +329,30 @@ export function CosmicBackground({ density = 95 }) {
       ctx.arc(0, 0, R3, 0, Math.PI * 2);
       ctx.stroke();
 
-      // Draw outer dotted ring
+      // Small astrolabe tick-marks inside outer ring R3 for premium instrument detail
       ctx.save();
-      ctx.strokeStyle = "rgba(212, 175, 55, 0.06)";
+      ctx.strokeStyle = `rgba(212, 175, 55, ${ringPulse * 0.8})`;
+      ctx.rotate(wheelRotation * 0.4);
+      for (let t = 0; t < 60; t++) {
+        const tickAngle = (t * Math.PI) / 30;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(tickAngle) * (R3 - 4), Math.sin(tickAngle) * (R3 - 4));
+        ctx.lineTo(Math.cos(tickAngle) * R3, Math.sin(tickAngle) * R3);
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      // Draw outer dotted ring (rotating slowly in reverse)
+      ctx.save();
+      ctx.strokeStyle = `rgba(212, 175, 55, ${ringPulse + 0.025})`;
       ctx.setLineDash([2, 5]);
+      ctx.rotate(-wheelRotation * 1.5);
       ctx.beginPath();
       ctx.arc(0, 0, R4, 0, Math.PI * 2);
       ctx.stroke();
       ctx.restore();
 
       // Draw 12 Zodiac Houses Radial Dividers
-      const wheelRotation = time * 0.018; // Very slow majestic rotate
       for (let h = 0; h < 12; h++) {
         const radAngle = (h * Math.PI) / 6 + wheelRotation;
         ctx.beginPath();
@@ -474,24 +512,28 @@ export function CosmicBackground({ density = 95 }) {
         // 4-Point cross hair lens flare drawing (Only on desktop)
         if (!isMobile && star.hasFlare && currentAlpha > 0.45) {
           ctx.save();
-          ctx.strokeStyle = star.colorType === "gold" ? `rgba(240, 215, 122, ${currentAlpha * 0.28})` : `rgba(255, 255, 255, ${currentAlpha * 0.25})`;
-          ctx.lineWidth = 0.5;
+          ctx.translate(px, py);
+          ctx.rotate(time * 0.15 + star.phase);
+          ctx.strokeStyle = star.colorType === "gold" ? `rgba(240, 215, 122, ${currentAlpha * 0.35})` : `rgba(255, 255, 255, ${currentAlpha * 0.32})`;
+          ctx.lineWidth = 0.65;
 
           ctx.beginPath();
-          ctx.moveTo(px - star.size * 3.5, py);
-          ctx.lineTo(px + star.size * 3.5, py);
-          ctx.moveTo(px, py - star.size * 3.5);
-          ctx.lineTo(px, py + star.size * 3.5);
+          // Adjust length dynamically in a breathing scale
+          const flareLen = star.size * (3.8 + Math.sin(time * 2 + star.phase) * 0.9);
+          ctx.moveTo(-flareLen, 0);
+          ctx.lineTo(flareLen, 0);
+          ctx.moveTo(0, -flareLen);
+          ctx.lineTo(0, flareLen);
           ctx.stroke();
           ctx.restore();
 
           // Soft circular halo
-          const flareGlow = ctx.createRadialGradient(px, py, 0, px, py, star.size * 4.5);
-          flareGlow.addColorStop(0, star.colorType === "gold" ? `rgba(212, 175, 55, ${currentAlpha * 0.18})` : `rgba(255, 255, 255, ${currentAlpha * 0.15})`);
+          const flareGlow = ctx.createRadialGradient(px, py, 0, px, py, star.size * 5.5);
+          flareGlow.addColorStop(0, star.colorType === "gold" ? `rgba(212, 175, 55, ${currentAlpha * 0.22})` : `rgba(255, 255, 255, ${currentAlpha * 0.18})`);
           flareGlow.addColorStop(1, "rgba(0, 0, 0, 0)");
           ctx.fillStyle = flareGlow;
           ctx.beginPath();
-          ctx.arc(px, py, star.size * 4.5, 0, Math.PI * 2);
+          ctx.arc(px, py, star.size * 5.5, 0, Math.PI * 2);
           ctx.fill();
         }
       });
@@ -648,12 +690,13 @@ export function CosmicBackground({ density = 95 }) {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      resizeObserver.disconnect();
       cancelAnimationFrame(animationId);
     };
   }, [density]);
 
   return (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden bg-background">
+    <div className="pointer-events-none absolute inset-0 overflow-hidden bg-transparent">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 h-full w-full opacity-98 transition-opacity duration-1000"
