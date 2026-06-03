@@ -1,0 +1,150 @@
+<USER_REQUEST>
+Refactor and reorganize the entire project structure WITHOUT changing the current UI, styling, responsiveness, animations, sections, or layout.
+
+IMPORTANT RULES:
+
+Do NOT redesign anything
+Do NOT modify styling
+Do NOT change responsiveness
+Do NOT change animations
+Do NOT change content
+Do NOT break existing functionality
+Preserve the exact same visual output
+
+MAIN TASK:
+Remove TanStack routing structure completely and convert the project into a clean standard React + Vite architecture using React Router DOM.
+
+REMOVE:
+
+TanStack Start
+TanStack Router
+file-based TanStack routing
+unnecessary framework-specific configs
+routeTree files
+generated TanStack files
+loader/action structures
+
+INSTALL & USE:
+
+React Router DOM
+Standard React routing
+
+TARGET CLEAN FILE STRUCTURE:
+
+src/
+│
+├── assets/
+│ ├── images/
+│ ├── icons/
+│ └── videos/
+│
+├── components/
+│ ├── common/
+│ ├── layout/
+│ ├── home/
+│ ├── about/
+│ ├── services/
+│ ├── booking/
+│ ├── products/
+│ ├── contact/
+│ └── ui/
+│
+├── pages/
+│ ├── Home.jsx
+│ ├── About.jsx
+│ ├── Services.jsx
+│ ├── Booking.jsx
+│ ├── Products.jsx
+│ ├── Contact.jsx
+│ └── NotFound.jsx
+│
+├── layouts/
+│ └── MainLayout.jsx
+│
+├── routes/
+│ └── AppRoutes.jsx
+│
+├── hooks/
+│
+├── utils/
+│
+├── data/
+│
+├── styles/
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+ROUTING REQUIREMENTS:
+
+Use React Router DOM
+Create centralized routing inside:
+src/routes/AppRoutes.jsx
+
+Required routes:
+/
+/about
+/services
+/booking
+/products
+/contact
+/*
+
+LAYOUT REQUIREMENTS:
+Create reusable:
+
+Navbar
+Footer
+ScrollToTop
+Page transitions
+
+Move them into:
+components/layout/
+
+ANIMATION REQUIREMENTS:
+Keep all existing:
+
+Framer Motion animations
+transitions
+hover effects
+scroll effects
+particle effects
+
+OPTIMIZATION:
+
+Remove unused imports
+Remove duplicate components
+Remove unnecessary wrappers
+Keep clean scalable architecture
+Preserve lazy loading if already implemented
+
+FINAL OUTPUT REQUIREMENTS:
+
+Fully working React + Vite project
+No TanStack dependencies
+No broken imports
+No routing errors
+No UI changes
+Same exact website appearance
+Production-ready clean architecture
+
+Also update:
+
+package.json
+vite.config.js
+main.jsx
+App.jsx
+
+Ensure the app runs perfectly using:
+npm install
+npm run dev
+
+WITHOUT any TanStack dependency remaining.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-20T14:47:31+05:30.
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Gemini 3.5 Flash (High). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>

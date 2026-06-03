@@ -1,0 +1,137 @@
+<USER_REQUEST>
+Proceed with the implementation plan but significantly increase the CINEMATIC QUALITY, MYSTICAL FEEL, and VISUAL DEPTH of the hero section.
+
+CURRENT ISSUE:
+The current particle/cosmic direction still feels:
+- flat
+- too technical
+- generic
+- not emotionally spiritual enough
+
+I want the hero to feel like:
+- a mystical astrology universe
+- divine cosmic portal
+- premium tarot experience
+- cinematic celestial atmosphere
+
+CRITICAL VISUAL UPGRADES:
+
+1. CREATE A TRUE GALAXY ATMOSPHERE
+The hero background should NOT feel like simple particles on a dark background.
+
+Build:
+- layered galaxy depth
+- visible nebula formations
+- cosmic fog
+- cinematic space ambience
+- realistic celestial atmosphere
+
+Use:
+- deep black
+- midnight blue
+- cosmic purple
+- subtle gold lighting
+
+2. STARS SHOULD FEEL ALIVE
+Do NOT render plain dots.
+
+Create:
+- twinkling stars
+- shimmering stars
+- glowing star clusters
+- depth-based star sizing
+- layered star fields
+- subtle sparkle animation
+
+Some stars should softly brighten and dim naturally.
+
+3. ADD MYSTICAL ASTROLOGY ELEMENTS
+Subtly integrate:
+- zodiac constellation lines
+- sacred geometry
+- celestial rings
+- astrology wheel outlines
+- moon phase symbols
+
+IMPORTANT:
+These should feel atmospheric and premium — not obvious or cluttered.
+
+4. HERO SHOULD FEEL SPIRITUALLY ILLUMINATED
+Add:
+- divine glow behind heading
+- cinematic center aura
+- soft bloom lighting
+- subtle cosmic light rays
+
+The hero content should feel naturally highlighted.
+
+5. PREMIUM PARTICLE SYSTEM
+Add:
+- glowing spiritual particles
+- cosmic energy dust
+- drifting magical sparks
+- floating light trails
+
+Motion must feel:
+- calm
+- smooth
+- cinematic
+- luxurious
+
+6. HERO BUTTONS
+Upgrade CTA buttons visually:
+- glassmorphism surface
+- gold shimmer effect
+- elegant glow border
+- cinematic hover transitions
+- refined shadow depth
+
+7. AUTO PLAY SPIRITUAL MUSIC
+Add:
+- very soft ambient spiritual music
+- low volume by default
+- smooth autoplay if browser allows
+- elegant mute/unmute toggle
+
+Music style:
+- meditation ambience
+- soft spiritual frequencies
+- calming cosmic atmosphere
+
+IMPORTANT:
+Keep it subtle and non-intrusive.
+
+8. REMOVE PRELOADER COMPLETELY
+Remove:
+- loading screen
+- splash loader
+- initial blocking animation
+
+The website should open instantly and smoothly.
+
+9. PERFORMANCE OPTIMIZATION
+Maintain:
+- fast loading
+- GPU accelerated animations
+- optimized rendering
+- smooth FPS
+- mobile optimization
+
+Reduce particle density dynamically on mobile devices.
+
+10. FINAL EXPERIENCE
+The user should instantly feel:
+“This is a premium luxury astrology and spiritual consultation platform.”
+
+The hero must feel:
+- mystical
+- cinematic
+- luxurious
+- spiritual
+- immersive
+- emotionally powerful
+- visually unforgettable
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-22T15:28:04+05:30.
+</ADDITIONAL_METADATA>

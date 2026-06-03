@@ -1,0 +1,129 @@
+<USER_REQUEST>
+Fix and refine ONLY the Home Page Hero Section sizing, spacing, typography, and slider timing.
+
+IMPORTANT:
+- Do NOT redesign the hero section
+- Do NOT change the galaxy background
+- Do NOT change layout structure
+- Do NOT remove animations
+- Only improve spacing, proportions, and premium feel
+
+========================================
+1. REDUCE HERO SECTION HEIGHT
+========================================
+
+CURRENT ISSUE:
+The hero section feels too tall and the image is sticking too close to the navbar/header.
+
+FIX:
+- Reduce overall hero height slightly
+- Add proper top spacing below navbar
+- Create more breathing space
+- Improve vertical balance
+
+REQUIREMENTS:
+- Add better top padding/margin
+- Ensure hero content starts lower
+- Prevent image from touching header/navbar
+
+Target feel:
+- premium
+- balanced
+- luxury editorial spacing
+
+========================================
+2. SLOW DOWN IMAGE CAROUSEL
+========================================
+
+CURRENT ISSUE:
+The image/slide changes are happening too fast.
+
+FIX:
+- Slow down autoplay speed
+- Make transitions smoother and calmer
+
+NEW SETTINGS:
+- Slide duration: 5–7 seconds
+- Smooth fade transition
+- Elegant cinematic pacing
+
+IMPORTANT:
+Transitions should feel:
+- luxurious
+- smooth
+- premium
+- calming
+
+Avoid:
+- fast aggressive switching
+- flashy transitions
+
+========================================
+3. REDUCE FONT SIZE
+========================================
+
+CURRENT ISSUE:
+The heading text feels oversized and less premium.
+
+FIX:
+- Slightly reduce hero heading font size
+- Improve line-height
+- Improve spacing between words/lines
+- Create a more elegant luxury feel
+
+TARGET:
+Desktop:
+- slightly smaller hero heading
+
+Mobile:
+- maintain clean readability
+
+Typography should feel:
+- premium
+- cinematic
+- luxury editorial
+- sophisticated
+
+========================================
+4. IMPROVE TEXT LAYOUT
+========================================
+
+- Better spacing between heading and paragraph
+- Improve button spacing
+- Improve content width balance
+- Keep cleaner visual hierarchy
+
+========================================
+5. KEEP EXISTING EFFECTS
+========================================
+
+Keep:
+- galaxy background
+- particles
+- stars
+- mystical atmosphere
+- image layout
+- animations
+
+Only refine:
+- proportions
+- pacing
+- spacing
+- typography scale
+
+========================================
+6. FINAL RESULT
+========================================
+
+The Hero section should feel:
+- more premium
+- more balanced
+- less crowded
+- more cinematic
+- luxury modern astrology brand
+
+The overall experience should feel calmer, cleaner, and more professionally designed.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-23T01:58:07+05:30.
+</ADDITIONAL_METADATA>

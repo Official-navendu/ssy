@@ -170,10 +170,24 @@ export default function Contact() {
               <div className="mt-8 border-t border-gold/10 pt-6">
                 <div className="text-xs uppercase tracking-[0.25em] text-gold font-medium">Follow Sanctuary</div>
                 <div className="mt-4 flex gap-3.5">
-                  <a href={SITE.social.instagram} target="_blank" rel="noreferrer" className="rounded-full border border-gold/30 p-3 text-gold hover:bg-gold/10 hover:border-gold/60 transition-colors"><Instagram className="h-4 w-4" /></a>
-                  <a href={SITE.social.facebook} target="_blank" rel="noreferrer" className="rounded-full border border-gold/30 p-3 text-gold hover:bg-gold/10 hover:border-gold/60 transition-colors"><Facebook className="h-4 w-4" /></a>
-                  <a href={SITE.social.youtube} target="_blank" rel="noreferrer" className="rounded-full border border-gold/30 p-3 text-gold hover:bg-gold/10 hover:border-gold/60 transition-colors"><Youtube className="h-4 w-4" /></a>
-                </div>
+  <a
+    href="https://www.instagram.com/shivani_spiritual_yatri?igsh=aHU1ZzczbHFyajhq&utm_source=qr"
+    target="_blank"
+    rel="noreferrer"
+    className="rounded-full border border-gold/30 p-3 text-gold hover:bg-gold/10 hover:border-gold/60 transition-colors"
+  >
+    <Instagram className="h-4 w-4" />
+  </a>
+
+  <a
+    href="https://www.youtube.com/@Shivani_Spirtual_Yatri"
+    target="_blank"
+    rel="noreferrer"
+    className="rounded-full border border-gold/30 p-3 text-gold hover:bg-gold/10 hover:border-gold/60 transition-colors"
+  >
+    <Youtube className="h-4 w-4" />
+  </a>
+</div>
               </div>
             </div>
           </Reveal>
@@ -194,7 +208,7 @@ export default function Contact() {
                   <div className="absolute bottom-3.5 right-3.5 w-3 h-3 border-b border-r border-gold/45 pointer-events-none z-10" />
                   
                   <iframe
-                    title="Vancouver Sanctuary Location Map"
+                    title="Brampton Sanctuary Location Map"
                     className="h-full w-full opacity-70 group-hover:opacity-85 transition-opacity duration-700"
                     style={{
                       filter: "invert(90%) hue-rotate(180deg) grayscale(80%) contrast(120%) brightness(95%)",
@@ -203,7 +217,7 @@ export default function Contact() {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps?q=Vancouver,BC,Canada&output=embed"
+                    src="https://www.google.com/maps?q=11+Lisa+Street,Brampton,ON,L6T4E8,Canada&output=embed"
                   />
                 </div>
                 

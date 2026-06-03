@@ -1,0 +1,179 @@
+<USER_REQUEST>
+Proceed with the implementation plan but apply the following CRITICAL visual and performance refinements.
+
+========================================
+1. HERO RENDERING FIX PRIORITY
+========================================
+
+IMPORTANT:
+Before adding effects, FIRST ensure:
+- hero content renders correctly
+- navbar visible
+- buttons visible
+- text visible
+- no dark blank screen
+
+STRICT LAYERING ORDER:
+
+z-0:
+Cosmic background canvas
+
+z-[5]:
+Astrolabe / rotating mystical symbols
+
+z-10:
+Soft dark overlay
+
+z-20:
+Hero content
+
+Canvas must NEVER overlap hero content.
+
+========================================
+2. HERO VISUAL POLISH
+========================================
+
+The hero should feel:
+- cinematic
+- premium
+- mystical
+- luxury astrology brand
+
+Improve:
+- text readability
+- spacing
+- visual hierarchy
+- image composition
+- smoother transitions
+
+Reduce:
+- clutter
+- excessive particles
+- over-dark overlays
+
+========================================
+3. PREMIUM COURSE CARD EXPERIENCE
+========================================
+
+Course cards should feel:
+- luxury SaaS quality
+- cinematic spiritual brand
+- high-end premium platform
+
+Add:
+- subtle image zoom on hover
+- glow border animation
+- elegant glassmorphism
+- premium shadow depth
+- smooth hover lift
+
+Avoid:
+- generic card UI
+- flat borders
+- overcrowded effects
+
+========================================
+4. COURSE IMAGE QUALITY
+========================================
+
+Generated images should feel:
+- cinematic
+- ultra premium
+- editorial
+- mystical
+- modern spiritual luxury
+
+Avoid:
+- AI-looking cheap visuals
+- oversaturated colors
+- unrealistic faces
+- cluttered compositions
+
+Maintain:
+- dark cosmic palette
+- gold highlights
+- purple ambience
+
+========================================
+5. COURSE MODAL EXPERIENCE
+========================================
+
+The popup modal should feel:
+- luxurious
+- cinematic
+- immersive
+
+Add:
+- smooth backdrop blur
+- fade animation
+- soft scale-up motion
+- premium close button
+- elegant spacing
+
+The modal should feel like a premium streaming/SaaS experience.
+
+========================================
+6. WHATSAPP REDIRECT POLISH
+========================================
+
+Ensure:
+- proper URL encoding
+- correct dynamic course names
+- no broken spaces
+- no old hardcoded names/messages
+
+Message format:
+Hello Shivani Spiritual Yatri, I am interested in purchasing the [COURSE NAME] course. Please share complete details.
+
+========================================
+7. MUSIC SYSTEM FIX
+========================================
+
+The meditation music still needs proper functionality.
+
+Ensure:
+- audio actually plays
+- autoplay starts after first interaction if blocked
+- mute/unmute works correctly
+- low volume by default
+- smooth fade in/out
+
+Music should feel:
+- subtle
+- calming
+- premium
+
+========================================
+8. PERFORMANCE OPTIMIZATION
+========================================
+
+Maintain:
+- smooth FPS
+- lightweight rendering
+- optimized particles
+- lazy loaded course images
+- responsive canvas density
+- GPU accelerated animations
+
+Reduce effects automatically on mobile devices.
+
+========================================
+9. FINAL EXPERIENCE
+========================================
+
+The website should feel like:
+- a luxury astrology SaaS platform
+- cinematic spiritual brand
+- premium mystical learning experience
+
+Everything should feel:
+- polished
+- immersive
+- smooth
+- premium
+- modern
+- professionally designed
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-23T01:50:30+05:30.
+</ADDITIONAL_METADATA>

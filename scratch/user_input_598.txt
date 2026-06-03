@@ -1,0 +1,181 @@
+<USER_REQUEST>
+Enhance and redesign the Contact Page, Header Logo, Footer Logo, and Website Favicon to feel MUCH MORE premium, spiritual, cinematic, and professionally branded.
+
+IMPORTANT:
+- Do NOT change overall website structure
+- Preserve responsiveness
+- Preserve existing theme colors (black, gold, purple)
+- Keep current animations smooth
+- Only improve visual quality, branding, layout polish, and premium feel
+
+========================================
+1. CONTACT PAGE MAP UPDATE
+========================================
+
+Replace the current map with a cleaner premium Canada-based location map.
+
+USE LOCATION:
+Toronto, Ontario, Canada
+
+OR
+
+Vancouver, British Columbia, Canada
+
+MAP REQUIREMENTS:
+- Dark-themed embedded Google Map
+- Rounded premium container
+- Glassmorphism border
+- Soft glow effect
+- Smooth hover animation
+- Better spacing and alignment
+
+The map section should feel elegant and integrated with the spiritual luxury theme.
+
+========================================
+2. FAQ SECTION REDESIGN
+========================================
+
+CURRENT ISSUE:
+The FAQ section feels too basic and visually weak.
+
+NEW PREMIUM LAYOUT:
+Create a modern split layout:
+
+LEFT SIDE:
+- Premium spiritual image/illustration
+- Spiritual guidance visual
+- Elegant mystical aesthetic
+- Soft glow around image
+- Floating animation
+- Cosmic ambience background
+
+RIGHT SIDE:
+- Premium FAQ accordion section
+- Better spacing
+- Cleaner typography
+- Smooth accordion animations
+- Elegant icons
+- Luxury card styling
+
+FAQ DESIGN STYLE:
+- Glassmorphism cards
+- Soft gold borders
+- Cosmic glow effects
+- Smooth expand/collapse animation
+- Better padding
+- Premium typography hierarchy
+
+FAQ QUESTIONS:
+Create premium FAQs like:
+- How do online tarot consultations work?
+- How can astrology help in life decisions?
+- Are spiritual healing sessions confidential?
+- How do I book a consultation?
+- What products do you recommend for beginners?
+
+ANIMATIONS:
+- Smooth fade-up reveal
+- Accordion expand animation
+- Image floating effect
+- Glow pulse effect
+
+RESPONSIV
+<truncated 400 bytes>
+stical cosmic aesthetic
+- Clean and professional
+
+LOGO IDEAS:
+Include subtle:
+- moon
+- stars
+- zodiac circle
+- sacred geometry
+- mystical symbol
+- lotus
+- spiritual aura
+
+COLOR STYLE:
+- Gold accents
+- Soft white
+- Purple glow details
+- Transparent background
+
+TYPOGRAPHY:
+- Elegant luxury font
+- Premium spiritual branding
+- Modern editorial feel
+
+HEADER REQUIREMENTS:
+- Improve logo size balance
+- Better navbar alignment
+- Maintain clean glassmorphism navbar
+
+========================================
+4. FOOTER LOGO UPDATE
+========================================
+
+Replace footer logo with the new premium brand logo.
+
+FOOTER STYLE:
+- Softer glow
+- Minimal luxury version
+- Better spacing
+- Elegant alignment
+
+========================================
+5. FAVICON CREATION
+========================================
+
+Create a custom favicon matching the new logo identity.
+
+FAVICON STYLE:
+- Simple premium astrology icon
+- Moon/star/spiritual symbol
+- Gold on dark background
+- Minimal and recognizable
+
+REQUIREMENTS:
+- Proper favicon sizes
+- Sharp visibility
+- Browser tab optimized
+
+UPDATE:
+- index.html favicon reference
+- Ensure favicon loads correctly
+
+========================================
+6. GLOBAL BRAND POLISH
+========================================
+
+Ensure all branding elements feel:
+- premium
+- luxurious
+- mystical
+- cinematic
+- trustworthy
+- modern spiritual brand
+
+Avoid:
+- generic icons
+- cheap logo style
+- overcrowded branding
+- cartoon look
+
+========================================
+7. PERFORMANCE
+========================================
+
+- Optimize logo assets
+- Use SVG if possible
+- Optimize favicon size
+- Maintain fast loading speed
+
+========================================
+FINAL GOAL
+========================================
+
+The Contact Page and branding should feel like a world-class luxury astrology and spiritual consultation platform with premium modern identity and cinematic spiritual aesthetics.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T16:20:29+05:30.
+</ADDITIONAL_METADATA>

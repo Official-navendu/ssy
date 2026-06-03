@@ -11,8 +11,9 @@ import { CosmicBackground } from "@/components/common/CosmicBackground";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
 import { services, testimonials, trust } from "@/data/data";
+import { BentoCard } from "@/components/common/BentoCard";
 import { StonesShowcase } from "@/components/home/StonesShowcase";
-import aboutPreviewImg from "@/assets/images/about_preview.webp";
+import aboutPreviewImg from "@/assets/images/about_preview.png";
 import testimonialClientImg from "@/assets/images/testimonial_client.webp";
 
 // Import premium spiritual image showcase assets
@@ -118,22 +119,22 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative flex min-h-[75vh] lg:min-h-[80vh] items-center overflow-hidden pt-36 pb-16 lg:pt-44 lg:pb-20">
+      <section className="relative flex min-h-[80vh] lg:h-[calc(100vh-80px)] lg:min-h-[580px] lg:max-h-[780px] items-center overflow-hidden pt-28 pb-10 md:pt-32 md:pb-12 lg:pt-20 lg:pb-10">
         {/* Galaxy Background Layer (z-0) */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           <CosmicBackground density={60} />
         </div>
 
         {/* Concentric Rotating Astrolabe & Celestial Rings Layer (z-[5]) */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 flex items-center justify-center z-[5]">
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30 sm:opacity-50 flex items-center justify-center z-[5] overflow-hidden">
           {/* Outer Gold Astrolabe Ring */}
-          <div className="absolute h-[680px] w-[680px] rounded-full border border-gold/10 animate-spin-slow" style={{ animationDuration: "50s" }} />
+          <div className="absolute h-[380px] w-[380px] sm:h-[680px] sm:w-[680px] rounded-full border border-gold/10 animate-spin-slow" style={{ animationDuration: "50s" }} />
           {/* Dashed Gold Orbit Ring */}
-          <div className="absolute h-[620px] w-[620px] rounded-full border border-dashed border-gold/15 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "35s" }} />
+          <div className="absolute h-[320px] w-[320px] sm:h-[620px] sm:w-[620px] rounded-full border border-dashed border-gold/15 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "35s" }} />
           {/* Purple Energy Ring */}
-          <div className="absolute h-[520px] w-[520px] rounded-full border border-purple/10 animate-spin-slow" style={{ animationDuration: "25s" }} />
+          <div className="absolute h-[280px] w-[280px] sm:h-[520px] sm:w-[520px] rounded-full border border-purple/10 animate-spin-slow" style={{ animationDuration: "25s" }} />
           {/* Fine Outer Gold Ring */}
-          <div className="absolute h-[420px] w-[420px] rounded-full border border-gold/5 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "60s" }} />
+          <div className="absolute h-[240px] w-[240px] sm:h-[420px] sm:w-[420px] rounded-full border border-gold/5 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "60s" }} />
         </div>
 
         {/* Cinematic Dark Overlay Layer (z-10) */}
@@ -496,14 +497,14 @@ export default function Home() {
               >
                 {testimonials.map((t) => (
                   <SwiperSlide key={t.name}>
-                    <div className="glass rounded-2xl p-7 pb-12">
+                    <BentoCard className="glass rounded-2xl p-7 pb-12 bg-black/10">
                       <Quote className="h-7 w-7 text-gold/60" />
                       <p className="mt-4 text-base leading-relaxed text-foreground/90">"{t.text}"</p>
                       <div className="mt-5 border-t border-gold/10 pt-4">
                         <div className="font-display text-lg text-gold">{t.name}</div>
                         <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{t.role}</div>
                       </div>
-                    </div>
+                    </BentoCard>
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -512,27 +513,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative py-20">
-        <div className="mx-auto max-w-6xl px-6 md:px-8">
-          <Reveal>
-            <div className="relative overflow-hidden rounded-3xl glass-strong px-8 py-16 text-center md:px-16">
-              <div className="absolute -top-32 -left-20 h-80 w-80 rounded-full bg-purple/40 blur-3xl" />
-              <div className="absolute -bottom-32 -right-20 h-80 w-80 rounded-full bg-gold/30 blur-3xl" />
-              <div className="relative">
-                <PlayCircle className="mx-auto h-12 w-12 text-gold" />
-                <h2 className="mt-5 font-display text-4xl md:text-5xl">
-                  Ready to <span className="text-gradient-cosmic">Begin Your Journey?</span>
+      {/* CTA Full-Width Strip */}
+      <section className="relative w-full border-t border-b border-gold/15 bg-gradient-to-r from-black/80 via-[#0a0612]/95 to-black/80 py-16 md:py-20 overflow-hidden">
+        {/* Background ambient spotlight glows */}
+        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple/8 blur-[110px] rounded-full -z-10 animate-pulse" />
+        <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gold/4 blur-[90px] rounded-full -z-10 animate-pulse" />
+
+        {/* Rotating orbit rings layer (z-0) */}
+        <div className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 opacity-[0.04] flex items-center justify-center z-0 select-none scale-125">
+          <div className="h-[400px] w-[400px] rounded-full border border-dashed border-gold animate-spin-slow" style={{ animationDuration: "40s" }} />
+          <div className="absolute h-[320px] w-[320px] rounded-full border border-gold animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "25s" }} />
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6 md:px-8 relative z-10">
+          <BentoCard className="w-full glass-strong p-8 md:p-12 bg-black/40 backdrop-blur-md" glowColor="rgba(192, 132, 252, 0.15)">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
+              
+              {/* LEFT SIDE: Heading & Subtitle */}
+              <div className="flex-1 text-left space-y-4 max-w-3xl">
+                <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-3.5 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-gold text-glow-subtle animate-pulse w-fit">
+                  <Sparkles className="h-3 w-3 text-gold" />
+                  Divine Invitation
+                </span>
+                <h2 className="font-display text-3.5xl md:text-5xl leading-tight tracking-[0.08em] uppercase text-foreground">
+                  Begin Your Spiritual <span className="text-gradient-cosmic">Transformation Journey</span>
                 </h2>
-                <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-                  Book your private consultation today and step into the path the universe has shaped for you.
+                <p className="text-xs md:text-sm leading-relaxed text-muted-foreground/90 font-light tracking-wider max-w-2xl">
+                  Experience clarity, healing, guidance, and alignment through personalized spiritual consultations and transformational learning.
                 </p>
-                <Link to="/booking" className="mt-8 inline-flex items-center gap-2 rounded-full btn-gold px-8 py-4 text-sm font-semibold">
-                  Book Your Appointment <ArrowRight className="h-4 w-4" />
+              </div>
+
+              {/* RIGHT SIDE: Buttons */}
+              <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shrink-0 w-full sm:w-auto">
+                <Link 
+                  to="/booking" 
+                  className="w-full sm:w-auto group inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 text-xs font-bold uppercase tracking-widest btn-premium-glow shadow-[0_0_20px_rgba(212,175,55,0.15)] hover:shadow-[0_0_30px_rgba(212,175,55,0.35)] transition-all cursor-pointer text-center"
+                >
+                  Book A Consultation 
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+                
+                <Link 
+                  to="/courses" 
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 text-xs font-bold uppercase tracking-widest btn-outline-premium transition-all hover:bg-white/5 cursor-pointer text-center"
+                >
+                  Explore Courses
                 </Link>
               </div>
+
             </div>
-          </Reveal>
+          </BentoCard>
         </div>
       </section>
     </>

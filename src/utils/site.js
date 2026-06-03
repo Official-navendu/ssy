@@ -5,7 +5,7 @@ export const SITE = {
   phoneRaw: "+14376609396",
   email: "contact@shivanispiritualyatri.com",
   whatsapp: "14376609396",
-  address: "Vancouver, British Columbia, Canada",
+  address: "11 Lisa Street, ON L6T4E8, Brampton, Ontario, Canada",
   social: {
     instagram: "https://instagram.com",
     facebook: "https://facebook.com",

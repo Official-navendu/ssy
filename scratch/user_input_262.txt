@@ -1,0 +1,108 @@
+<USER_REQUEST>
+The current background still feels flat and unclear visually.
+
+Redesign the cosmic background to feel MUCH MORE premium, cinematic, immersive, and visually rich while still keeping it elegant and spiritual.
+
+IMPORTANT:
+- Do NOT change layout structure
+- Do NOT change content
+- Do NOT change responsiveness
+- Only improve the hero background atmosphere and visual depth
+
+CURRENT ISSUE:
+The background lacks depth, realism, layering, and cinematic focus.
+Particles are not visually impactful enough.
+The hero feels empty instead of immersive.
+
+NEW BACKGROUND DIRECTION:
+
+Create a luxury cinematic universe environment similar to:
+- Interstellar-inspired space ambience
+- Premium SaaS hero backgrounds
+- Spiritual luxury branding
+- Apple-level motion smoothness
+- Modern cosmic UI aesthetics
+
+ADD VISUAL DEPTH USING MULTIPLE LAYERS:
+
+1. Deep Space Base Layer
+- Rich black + deep purple gradient
+- Add subtle blue/purple nebula clouds
+- Smooth blending
+- No flat black sections
+
+2. Cinematic Nebula Layer
+- Large soft nebula clouds
+- Slow drifting movement
+- Very subtle opacity animation
+- Gold/purple cosmic haze
+- Add depth and atmosphere
+
+3. Premium Particle System
+Replace tiny invisible particles with:
+- More visible premium glowing particles
+- Different particle sizes
+- Different blur levels
+- Slow cinematic movement
+- Smooth floating trails
+- Better brightness balance
+- Some particles should softly twinkle
+
+4. Add Premium Light Effects
+- Soft glowing energy orbs
+- Radial glow spots
+- Light diffusion effects
+- Ambient cosmic lighting
+- Soft cinematic bloom effect
+
+5. Add Orbit + Energy Lines
+- Thin elegant orbital rings
+- Slowly rotating
+- Very subtle opacity
+- Premium sci-fi spiritual feel
+
+6. Add Depth & Parallax
+Create layered movement:
+- Foreground particles
+- Mid-layer nebula
+- Background stars
+- Smooth parallax on mouse movement
+
+7. Hero Focus Enhancement
+The center hero content should feel highlighted naturally:
+- Slight ambient glow behind heading
+- Smooth focus lighting
+- Better contrast separation
+
+8. Animation Quality
+Animations must feel:
+- Cinematic
+- Smooth
+- Calm
+- Premium
+- Expensive
+- Spiritual
+
+Avoid:
+- Gaming visuals
+- Cheap particle look
+- Overcrowding
+- Harsh glows
+- Random chaos
+
+9. PERFORMANCE
+- Optimize canvas rendering
+- Maintain smooth FPS
+- Mobile-friendly rendering
+- Use requestAnimationFrame properly
+
+10. FINAL GOAL
+The background should instantly create a:
+“WOW this feels premium”
+reaction while still staying elegant, calm, spiritual, and luxurious.
+
+The hero should feel alive and immersive even before scrolling.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-20T15:11:06+05:30.
+</ADDITIONAL_METADATA>

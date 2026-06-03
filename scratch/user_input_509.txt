@@ -1,0 +1,199 @@
+<USER_REQUEST>
+Enhance and redesign the Products Page to match the same PREMIUM LUXURY QUALITY as the upgraded Services Page.
+
+IMPORTANT:
+- Do NOT change routing or functionality
+- Preserve responsiveness
+- Keep current spiritual luxury branding
+- Maintain black + gold + purple aesthetic
+- Only improve layout, visuals, product presentation, animations, and pricing structure
+
+MAIN GOAL:
+Make the Products page feel like a high-end spiritual luxury store for Canadian clients.
+
+The page should feel:
+- premium
+- cinematic
+- trustworthy
+- elegant
+- modern spiritual brand
+- luxury wellness storefront
+
+1. PREMIUM PRODUCTS HERO SECTION
+Create a cinematic hero/banner section at the top.
+
+Include:
+- Cosmic luxury background
+- Floating particles
+- Soft glowing energy
+- Premium typography
+- Spiritual product atmosphere
+
+Heading:
+“Spiritual Healing Products”
+
+Subtitle:
+“Carefully selected spiritual tools and healing products designed to elevate your energy, balance your soul, and enhance your spiritual journey.”
+
+Add smooth entrance animations and premium glow effects.
+
+2. REDESIGN PRODUCT CARDS
+Transform the current product layout into premium luxury showcase cards.
+
+Each product card should include:
+- Large premium product image
+- Product title
+- Spiritual tagline
+- Detailed product description
+- Benefits list
+- Canadian pricing
+- CTA button
+- Soft glow effect
+
+CARD STYLE:
+- Glassmorphism
+- Gold gradient borders
+- Luxury shadows
+- Smooth hover animations
+- Premium spacing
+- Cinematic image overlay
+- Elegant rounded corners
+
+3. ADD PREMIUM PRODUCT IMAGES
+Use high-end spiritual product visuals.
+
+Required products:
+
+1. Amethyst Healing Bracelet
+Image style:
+- Purple crystal bracelet
+- Luxury product photography
+- Dark cinematic background
+
+2. Rose Quartz Healing Stone
+Image style:
+- Soft pink crystal
+- Elegant healing aesthetic
+- Premium glow lighting
+
+3. Spiritual Protection Kit
+Image style:
+- Sage bundle
+- Crystals
+- Candles
+- Luxury spiritual setup
+
+4. Tarot Card Deck
+Image style:
+- Premium tarot cards
+- Mystic table
+<truncated 130 bytes>
+BASED PRICING
+Since the client is based in Canada:
+- Display pricing in CAD ($ CAD)
+
+Suggested pricing:
+
+Amethyst Healing Bracelet
+CAD $49
+
+Rose Quartz Healing Stone
+CAD $59
+
+Spiritual Protection Kit
+CAD $89
+
+Premium Tarot Deck
+CAD $69
+
+Display pricing elegantly:
+- Premium typography
+- Small “CAD” label
+- Soft gold accent styling
+
+5. PRODUCT LAYOUT
+Desktop:
+- Premium grid or alternating showcase sections
+
+Mobile:
+- Fully responsive stacked layout
+- Maintain cinematic image quality
+
+6. ADD PRODUCT BENEFITS
+Each product should include:
+- 3 key spiritual benefits
+- Small elegant icons
+- Better trust-building layout
+
+7. CTA BUTTONS
+Use premium buttons:
+- “Order Now”
+- “Explore Details”
+
+Button style:
+- Gold glow border
+- Glassmorphism
+- Smooth shimmer hover
+- Premium transition
+
+8. ADD MICRO-INTERACTIONS
+- Product image zoom hover
+- Glow pulse
+- Floating effect
+- Smooth fade-up reveal
+- Elegant button hover animation
+
+9. ADD PREMIUM BACKGROUND EFFECTS
+- Cosmic gradients
+- Ambient lighting
+- Soft particles
+- Blur glows
+- Subtle energy effects
+
+10. TYPOGRAPHY ENHANCEMENT
+Use premium editorial typography:
+- Cormorant Garamond for headings
+- Plus Jakarta Sans / Outfit for body
+
+Improve:
+- readability
+- spacing
+- hierarchy
+- luxury feel
+
+11. ORDER/INQUIRY SECTION
+Keep existing inquiry/order functionality but make it visually premium.
+
+Include:
+- Elegant form styling
+- Better spacing
+- Premium input fields
+- Soft glow focus effects
+- WhatsApp integration preserved
+
+12. ANIMATION QUALITY
+Animations should feel:
+- calm
+- cinematic
+- premium
+- spiritual
+- luxurious
+
+Avoid:
+- cheap ecommerce feel
+- overcrowded visuals
+- flashy effects
+- gaming aesthetics
+
+13. PERFORMANCE
+- Optimize images
+- Lazy load product visuals
+- Maintain smooth FPS
+- Mobile optimized rendering
+
+FINAL GOAL:
+The Products page should feel like a world-class luxury spiritual ecommerce experience designed for premium Canadian clients.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T15:47:37+05:30.
+</ADDITIONAL_METADATA>

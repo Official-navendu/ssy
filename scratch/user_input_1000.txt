@@ -1,0 +1,105 @@
+<USER_REQUEST>
+The current hero implementation is broken.
+
+ISSUE:
+Only a dark gradient background is visible.
+The galaxy, stars, particles, nebula effects, and hero content are either:
+- not rendering
+- hidden
+- behind incorrect layers
+- or blocked by canvas/overlay issues
+
+FIX THE HERO SECTION COMPLETELY.
+
+IMPORTANT:
+- Restore the full hero content visibility
+- Ensure navbar, text, buttons, and sections render properly
+- Keep existing layout structure
+- Do NOT redesign the page
+- Fix rendering/layering/z-index issues only
+
+REQUIRED FIXES:
+
+1. FIX CANVAS LAYERING
+- The canvas background should stay BEHIND all hero content
+- Use proper z-index hierarchy
+- Ensure content container stays above effects
+
+Correct structure:
+Galaxy Canvas → Background Layer
+Hero Content → Foreground Layer
+
+2. FIX HERO CONTENT VISIBILITY
+Ensure visible:
+- heading
+- subtitle
+- CTA buttons
+- navbar
+- particles
+- glow effects
+
+Nothing should disappear behind overlays.
+
+3. FIX BACKGROUND RENDERING
+The galaxy effects are currently not visible.
+
+Properly render:
+- stars
+- particles
+- nebula
+- glow effects
+- orbit lines
+
+Increase visibility slightly while keeping it premium.
+
+4. FIX CANVAS SIZE
+Ensure:
+- full width
+- full height hero coverage
+- responsive scaling
+- no clipping
+
+5. FIX PARTICLE VISIBILITY
+Particles/stars should:
+- actually glow
+- visibly twinkle
+- move smoothly
+- appear layered
+
+Right now they are too hidden or not rendering.
+
+6. FIX OVERLAY OPACITY
+The dark overlay is too strong.
+
+Reduce overlay darkness so:
+- galaxy visuals become visible
+- cinematic depth remains intact
+
+7. KEEP PERFORMANCE OPTIMIZED
+- requestAnimationFrame
+- optimized particles
+- maintain smooth FPS
+- mobile friendly rendering
+
+8. DO NOT BREAK:
+- responsiveness
+- navbar
+- buttons
+- animations
+- typography
+- sections below hero
+
+9. FINAL RESULT
+The hero should show:
+- visible galaxy atmosphere
+- glowing stars
+- moving particles
+- cinematic cosmic depth
+- visible hero content
+- premium astrology vibe
+
+The page should no longer appear as a blank dark screen.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-22T15:32:05+05:30.
+</ADDITIONAL_METADATA>

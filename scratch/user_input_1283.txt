@@ -1,0 +1,143 @@
+<USER_REQUEST>
+Fix the spiritual background music system completely.
+
+CURRENT ISSUE:
+The music toggle/button exists but the audio is not playing properly.
+
+TASK:
+Make the background spiritual music fully functional across the website while keeping it subtle, premium, and optimized.
+
+IMPORTANT:
+- Do NOT break layout
+- Do NOT change hero structure
+- Do NOT remove existing animations
+- Only fix and improve the music functionality
+
+========================================
+1. FIX AUDIO PLAYBACK
+========================================
+
+Ensure:
+- audio file loads correctly
+- audio actually plays
+- mute/unmute works properly
+- play state updates correctly
+- no console errors
+
+Check:
+- incorrect audio path
+- autoplay restrictions
+- audio initialization issues
+- browser permission handling
+
+========================================
+2. HANDLE AUTOPLAY PROPERLY
+========================================
+
+Modern browsers block autoplay with sound.
+
+IMPLEMENT THIS LOGIC:
+
+- Start music muted initially
+OR
+- Start only after first user interaction
+
+Examples:
+- first click
+- scroll
+- touch
+- mouse movement
+
+After interaction:
+- smoothly start spiritual ambient music
+
+========================================
+3. MUSIC SETTINGS
+========================================
+
+Music should:
+- loop continuously
+- volume very low (10–15%)
+- feel calm and cinematic
+- not disturb users
+
+TYPE:
+- meditation ambience
+- soft spiritual frequencies
+- cosmic ambient background
+
+========================================
+4. FIX MUTE/UNMUTE BUTTON
+========================================
+
+Ensure the music toggle button:
+- actually controls audio
+- updates icon correctly
+- remembers current state
+
+BUTTON STATES:
+- muted icon
+- unmuted icon
+
+Add:
+- smooth hover animation
+- premium glassmorphism style
+- soft glow effect
+
+========================================
+5. KEEP PERFORMANCE OPTIMIZED
+========================================
+
+- preload audio efficiently
+- avoid unnecessary rerenders
+- lightweight audio handling
+- smooth playback
+
+========================================
+6. RESPONSIVENESS
+========================================
+
+Ensure music works properly on:
+- desktop
+- tablet
+- mobile browsers
+
+Handle mobile autoplay restrictions gracefully.
+
+========================================
+7. USER EXPERIENCE
+========================================
+
+Music should feel:
+- subtle
+- luxurious
+- immersive
+- calming
+- premium
+
+Avoid:
+- loud startup
+- sudden playback
+- broken controls
+
+========================================
+8. OPTIONAL ENHANCEMENT
+========================================
+
+Add smooth fade-in/fade-out volume transitions:
+- fade in when music starts
+- fade out when muted
+
+========================================
+9. FINAL RESULT
+========================================
+
+The spiritual background music should:
+- actually play correctly
+- be controllable
+- feel cinematic and calming
+- integrate seamlessly with the mystical galaxy hero section.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-23T00:49:50+05:30.
+</ADDITIONAL_METADATA>

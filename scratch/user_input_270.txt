@@ -1,0 +1,99 @@
+<USER_REQUEST>
+The current hero background feels too flat and lifeless.
+There is almost no visible animation, glow, or immersive cosmic feeling.
+
+I want the hero section background to feel ALIVE, PREMIUM, CINEMATIC, and VISUALLY RICH.
+
+IMPORTANT:
+- Do NOT change layout
+- Do NOT redesign sections
+- Do NOT change responsiveness
+- Only improve the hero background animation and atmosphere
+
+MAIN GOAL:
+The hero should instantly create a “WOW” feeling with glowing stars, moving particles, cosmic depth, and premium universe ambience.
+
+BACKGROUND IMPROVEMENTS:
+
+1. Add Thousands of Tiny Animated Stars
+- Stars should softly twinkle
+- Different star sizes
+- Different brightness levels
+- Some stars should pulse/glow slowly
+- Random shining animation
+- Create realistic galaxy depth
+
+2. Add Smooth Floating Particles
+- Tiny glowing particles moving slowly
+- Some particles drifting upward
+- Some moving diagonally
+- Add soft blur/glow
+- Premium magical energy feeling
+
+3. Add Shooting Stars / Meteors
+- Occasionally animate fast shooting stars
+- Soft glowing trail
+- Random timing
+- Very cinematic and subtle
+
+4. Add Nebula & Cosmic Clouds
+- Large soft purple/blue/gold nebula clouds
+- Slow drifting movement
+- Animated opacity breathing effect
+- Create rich space atmosphere
+
+5. Add Ambient Glow Effects
+- Soft radial glow lights
+- Gold/purple/blue cinematic lighting
+- Smooth moving light diffusion
+- Add premium visual depth
+
+6. Add Orbit Energy Lines
+- Thin elegant orbit circles
+- Slow subtle rotation
+- Soft transparency
+- Spiritual + futuristic feel
+
+7. Add Multi-Layer Depth
+Create:
+- Foreground stars
+- Mid particles
+- Background galaxy layer
+- Smooth parallax movement
+
+8. Hero Focus Enhancement
+- Add soft glow behind hero text
+- Create cinematic focus in center
+- Improve contrast naturally
+- Keep text readable
+
+9. Animation Quality
+Animations must feel:
+- Smooth
+- Calm
+- Luxury
+- Cinematic
+- Spiritual
+- Expensive
+
+Avoid:
+- Gaming effects
+- Cheap particles
+- Harsh flashing
+- Overcrowded visuals
+
+10. PERFORMANCE
+- Use optimized canvas rendering
+- Use requestAnimationFrame
+- Keep smooth FPS on mobile and desktop
+- GPU optimized animations
+
+FINAL RESULT:
+The hero should feel like a premium luxury cosmic universe with glowing stars, shining particles, subtle galaxy movement, and immersive cinematic ambience.
+
+The background should no longer feel static or flat.
+It should feel alive, magical, spiritual, and visually premium.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T12:42:06+05:30.
+</ADDITIONAL_METADATA>

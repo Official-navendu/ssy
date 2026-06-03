@@ -1,0 +1,140 @@
+<USER_REQUEST>
+Proceed with the implementation plan but significantly improve the VISUAL IMPACT and CINEMATIC DEPTH of the hero atmosphere.
+
+CURRENT ISSUE:
+Even with particles and gradients, the hero still risks feeling:
+- flat
+- generic
+- empty
+- not emotionally “astrology/spiritual”
+
+I want a MUCH STRONGER premium mystical cosmic ambience.
+
+VISUAL DIRECTION:
+The hero should feel like:
+- entering a celestial astrology universe
+- premium tarot consultation experience
+- mystical cosmic dimension
+- spiritual energy portal
+
+UPGRADE THE BACKGROUND QUALITY:
+
+1. REALISTIC STAR FIELD
+Do NOT use simple dots only.
+
+Create:
+- layered stars
+- realistic galaxy density
+- tiny stars in deep background
+- brighter foreground stars
+- random star clusters
+- cinematic depth
+
+Some stars should:
+- twinkle softly
+- shimmer slowly
+- glow dynamically
+- pulse naturally
+
+2. CINEMATIC NEBULA SYSTEM
+The nebula clouds should be MUCH more visible and artistic:
+- deep purple clouds
+- blue cosmic fog
+- soft golden cosmic haze
+- layered opacity blending
+- smooth atmospheric motion
+
+Make them feel:
+- dreamy
+- spiritual
+- immersive
+- premium
+
+3. ADD ASTROLOGY VISUAL ELEMENTS
+Subtly integrate:
+- zodiac constellation lines
+- sacred geometry
+- astrology circle symbols
+- celestial orbit paths
+- moon phase silhouettes
+
+IMPORTANT:
+Very subtle and elegant.
+Do NOT overpower the hero content.
+
+4. ADD MAGICAL ENERGY EFFECTS
+Introduce:
+- floating spiritual particles
+- glowing dust trails
+- soft cosmic sparks
+- ambient energy flow
+
+Motion should feel:
+- smooth
+- calm
+- luxurious
+- divine
+
+5. HERO LIGHTING
+Add cinematic center lighting:
+- subtle glow behind heading
+- divine aura effect
+- atmospheric radial lighting
+- premium bloom effect
+
+The hero text area should feel naturally illuminated.
+
+6. BUTTON POLISH
+Buttons should feel more premium:
+- glassmorphism surface
+- gold glow border
+- soft shimmer hover
+- elegant transition
+- subtle shadow depth
+
+7. TYPOGRAPHY POLISH
+The typography should feel:
+- mystical
+- editorial
+- luxurious
+- premium spiritual brand
+
+Use:
+- Cormorant Garamond for luxury headings
+- Plus Jakarta Sans / Outfit for body
+
+Improve:
+- spacing
+- readability
+- line-height
+- letter spacing
+
+8. ANIMATION QUALITY
+All motion should feel:
+- cinematic
+- expensive
+- smooth
+- Apple-level polished
+- high-end SaaS quality
+
+Avoid:
+- gaming particles
+- random chaos
+- cheap glow spam
+- flashy movement
+
+9. PERFORMANCE
+- Maintain smooth FPS
+- Mobile optimized
+- GPU accelerated rendering
+- Smooth requestAnimationFrame loops
+
+FINAL EXPERIENCE:
+The hero should emotionally feel:
+“Mystical, premium, spiritual, luxurious, cinematic, and deeply astrology-focused.”
+
+The user should instantly recognize this as a high-end astrology & tarot brand.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T15:35:28+05:30.
+</ADDITIONAL_METADATA>

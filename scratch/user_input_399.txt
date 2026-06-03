@@ -1,0 +1,148 @@
+<USER_REQUEST>
+Completely enhance the Hero Section atmosphere so it instantly feels like a PREMIUM ASTROLOGY & SPIRITUAL WEBSITE instead of a generic modern website.
+
+IMPORTANT:
+- Do NOT change the overall layout structure
+- Do NOT remove current content
+- Do NOT break responsiveness
+- Only transform the HERO VISUAL EXPERIENCE and cosmic atmosphere
+
+CURRENT ISSUE:
+The hero section does not emotionally communicate:
+- astrology
+- spirituality
+- cosmic energy
+- tarot aura
+- mystical luxury
+
+It currently feels too flat and generic.
+
+MAIN GOAL:
+The hero should instantly create a:
+“WOW — this is a premium astrology/spiritual brand”
+feeling.
+
+NEW HERO DIRECTION:
+Create a deeply immersive cosmic mystical atmosphere inspired by:
+- Astrology universe visuals
+- Zodiac energy
+- Celestial movement
+- Spiritual luxury branding
+- Cinematic cosmic ambience
+- Tarot & mystical aura
+- Premium spiritual platforms
+
+HERO BACKGROUND IMPROVEMENTS:
+
+1. ADD REAL COSMIC SKY DEPTH
+Create a rich layered galaxy environment:
+- Deep black + purple + dark blue gradients
+- Visible nebula clouds
+- Soft cosmic fog
+- Galaxy texture depth
+- Realistic celestial ambience
+
+2. ADD GLOWING STARS
+- Hundreds/thousands of tiny stars
+- Random twinkling animation
+- Different star sizes
+- Gold + white + blue stars
+- Soft pulsing glow
+- Some stars shining brighter occasionally
+
+3. ADD CELESTIAL ELEMENTS
+Include subtle animated:
+- Zodiac constellation lines
+- Horoscope symbols
+- Moon phases
+- Circular astrology charts
+- Orbit rings
+- Spiritual sacred geometry
+
+IMPORTANT:
+These should be subtle and premium — not overpowering.
+
+4. ADD MAGICAL ENERGY PARTICLES
+- Floating glowing particles
+- Spiritual energy dust
+- Smooth drifting movement
+- Soft glow blur
+- Cinematic motion
+
+5. ADD SHOOTING STARS
+- Rare animated meteors
+- Elegant light trails
+- Random subtle appearance
+- Premium cinematic feel
+
+6. ADD MYSTICAL LIGHTING
+Create atmospheric lighting:
+- Soft golden cosmic glow
+- Purple ambient lighting
+- Radial energy highlights
+- Cinematic bloom effect
+- Light rays behind hero content
+
+7. HERO CONTENT FOCUS
+The center text area should feel spiritually illuminated:
+- Add subtle glowing aura behind heading
+- Improve text contrast naturally
+- Create a divine cosmic focus effect
+
+8. TYPOGRAPHY ENHANCEMENT
+Make hero typography feel:
+- Elegant
+- Mystical
+- Premium
+- Spiritual
+- Luxury editorial
+
+Use:
+- Cormorant Garamond for headings
+- Plus Jakarta Sans or Outfit for body
+
+Reduce oversized text slightly and improve spacing.
+
+9. BUTTON ENHANCEMENT
+Buttons should feel premium spiritual:
+- Soft glow border
+- Gold shimmer hover
+- Smooth hover transition
+- Elegant shadow
+- Premium glass effect
+
+10. ANIMATION QUALITY
+Animations must feel:
+- Smooth
+- Calm
+- Cinematic
+- Divine
+- Spiritual
+- Expensive
+
+Avoid:
+- Gaming effects
+- Overcrowded particles
+- Cheap glow spam
+- Harsh animations
+
+11. PERFORMANCE
+- Optimize all animations
+- Maintain smooth FPS
+- Use requestAnimationFrame
+- GPU optimized rendering
+- Mobile-friendly effects
+
+12. FINAL EXPERIENCE
+The hero should feel like:
+- entering a mystical astrology universe
+- premium tarot consultation platform
+- luxury spiritual brand
+- cinematic cosmic experience
+
+The user should instantly emotionally understand:
+“This is a high-end astrology & spiritual guidance website.”
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T15:33:55+05:30.
+</ADDITIONAL_METADATA>

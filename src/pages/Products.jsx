@@ -7,6 +7,7 @@ import { CosmicBackground } from "@/components/common/CosmicBackground";
 import { Reveal } from "@/components/common/Reveal";
 import { products } from "@/data/data";
 import { SITE } from "@/utils/site";
+import { BentoCard } from "@/components/common/BentoCard";
 
 import productAmethyst from "@/assets/images/product_amethyst.webp";
 import productRose from "@/assets/images/product_rose.webp";
@@ -111,7 +112,7 @@ export default function ProductsPage() {
               
               return (
                 <Reveal key={p.slug} delay={i * 0.05}>
-                  <div className="group relative overflow-hidden rounded-3xl glass p-7 md:p-9 transition-all duration-500 hover:border-gold/30 hover:shadow-[0_15px_45px_rgba(212,175,55,0.08)] bg-card/10 flex flex-col justify-between h-full">
+                  <BentoCard className="group glass p-7 md:p-9 bg-card/10 flex flex-col justify-between h-full">
                     {/* Subtle inner-card background glow */}
                     <div className={`absolute -top-24 -left-24 h-56 w-56 rounded-full bg-gradient-to-br ${auraColor} blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none`} />
                     
@@ -194,7 +195,7 @@ export default function ProductsPage() {
                         </button>
                       </div>
                     </div>
-                  </div>
+                  </BentoCard>
                 </Reveal>
               );
             })}

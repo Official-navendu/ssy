@@ -1,0 +1,125 @@
+<USER_REQUEST>
+The hero section implementation is still broken after restart.
+
+CURRENT ISSUE:
+The screen still appears mostly blank/dark.
+The galaxy canvas/background implementation is covering or breaking the hero content rendering.
+
+THIS IS NOW A DEBUG + FIX TASK.
+
+IMPORTANT:
+Do NOT add more effects until the rendering structure is fixed.
+
+FIRST FIX THE STRUCTURE.
+
+ROOT PROBLEM LIKELY:
+- incorrect z-index layering
+- canvas overlay blocking content
+- absolute positioning issue
+- parent container height issue
+- opacity overlay issue
+- canvas rendering loop issue
+- content rendered behind canvas
+
+FIX USING THIS STRUCTURE:
+
+<section class="relative overflow-hidden min-h-screen">
+
+  <!-- Galaxy Background -->
+  <div class="absolute inset-0 z-0">
+    <!-- canvas / particles -->
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+  <!-- Hero Content -->
+  <div class="relative z-20">
+    <!-- navbar + hero text + buttons -->
+  </div>
+
+</section>
+
+CRITICAL FIXES:
+
+1. ENSURE HERO CONTENT IS ABOVE EVERYTHING
+- Navbar visible
+- Heading visible
+- Buttons visible
+- Text visible
+
+Use:
+z-20 or z-30 for content.
+
+2. CANVAS MUST STAY IN BACKGROUND ONLY
+Canvas layer:
+- absolute
+- inset-0
+- z-0
+- pointer-events-none
+
+3. OVERLAY TOO DARK
+Reduce opacity:
+Current overlay likely hiding everything.
+
+Use:
+bg-black/30
+or
+bg-black/40 maximum
+
+4. FIX HERO HEIGHT
+Ensure:
+min-h-screen
+
+NOT:
+h-screen with broken parent calculations.
+
+5. TEMPORARILY REDUCE PARTICLE COMPLEXITY
+The canvas may be failing because too many effects are rendering.
+
+Temporarily:
+- reduce particle count
+- remove heavy blur
+- simplify render loop
+
+FIRST make it visible and stable.
+
+6. VERIFY CONTENT RENDERS BEFORE EFFECTS
+Temporarily disable:
+- nebula blur
+- bloom
+- orbit lines
+
+Then:
+restore them gradually AFTER the hero works.
+
+7. CHECK FOR CSS ISSUES
+Look for:
+- opacity: 0
+- visibility hidden
+- mix-blend-mode problems
+- incorrect fixed positioning
+- overflow clipping
+- transform stacking issues
+
+8. DEBUG RESPONSIVELY
+Ensure:
+desktop + mobile hero renders correctly.
+
+9. FINAL GOAL
+Restore:
+- visible hero text
+- visible navbar
+- visible CTA buttons
+- visible cosmic background
+- smooth galaxy particles
+
+The homepage should NOT appear as a dark empty screen anymore.
+
+FIRST PRIORITY:
+Fix rendering visibility and layering.
+NOT adding more visual effects.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-22T20:57:39+05:30.
+</ADDITIONAL_METADATA>

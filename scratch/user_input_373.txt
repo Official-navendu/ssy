@@ -1,0 +1,146 @@
+<USER_REQUEST>
+Reorganize ONLY the Home Page section order and testimonial content WITHOUT changing the existing overall design style, responsiveness, animations, spacing system, or visual identity.
+
+IMPORTANT:
+- Keep all existing sections visually the same
+- Keep same layout styling
+- Keep same responsiveness
+- Keep same animations
+- Keep same premium spiritual theme
+- Only adjust the section order and testimonial media content
+
+HOME PAGE STRUCTURE CHANGES:
+
+CURRENT:
+Hero
+...
+Testimonials
+About
+CTA
+Footer
+
+NEW REQUIRED ORDER:
+Hero
+...
+About Section
+Why Choose Us Section
+Testimonials Section
+CTA Section
+Footer
+
+TASK 1 — MOVE ABOUT SECTION
+Move the existing About Preview section ABOVE the Testimonials section.
+
+Do NOT redesign it.
+Keep:
+- Same layout
+- Same content style
+- Same responsiveness
+- Same animations
+
+TASK 2 — CREATE “WHY CHOOSE US” SECTION
+Add a new premium section BELOW the About section and ABOVE Testimonials.
+
+SECTION TITLE:
+“Why Choose Shivani Spiritual Yatri”
+
+SECTION SUBTITLE:
+“Guiding souls with authentic spiritual wisdom, energy healing, and cosmic clarity.”
+
+Create 4 premium feature cards:
+
+1. Personalized Spiritual Guidance
+Short description about customized readings and consultations.
+
+2. Trusted Astrology Expertise
+Mention years of spiritual experience and accurate guidance.
+
+3. Positive Energy Healing
+Focus on emotional balance, healing, and spiritual alignment.
+
+4. Confidential & Secure Sessions
+Mention privacy, trust, and one-on-one support.
+
+DESIGN STYLE:
+- Premium glassmorphism cards
+- Soft gold borders
+- Cosmic glow effects
+- Elegant icons
+- Hover animations
+- Luxury typography
+- Match existing website theme
+
+LAYOUT:
+Desktop:
+- 4-column or 2x2 premium grid
+
+Mobile:
+- Stacked responsive cards
+
+ANIMATIONS:
+- Smooth fade-up
+- Soft glow pulse
+- Subtle floating effect
+
+TASK 3 — TESTIMONIAL SECTION UPDATE
+Inside the Testimonials section:
+
+REMOVE:
+- All embedded videos/reels
+
+REPLACE WITH:
+- Premium client/customer photos instead of videos
+
+REQUIREMENTS:
+- Use elegant portrait-style testimonial images
+- Add soft glow borders
+- Premium card styling
+- Keep testimonial text and slider functionality
+- Maintain smooth transitions
+
+TESTIMONIAL STYLE:
+- Luxury spiritual brand feel
+- Cinematic client presentation
+- Elegant review cards
+- Better visual trust-building
+
+TASK 4 — KEEP CTA SECTION
+Keep the CTA section BELOW testimonials exactly as it currently is.
+
+Do NOT redesign CTA section.
+
+TASK 5 — FOOTER UPDATES
+
+CHANGE ADDRESS:
+Replace current address/location with a Canada-based address.
+
+Use something premium and realistic like:
+Toronto, Ontario, Canada
+
+OR
+
+Vancouver, British Columbia, Canada
+
+UPDATE FOOTER COPYRIGHT TEXT:
+
+CURRENT:
+© 2026 Shivani Spiritual Yatri · Crafted with cosmic intention
+
+NEW:
+© 2026 Shivani Spiritual Yatri · Crafted with Navendu
+
+IMPORTANT:
+Only replace the text.
+Do not redesign footer styling.
+
+FINAL REQUIREMENTS:
+- Preserve entire website design system
+- Preserve responsiveness
+- Preserve animations
+- Preserve premium spiritual aesthetic
+- Only implement the requested section restructuring and content updates
+- Ensure everything looks seamless and professionally integrated
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T14:21:55+05:30.
+</ADDITIONAL_METADATA>

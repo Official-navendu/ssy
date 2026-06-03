@@ -1,0 +1,185 @@
+<USER_REQUEST>
+Update ONLY the Home Page Hero Section layout and image structure while preserving the existing dark mystical galaxy background, particles, animations, typography, responsiveness, and overall design system.
+
+IMPORTANT:
+- Keep the existing galaxy background exactly as it is
+- Keep current colors/theme
+- Keep current animations
+- Keep current responsiveness
+- Do NOT redesign the entire homepage
+- Only restructure and enhance the hero section layout
+
+REFERENCE:
+Follow the attached reference screenshot layout style.
+
+========================================
+1. HERO SECTION LAYOUT UPDATE
+========================================
+
+NEW LAYOUT:
+
+LEFT SIDE:
+- Hero content
+- Badge
+- Heading
+- Subtitle
+- CTA buttons
+
+RIGHT SIDE:
+- Large featured image
+- 4 smaller stacked images beside it
+- Premium fitness/spiritual luxury showcase style
+- Similar structure to the reference layout
+
+LAYOUT STRUCTURE:
+Desktop:
+- Left content
+- Right image showcase
+
+Mobile:
+- Stack vertically
+- Content first
+- Images below
+- Maintain premium spacing
+
+========================================
+2. IMAGE SHOWCASE STRUCTURE
+========================================
+
+RIGHT SIDE IMAGE LAYOUT:
+
+- One LARGE main image
+- 4 smaller images stacked vertically beside the main image
+- Rounded premium corners
+- Cinematic glow borders
+- Smooth hover effects
+- Premium shadows
+
+STYLE:
+- Luxury editorial look
+- Cinematic composition
+- Smooth transitions
+- Premium card depth
+
+========================================
+3. MAIN IMAGE AUTO CAROUSEL
+========================================
+
+The LARGE main image should:
+- Automatically change in loop
+- Smooth carousel/slider transition
+- Fade or slide animation
+- Infinite autoplay
+- Smooth cinematic transition
+
+AUTO SLIDE SETTINGS:
+- Auto change every 3–4 seconds
+- Infinite loop
+- Smooth transition only
+
+The 4 side images should also update according to the active slide if needed.
+
+Use:
+- Swiper.js
+OR
+- optimized custom carousel
+
+========================================
+4. IMAGE STYLE
+=======================
+<truncated 273 bytes>
+===
+5. HERO CONTENT POSITIONING
+========================================
+
+Move hero text content fully to LEFT side.
+
+Include:
+- small premium badge
+- large luxury heading
+- subtitle
+- CTA buttons
+
+Improve:
+- spacing
+- readability
+- typography hierarchy
+- luxury feel
+
+========================================
+6. KEEP EXISTING GALAXY BACKGROUND
+========================================
+
+Do NOT remove:
+- galaxy atmosphere
+- particles
+- glowing stars
+- cosmic fog
+- cinematic background effects
+
+Keep all current mystical background visuals.
+
+========================================
+7. SPIRITUAL MUSIC AUTOPLAY FIX
+========================================
+
+Make background meditation/spiritual music:
+- autoplay automatically when website opens
+- very low volume by default
+- smooth fade-in effect
+
+IMPORTANT:
+- Add ONLY mute/unmute option
+- No complicated music player UI
+
+Music toggle button:
+- small floating icon
+- premium glassmorphism style
+- elegant glow effect
+
+Browser handling:
+- If autoplay blocked, start after first interaction automatically
+
+========================================
+8. PERFORMANCE OPTIMIZATION
+========================================
+
+Ensure:
+- optimized carousel rendering
+- lazy loaded images
+- smooth FPS
+- mobile optimization
+- lightweight animations
+
+========================================
+9. RESPONSIVENESS
+========================================
+
+Desktop:
+- Showcase layout like reference image
+
+Tablet:
+- Balanced responsive scaling
+
+Mobile:
+- Vertical stacking
+- Full-width image layout
+- Smooth slider behavior
+
+========================================
+10. FINAL EXPERIENCE
+========================================
+
+The Hero section should feel:
+- cinematic
+- premium
+- modern
+- luxury spiritual brand
+- immersive
+- visually rich
+
+The final result should look similar in structure and premium feel to the provided reference screenshot while keeping the existing mystical galaxy aesthetic.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-23T01:36:47+05:30.
+</ADDITIONAL_METADATA>

@@ -1,0 +1,184 @@
+<USER_REQUEST>
+```txt id="u7m4qx"
+Update the ENTIRE website content and branding according to the newly provided client content and business identity.
+
+IMPORTANT:
+- The brand/project name should ONLY be:
+“Shivani Spiritual Yatri”
+NOT:
+“Shivani Spiritual Yatri Academy”
+
+The word “Academy” should ONLY appear where courses/certifications/training are specifically being discussed.
+
+Do NOT globally rename the brand to Academy.
+
+========================================
+1. GLOBAL BRANDING UPDATE
+========================================
+
+PRIMARY BRAND NAME:
+Shivani Spiritual Yatri
+
+Use this name consistently in:
+- Header
+- Footer
+- Hero section
+- Meta titles
+- CTA sections
+- About section
+- Contact page
+- Booking page
+- WhatsApp messages
+- Copyright text
+- SEO descriptions
+
+ONLY use:
+“Shivani Spiritual Yatri Academy”
+inside:
+- Courses page
+- Certification/training sections
+- Learning/certification content
+
+========================================
+2. UPDATE WEBSITE CONTENT USING CLIENT DATA
+========================================
+
+Carefully restructure and professionally implement the provided client content across the correct pages and sections.
+
+DO NOT dump large paragraphs directly.
+
+Convert the content into:
+- premium website sections
+- luxury layouts
+- clean readable blocks
+- elegant cards
+- accordions
+- tabs
+- timeline sections
+- feature grids
+- certification sections
+- course layouts
+
+Maintain:
+- readability
+- premium spacing
+- luxury typography
+- cinematic structure
+
+========================================
+3. ABOUT PAGE CONTENT REBUILD
+========================================
+
+Use the provided client content to completely upgrade the About page professionally.
+
+INCLUDE:
+
+- About Shivani
+- Healing approach
+- Spiritual philosophy
+- Session methodology
+- Expertise areas
+- Why choose Shivani Spiritual Yatri
+- Healing modalities
+- Emotional transformation focus
+
+Create premium sections like:
+- “About Shivani”
+- 
+<truncated 2564 bytes>
+stems
+- section dividers
+- tabs
+- cards
+- grids
+- modern typography hierarchy
+
+Avoid:
+- giant text walls
+- overcrowded sections
+- unreadable paragraphs
+
+========================================
+8. CONTACT PAGE ADDRESS UPDATE
+========================================
+
+Update address everywhere to:
+
+11 Lisa Street,
+ON L6T4E8
+Brampton, Ontario, Canada
+
+Use this in:
+- Contact page
+- Footer
+- Google Map location
+- Contact cards
+
+========================================
+9. COURSE/CERTIFICATION EXPERIENCE
+========================================
+
+The Courses page should feel like:
+- a luxury spiritual learning platform
+- premium certification academy
+- cinematic online healing institute
+
+Maintain:
+- galaxy background
+- moving particles
+- premium cards
+- cinematic visuals
+
+========================================
+10. KEEP PERFORMANCE OPTIMIZED
+========================================
+
+IMPORTANT:
+Even after adding more content:
+- maintain fast loading
+- lazy load sections
+- optimize animations
+- avoid huge DOM rendering
+- use accordions/tabs where needed
+
+========================================
+11. SEO & CONTENT POLISH
+========================================
+
+Optimize headings and section hierarchy:
+- proper H1/H2/H3 structure
+- readable spacing
+- premium formatting
+- modern luxury copy feel
+
+Tone should feel:
+- professional
+- spiritual
+- trustworthy
+- premium
+- transformational
+
+========================================
+12. FINAL EXPERIENCE
+========================================
+
+The website should now feel like:
+- a world-class spiritual guidance platform
+- premium healing and transformation brand
+- luxury astrology & energy healing ecosystem
+- cinematic spiritual academy experience
+
+The content should feel:
+- professionally structured
+- emotionally powerful
+- elegant
+- premium
+- readable
+- trustworthy
+- modern
+```
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-29T22:35:24+05:30.
+</ADDITIONAL_METADATA>

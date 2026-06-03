@@ -1,0 +1,207 @@
+<USER_REQUEST>
+Create a BRAND NEW premium “Courses” page and fully integrate it into the website navigation and routing.
+
+IMPORTANT:
+- Do NOT break existing layout or routing
+- Preserve current premium spiritual design system
+- Maintain responsiveness on all devices
+- Keep same dark mystical galaxy aesthetic
+- Fully optimize performance
+
+========================================
+1. CREATE NEW PAGE
+========================================
+
+Create:
+Courses Page
+
+ROUTE:
+ /courses
+
+Also add:
+“Courses”
+inside Navbar menu.
+
+========================================
+2. COURSES PAGE HERO SECTION
+========================================
+
+Create a premium cinematic hero section.
+
+BACKGROUND:
+- Dark galaxy atmosphere
+- Moving glowing particles
+- Twinkling stars
+- Cosmic fog
+- Purple + black + gold mystical gradients
+- Smooth animated background
+
+HEADING:
+“Spiritual Courses & Cosmic Learning”
+
+SUBTITLE:
+“Unlock ancient wisdom, tarot mastery, astrology knowledge, and spiritual transformation through guided premium courses.”
+
+STYLE:
+- Cinematic
+- Luxury spiritual aesthetic
+- Smooth animations
+- Mystical premium feel
+
+========================================
+3. COURSES GRID LAYOUT
+========================================
+
+Create a PREMIUM COURSES GRID.
+
+DESKTOP:
+- 4 courses per row
+- 2 rows total
+- Total 8 courses
+
+TABLET:
+- 2 columns
+
+MOBILE:
+- 1 column stacked
+
+GRID STYLE:
+- Equal card heights
+- Premium spacing
+- Responsive layout
+- Optimized alignment
+
+========================================
+4. COURSE CARDS DESIGN
+========================================
+
+Each course card should include:
+
+- Premium course image
+- Course title
+- Small subtitle/tagline
+- Short description
+- Price
+- Duration
+- 2 CTA buttons
+
+BUTTONS:
+1. View Course Details
+2. Purchase Course
+
+CARD STYLE:
+- Glassmorphism
+- Gold glow border
+- Soft cosmic glow
+- Smooth hover animation
+- Floating hover effect
+- Premium shadow
+- Cinematic luxury style
+
+========================================
+5. COURSE DETAIL POPUP MODAL
+==============================
+<truncated 1405 bytes>
+hould include:
+- premium image
+- short description
+- detailed modal content
+- duration
+- CAD pricing
+
+========================================
+8. COURSE IMAGES
+========================================
+
+Use premium cinematic visuals:
+- Tarot cards
+- Zodiac charts
+- Mystical spiritual scenes
+- Cosmic healing visuals
+- Meditation atmosphere
+- Luxury astrology aesthetic
+
+IMAGE STYLE:
+- Dark premium tones
+- Gold/purple glow
+- Cinematic lighting
+- Spiritual luxury branding
+
+========================================
+9. PRICING (CANADA CLIENT)
+========================================
+
+Use CAD pricing.
+
+Example pricing:
+CAD $99
+CAD $149
+CAD $199
+
+Display elegantly with:
+- premium typography
+- glow styling
+- modern pricing badges
+
+========================================
+10. GALAXY BACKGROUND EFFECTS
+========================================
+
+The ENTIRE page background should feel alive.
+
+Add:
+- moving stars
+- glowing particles
+- subtle nebula
+- cosmic dust
+- ambient glow
+- smooth parallax movement
+
+IMPORTANT:
+- Keep effects subtle and premium
+- Avoid gaming visuals
+- Maintain fast loading
+
+========================================
+11. ANIMATIONS
+========================================
+
+Use:
+- Framer Motion
+- Smooth fade-up
+- Glow hover
+- Floating motion
+- Elegant transitions
+
+Avoid:
+- harsh movement
+- flashy animations
+- laggy effects
+
+========================================
+12. PERFORMANCE OPTIMIZATION
+========================================
+
+Ensure:
+- lazy loaded images
+- optimized rendering
+- smooth FPS
+- mobile optimization
+- lightweight animations
+
+========================================
+13. FINAL EXPERIENCE
+========================================
+
+The Courses page should feel like:
+- a premium spiritual learning platform
+- luxury astrology academy
+- cinematic mystical experience
+- modern spiritual brand
+
+The user should instantly feel:
+“This is a premium world-class spiritual learning experience.”
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-22T23:58:09+05:30.
+</ADDITIONAL_METADATA>

@@ -1,0 +1,186 @@
+<USER_REQUEST>
+The current Hero section still does NOT feel premium enough visually.
+
+CURRENT ISSUES:
+- Text feels too plain and oversized
+- Images feel repetitive and low-impact
+- Hero lacks emotional cinematic storytelling
+- The slider transition feels basic
+- The music exists but NO SOUND is audible
+- The hero still does not feel like a world-class luxury astrology platform
+
+Completely REFRESH the Hero experience while keeping:
+- same structure
+- same dark galaxy aesthetic
+- same responsiveness
+- same overall layout concept
+
+IMPORTANT:
+Do NOT redesign the whole homepage.
+Only upgrade and polish the Hero section.
+
+========================================
+1. GENERATE COMPLETELY NEW HERO IMAGES
+========================================
+
+Replace current images with fresh premium cinematic visuals.
+
+IMAGE STYLE:
+- luxury astrology visuals
+- cinematic spiritual atmosphere
+- mystical tarot aesthetic
+- cosmic energy
+- dark premium tones
+- gold/purple glow
+- ultra high-end editorial style
+
+MAIN IMAGE IDEAS:
+- mystical astrology wheel
+- tarot reading setup
+- cosmic feminine spiritual energy
+- celestial zodiac visuals
+- divine meditation scene
+- glowing sacred geometry
+
+SIDE IMAGES:
+- premium tarot cards
+- moon rituals
+- zodiac symbols
+- chakra meditation
+- cosmic healing
+- astrology charts
+
+IMPORTANT:
+Images should feel:
+- unique
+- luxurious
+- emotionally immersive
+- cinematic
+- modern spiritual brand
+
+========================================
+2. TEXT SHOULD CHANGE WITH IMAGE
+========================================
+
+When the MAIN image changes:
+- hero heading changes
+- subtitle changes
+- small label changes
+- CTA wording can subtly change
+
+Each slide should feel like a NEW spiritual experience.
+
+========================================
+3. ADD PREMIUM FADE TRANSITIONS
+========================================
+
+CURRENT ISSUE:
+Transitions feel hard/static.
+
+IMPLEMENT:
+- smooth cinematic fade transitions
+- text fade-in/fade-out
+- image crossfade
+- soft zoom motion
+- subtle parallax
+
+Transition style should feel:
+- luxurious
+-
+<truncated 607 bytes>
+s
+
+========================================
+5. MUSIC SOUND FIX
+========================================
+
+CURRENT ISSUE:
+Music toggle exists but NO SOUND is audible.
+
+FIX COMPLETELY:
+- audio should actually play
+- ensure correct file path
+- ensure volume > 0
+- ensure autoplay logic works
+- ensure mute/unmute actually controls sound
+
+IMPORTANT:
+Music should:
+- autoplay softly
+- very low volume
+- meditation/spiritual ambience
+- smooth fade-in
+
+If browser blocks autoplay:
+- automatically start after first interaction
+
+========================================
+6. HERO TYPOGRAPHY POLISH
+========================================
+
+Improve typography hierarchy:
+- cleaner spacing
+- premium editorial feel
+- better line-height
+- slightly smaller heading
+- elegant luxury readability
+
+Use:
+- Cormorant Garamond for headings
+- Plus Jakarta Sans / Outfit for body
+
+========================================
+7. BUTTON ENHANCEMENT
+========================================
+
+Improve CTA buttons:
+- subtle shimmer effect
+- glassmorphism styling
+- premium glow border
+- elegant hover animation
+- softer shadows
+
+========================================
+8. KEEP GALAXY BACKGROUND
+========================================
+
+Keep:
+- stars
+- particles
+- galaxy atmosphere
+- cosmic fog
+- glow effects
+
+But make them:
+- more balanced
+- more cinematic
+- less cluttered
+- smoother
+
+========================================
+9. PERFORMANCE
+========================================
+
+Maintain:
+- fast loading
+- smooth FPS
+- optimized rendering
+- mobile responsiveness
+- lightweight animations
+
+========================================
+10. FINAL EXPERIENCE
+========================================
+
+The Hero should feel like:
+- a world-class luxury astrology platform
+- cinematic spiritual experience
+- immersive mystical universe
+- premium modern spiritual brand
+
+The user should instantly feel:
+“This looks expensive, cinematic, and spiritually powerful.”
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-23T01:45:25+05:30.
+</ADDITIONAL_METADATA>

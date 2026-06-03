@@ -1,0 +1,134 @@
+<USER_REQUEST>
+Proceed with the implementation plan but push the hero atmosphere MUCH further visually.
+
+The current direction is still too technically focused and risks looking like a generic particle background.
+
+I want the hero to feel:
+- mystical
+- divine
+- luxurious
+- cinematic
+- astrology-focused
+- emotionally immersive
+
+CRITICAL VISUAL IMPROVEMENTS:
+
+1. MAKE THE COSMIC BACKGROUND FEEL “REAL”
+Avoid flat gradients.
+
+Create:
+- layered galaxy depth
+- visible nebula textures
+- cinematic cosmic fog
+- deep space atmosphere
+- realistic star distribution
+
+The hero should feel like:
+“a living celestial universe.”
+
+2. STARS SHOULD FEEL MAGICAL
+Do NOT render simple static dots.
+
+Create:
+- twinkling stars
+- glow pulsing
+- random shimmer
+- clustered galaxy areas
+- depth-based star sizing
+- foreground & background star layers
+
+Some stars should softly sparkle brighter over time.
+
+3. ADD ASTROLOGY ENERGY
+Subtly integrate:
+- zodiac constellation lines
+- astrology wheel outlines
+- sacred geometry
+- celestial circles
+- moon phase elements
+
+VERY IMPORTANT:
+Keep them elegant and atmospheric, not obvious or distracting.
+
+4. CREATE A DIVINE HERO FOCUS
+The hero text area should feel illuminated by cosmic energy.
+
+Add:
+- soft aura behind heading
+- radial golden glow
+- subtle bloom lighting
+- cinematic focus effect
+
+The heading should feel spiritually highlighted.
+
+5. PREMIUM MOTION SYSTEM
+Motion should feel:
+- smooth
+- slow
+- expensive
+- Apple-level polished
+- cinematic
+
+Avoid:
+- aggressive movement
+- gaming particles
+- chaotic animation
+
+6. HERO BUTTONS
+Upgrade CTA buttons visually:
+- premium glass effect
+- subtle gold shimmer
+- elegant glow border
+- cinematic hover animation
+- refined shadows
+
+7. TYPOGRAPHY SYSTEM
+The typography should feel like a luxury editorial spiritual brand.
+
+Use:
+- Cormorant Garamond for hero headings
+- Plus Jakarta Sans / Outfit for body text
+
+Improve:
+- readability
+- spacing
+- luxury hierarchy
+- elegant line-height
+
+8. ADD DEPTH THROUGH PARALLAX
+Implement subtle layered parallax:
+- stars move slightly
+- nebula shifts slowly
+- foreground particles drift differently
+
+Create immersive depth without overdoing movement.
+
+9. ATMOSPHERIC COLOR BALANCE
+Use:
+- deep black
+- cosmic purple
+- midnight blue
+- soft gold lighting
+
+Avoid:
+- flat black backgrounds
+- oversaturated colors
+- neon gaming vibe
+
+10. PERFORMANCE
+Maintain:
+- smooth FPS
+- GPU acceleration
+- optimized rendering
+- mobile-friendly effects
+- lightweight canvas loops
+
+FINAL EXPERIENCE:
+The user should instantly feel:
+“This is a premium astrology and spiritual consultation platform with cinematic cosmic energy.”
+
+The hero should feel emotionally immersive, mystical, luxurious, and alive.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T15:49:03+05:30.
+</ADDITIONAL_METADATA>

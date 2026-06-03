@@ -1,0 +1,183 @@
+<USER_REQUEST>
+Enhance and redesign the Services Page UI to feel MUCH MORE premium, luxury, cinematic, and visually rich while preserving the current theme, responsiveness, and spiritual branding.
+
+IMPORTANT:
+- Do NOT change routing or functionality
+- Keep existing service content structure
+- Preserve responsiveness
+- Keep existing color palette (black, gold, purple)
+- Only upgrade the visual layout, presentation, spacing, animations, and imagery
+
+CURRENT ISSUE:
+The services page feels too basic and generic.
+It does not feel like a premium astrology/spiritual luxury brand.
+
+MAIN GOAL:
+Make the Services page feel like a high-end spiritual consultation platform with cinematic visuals, elegant layouts, luxury typography, and immersive service storytelling.
+
+SERVICES PAGE IMPROVEMENTS:
+
+1. PREMIUM PAGE HERO SECTION
+Create a luxury hero/banner section for Services page:
+- Cinematic cosmic background
+- Astrology symbols subtly floating
+- Elegant glowing particles
+- Large luxury heading
+- Premium subtitle
+- Soft center glow
+- Smooth entrance animation
+
+Heading:
+“Spiritual Services & Cosmic Guidance”
+
+Subtitle:
+“Discover personalized astrology, tarot, and spiritual healing experiences designed to bring clarity, balance, and transformation.”
+
+2. REDESIGN SERVICE CARDS
+Transform current service cards into premium luxury showcase blocks.
+
+Each service card should include:
+- Large premium service image
+- Service title
+- Spiritual tagline
+- Detailed description
+- Benefits list
+- CTA button
+- Optional icon/badge
+
+CARD STYLE:
+- Glassmorphism effect
+- Soft gold borders
+- Gradient overlays
+- Smooth hover animation
+- Cinematic glow
+- Elegant shadows
+- Premium spacing
+- Rounded luxury corners
+
+3. ADD SERVICE IMAGES
+Add HIGH-QUALITY premium images according to each service.
+
+Required services + image direction:
+
+1. Tarot Reading
+- Tarot cards
+- Mystic table
+- Candle lighting
+- Spiritual aura
+
+2. Astrology Consultation
+- Zodiac charts
+- Celestial visuals
+- Horoscope elements
+- Astrology wheel
+
+3. Love & Relationship Guidance
+
+<truncated 120 bytes>
+
+- Future direction visuals
+- Spiritual decision making
+- Empowerment energy
+
+5. Numerology Reading
+- Sacred numbers
+- Mystical calculations
+- Ancient symbols
+- Luxury abstract numerology visuals
+
+6. Spiritual Energy Healing
+- Meditation energy
+- Healing aura
+- Chakra visuals
+- Divine light atmosphere
+
+IMAGE STYLE:
+- Cinematic
+- Luxury
+- Spiritual
+- Editorial
+- Dark premium tones
+- Gold/purple ambience
+- High-end visual quality
+
+4. LAYOUT STRUCTURE
+Desktop:
+- Alternate image/content layout
+- Some sections image left
+- Some sections image right
+- Create storytelling flow
+
+Mobile:
+- Stack vertically
+- Maintain premium spacing
+- Preserve image quality
+
+5. ADD PREMIUM MICRO-INTERACTIONS
+- Image zoom on hover
+- Glow animation
+- Soft floating motion
+- Elegant CTA hover
+- Smooth reveal animations
+
+6. ADD BENEFITS SECTION INSIDE SERVICES
+For each service:
+- 3 spiritual benefits
+- Small premium icon list
+- Better trust-building
+
+7. CTA BUTTONS
+Use premium CTA buttons:
+- “Book Consultation”
+- “Explore More”
+
+Style:
+- Gold glow border
+- Glassmorphism
+- Smooth shimmer hover
+- Premium animation
+
+8. TYPOGRAPHY ENHANCEMENT
+Use premium editorial typography:
+- Cormorant Garamond for headings
+- Plus Jakarta Sans / Outfit for body
+
+Improve:
+- spacing
+- readability
+- hierarchy
+- luxury feel
+
+9. ADD VISUAL DEPTH
+- Cosmic gradients
+- Ambient glows
+- Subtle background particles
+- Section dividers
+- Soft blur lighting
+
+10. ANIMATION QUALITY
+Animations should feel:
+- cinematic
+- calm
+- smooth
+- premium
+- spiritual
+
+Avoid:
+- cheap hover effects
+- gaming visuals
+- overcrowding
+- flashy animations
+
+11. PERFORMANCE
+- Optimize images
+- Lazy load sections/images
+- Maintain smooth FPS
+- Mobile optimized
+
+FINAL GOAL:
+The Services page should feel like a world-class luxury astrology and spiritual consultation platform with premium visuals, cinematic presentation, elegant service storytelling, and immersive spiritual branding.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T15:39:38+05:30.
+</ADDITIONAL_METADATA>

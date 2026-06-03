@@ -1,0 +1,167 @@
+<USER_REQUEST>
+Fix and enhance the WhatsApp floating button and optimize the ENTIRE WEBSITE for FAST LOADING and HIGH PERFORMANCE WITHOUT breaking any layout, responsiveness, animations, or functionality.
+
+IMPORTANT:
+- Do NOT change UI structure
+- Do NOT redesign sections
+- Do NOT break responsiveness
+- Do NOT remove animations completely
+- Preserve all existing functionality
+- Preserve premium visual quality
+
+========================================
+1. WHATSAPP BUTTON FIX & REDESIGN
+========================================
+
+CURRENT ISSUE:
+The current WhatsApp floating icon/button feels unpolished and visually inconsistent with the premium website design.
+
+NEW REQUIREMENTS:
+
+Create a premium floating WhatsApp button:
+- Modern circular glassmorphism design
+- Premium green glow
+- Better icon quality
+- Smooth hover animation
+- Soft pulse effect
+- Proper shadow depth
+- Better spacing from screen edges
+- Responsive positioning
+
+BUTTON BEHAVIOR:
+- Fixed bottom-right position
+- Smooth entrance animation
+- Subtle floating motion
+- Smooth scale hover effect
+- No aggressive bouncing
+
+OPTIONAL:
+Add small tooltip on hover:
+“Chat on WhatsApp”
+
+MOBILE OPTIMIZATION:
+- Proper spacing from edges
+- Avoid overlapping content
+- Smooth tap interaction
+
+========================================
+2. COMPLETE WEBSITE PERFORMANCE OPTIMIZATION
+========================================
+
+MAIN GOAL:
+Make the website feel:
+- ultra smooth
+- premium
+- fast loading
+- highly optimized
+- responsive
+- production ready
+
+WITHOUT changing layout or functionality.
+
+========================================
+3. IMAGE OPTIMIZATION
+========================================
+
+- Compress large images
+- Convert heavy PNG/JPG assets to WebP where possible
+- Lazy load below-the-fold images
+- Optimize hero/background assets
+- Prevent layout shifts
+
+========================================
+4. ANIMATION OPTIMIZATION
+========================================
+
+Optimize all animations:
+- Use GPU acceleration
+- Use transform instead of top/left animations
+- Reduce unnece
+<truncated 400 bytes>
+ive particle density
+- Lower load on mobile devices
+- Maintain smooth FPS
+
+========================================
+6. CODE SPLITTING & LAZY LOADING
+========================================
+
+Implement:
+- React lazy loading for pages/components
+- Dynamic imports where appropriate
+- Split heavy sections intelligently
+
+========================================
+7. VITE & BUILD OPTIMIZATION
+========================================
+
+Optimize production build:
+- Remove unused imports
+- Remove dead code
+- Minify assets
+- Tree shaking
+- Efficient chunk splitting
+- Reduce JS bundle size
+
+========================================
+8. FONT OPTIMIZATION
+========================================
+
+- Optimize Google Fonts loading
+- Use font-display: swap
+- Preconnect font domains
+- Avoid unnecessary font weights
+
+========================================
+9. CSS OPTIMIZATION
+========================================
+
+- Remove unused styles
+- Optimize Tailwind usage
+- Avoid duplicate utilities
+- Improve rendering performance
+
+========================================
+10. RESPONSIVENESS & SMOOTHNESS
+========================================
+
+Ensure:
+- No lag during scrolling
+- Smooth mobile performance
+- No animation stutter
+- Fast interactions
+- Smooth navbar transitions
+
+========================================
+11. PERFORMANCE TARGET
+========================================
+
+Aim for:
+- Very fast first load
+- Smooth scrolling
+- Lightweight rendering
+- High Lighthouse/PageSpeed scores
+- Mobile optimization
+- Premium UX performance
+
+========================================
+12. FINAL REQUIREMENTS
+========================================
+
+MOST IMPORTANT:
+- Do NOT break layout
+- Do NOT break forms
+- Do NOT break booking system
+- Do NOT break responsiveness
+- Do NOT change website structure
+
+Only:
+- improve WhatsApp button
+- optimize performance
+- improve smoothness
+- improve loading speed
+- keep premium cinematic experience intact
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T18:06:39+05:30.
+</ADDITIONAL_METADATA>

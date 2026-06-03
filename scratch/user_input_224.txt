@@ -1,0 +1,123 @@
+<USER_REQUEST>
+Enhance the existing hero section and overall typography WITHOUT changing the current layout structure, responsiveness, spacing system, or branding colors.
+
+IMPORTANT:
+- Preserve the same UI structure
+- Preserve current sections and alignment
+- Do NOT redesign the page
+- Only improve visual quality, motion effects, typography, and premium feel
+
+HERO SECTION ENHANCEMENTS:
+
+1. Replace the current static background feel with a premium cinematic cosmic/universe atmosphere:
+- Add subtle moving nebula gradients
+- Add smooth floating particles
+- Add tiny glowing stars with randomized motion
+- Add slow-moving cosmic dust effects
+- Add soft radial light glows
+- Add animated particle trails
+- Add subtle orbit lines with slow movement
+- Keep animations elegant and lightweight
+- Avoid overdoing effects
+- Must feel luxury and spiritual, not gaming style
+
+2. Particle System:
+Create premium animated particles:
+- Small glowing particles
+- Slow drifting movement
+- Random opacity pulsing
+- Smooth motion physics
+- Some particles connecting softly
+- Universe/cosmic energy feeling
+- Performance optimized
+
+3. Hero Typography Improvements:
+Current heading feels oversized.
+
+Reduce heading size slightly:
+- Improve readability
+- Make it feel more luxury and premium
+- Better spacing between lines
+- Better responsive scaling
+
+Typography style:
+- Elegant modern luxury font pairing
+- Premium editorial look
+- Spiritual luxury brand aesthetic
+- Sophisticated and professional
+
+Use modern font combinations like:
+- Playfair Display
+- Cormorant Garamond
+- Sora
+- Outfit
+- Plus Jakarta Sans
+- Clash Display (if available)
+
+Suggested hierarchy:
+Heading:
+- elegant serif luxury font
+
+Body text:
+- modern clean sans-serif
+
+4. Improve Hero Content Styling:
+- Better text width balance
+- Softer paragraph color
+- More refined spacing
+- Better CTA positioning
+- More premium glow effects
+
+5. Navbar Scroll Behavior:
+Currently buttons/elements appear during scroll.
+
+Required behavior:
+- Navbar should become clean glassmorphism on scroll
+- No extra floating buttons appearing
+- No awkward animations
+- Smooth transition only
+- Keep navbar elegant and minimal
+
+6. Premium Feel Across Entire Website:
+Improve global typography system:
+- Better font consistency
+- More premium spacing rhythm
+- Cleaner button typography
+- More refined headings
+- Elegant paragraph readability
+- Modern luxury visual hierarchy
+
+7. Animation Requirements:
+Use smooth premium animations only:
+- Framer Motion
+- subtle fade
+- soft upward motion
+- smooth blur reveal
+- floating cosmic movement
+
+Avoid:
+- aggressive motion
+- flashy animations
+- heavy glow spam
+- gaming aesthetic
+
+8. Performance:
+- Keep animations GPU optimized
+- Maintain smooth FPS
+- No lag on mobile
+- Lazy render particles if needed
+
+9. Preserve Existing:
+- Existing sections
+- Existing responsiveness
+- Existing colors
+- Existing structure
+- Existing CTA buttons
+- Existing branding
+
+Goal:
+Make the website feel like a world-class luxury astrology and spiritual brand with cinematic cosmic ambience, elegant typography, and premium modern UI polish.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-20T15:05:34+05:30.
+</ADDITIONAL_METADATA>

@@ -1,0 +1,123 @@
+<USER_REQUEST>
+Add a new premium “Healing Crystal / Spiritual Stones” showcase section on the Home Page ABOVE the Testimonials section.
+
+IMPORTANT:
+- Do NOT change existing layout structure
+- Do NOT break responsiveness
+- Match the current premium spiritual luxury design
+- Keep animations smooth and cinematic
+- Maintain existing theme colors (black, gold, purple)
+
+SECTION LAYOUT:
+Create a modern split layout:
+
+LEFT SIDE:
+- Stone content/details
+- Stone title
+- Small spiritual subtitle
+- Short premium description
+- Benefits list
+- CTA button
+
+RIGHT SIDE:
+- Large premium image of the stone
+- Image should animate smoothly during slide change
+- Soft glow around image
+- Floating animation effect
+
+SECTION FUNCTIONALITY:
+Create an AUTO-SLIDING showcase for 4 spiritual stones.
+
+Requirements:
+- Auto slide every 4–5 seconds
+- Smooth fade/slide transition
+- Content and image should change together
+- Manual navigation arrows optional
+- Pagination dots optional
+- Smooth premium animations only
+
+USE SWIPER.JS OR A CUSTOM SMOOTH SLIDER.
+
+STONE DATA:
+Create 4 premium stones with realistic spiritual content.
+
+1. Amethyst Crystal
+Benefits:
+- Spiritual clarity
+- Calmness
+- Emotional healing
+
+2. Rose Quartz
+Benefits:
+- Love energy
+- Emotional balance
+- Relationship healing
+
+3. Citrine Stone
+Benefits:
+- Success & abundance
+- Positive energy
+- Confidence boost
+
+4. Black Tourmaline
+Benefits:
+- Protection
+- Negative energy removal
+- Grounding energy
+
+EACH SLIDE SHOULD INCLUDE:
+- Stone Name
+- Spiritual tagline
+- Short luxury description
+- 3 benefit points
+- “Explore Details” button
+
+BUTTON:
+“Explore Details”
+
+Button behavior:
+- Link to dynamic detail page OR placeholder route:
+/stones/amethyst
+/stones/rose-quartz
+/stones/citrine
+/stones/black-tourmaline
+
+VISUAL STYLE:
+- Premium glassmorphism card
+- Soft gold borders
+- Cosmic glow effects
+- Elegant typography
+- Cinematic hover effects
+- Spiritual luxury aesthetic
+
+ANIMATIONS:
+- Smooth image fade
+- Floating stone effect
+- Content fade-up animation
+- Glow pulse animation
+- Soft parallax movement
+
+IMAGE STYLE:
+- High-quality crystal/stone visuals
+- Transparent or blended backgrounds
+- Premium product showcase feel
+
+RESPONSIVENESS:
+Desktop:
+- Two-column layout
+
+Mobile:
+- Stack content above image
+- Maintain smooth slider behavior
+
+PERFORMANCE:
+- Optimize images
+- Lazy load slider images
+- Smooth GPU animations
+
+FINAL GOAL:
+The section should feel like a premium luxury spiritual product showcase with cinematic motion and elegant storytelling.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T13:00:44+05:30.
+</ADDITIONAL_METADATA>

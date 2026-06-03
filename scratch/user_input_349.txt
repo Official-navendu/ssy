@@ -1,0 +1,83 @@
+<USER_REQUEST>
+Update and replace the current About section images on BOTH:
+- Home Page About Preview Section
+- Full About Page
+
+IMPORTANT:
+- Do NOT change layout structure
+- Do NOT change responsiveness
+- Do NOT redesign sections
+- Only improve and replace the imagery/style
+- Maintain the same premium spiritual luxury aesthetic
+
+CURRENT ISSUE:
+The current images do not feel premium or cinematic enough.
+They lack emotional depth, luxury branding feel, and spiritual storytelling impact.
+
+NEW IMAGE DIRECTION:
+Use high-end spiritual luxury portrait imagery with:
+- Elegant spiritual feminine energy
+- Premium astrology/tarot branding feel
+- Cinematic lighting
+- Warm mystical ambience
+- Luxury editorial style
+- Modern spiritual influencer aesthetic
+- Rich black/gold/purple tones
+- Soft glowing highlights
+- Calm and trustworthy expression
+
+IMAGE STYLE:
+The image should feel:
+- Premium
+- Authentic
+- Spiritual
+- Professional
+- Luxurious
+- Modern
+- Cinematic
+
+VISUAL EFFECTS:
+Enhance the image presentation with:
+- Soft glow around image
+- Elegant gradient overlay
+- Glassmorphism border/card
+- Floating animation
+- Smooth hover movement
+- Ambient light effect
+- Slight depth/parallax effect
+
+HOME PAGE ABOUT SECTION:
+- Use a cleaner portrait composition
+- Add subtle floating glow
+- Improve image framing
+- Make it visually balanced with the text content
+- Keep compact premium look
+
+FULL ABOUT PAGE:
+- Use a more cinematic and storytelling-focused image
+- Larger premium visual presentation
+- Add layered glow effects
+- Add luxury framing style
+- Improve emotional visual impact
+
+OPTIONAL ENHANCEMENTS:
+- Add animated zodiac symbols subtly around image
+- Add soft moving particles near portrait
+- Add blurred cosmic aura behind image
+
+ANIMATION STYLE:
+- Smooth and calm
+- Luxury cinematic movement
+- No aggressive effects
+
+PERFORMANCE:
+- Optimize image sizes
+- Use lazy loading
+- Maintain fast loading speed
+
+FINAL GOAL:
+The About images should instantly feel like a premium world-class spiritual brand and create stronger trust, authority, elegance, and emotional connection.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-21T13:09:14+05:30.
+</ADDITIONAL_METADATA>

@@ -1,0 +1,143 @@
+<USER_REQUEST>
+Execute the approved implementation plan exactly as specified.
+
+CRITICAL INSTRUCTIONS:
+
+Do NOT change any layout
+Do NOT modify UI design
+Do NOT alter animations
+Do NOT change colors, spacing, typography, responsiveness, gradients, hover effects, or sections
+Preserve 100% visual identity
+Only refactor architecture and routing system
+
+PRIMARY GOAL:
+Convert the project completely from TanStack Start into a clean standard React + Vite architecture using React Router DOM.
+
+STRICT REQUIREMENTS:
+
+Remove ALL TanStack dependencies completely
+Remove file-based routing
+Remove generated routeTree files
+Remove Start/server-specific files
+Keep all existing functionality intact
+Preserve Framer Motion animations
+Preserve Tailwind CSS v4 styling
+Preserve Swiper sliders
+Preserve booking flow
+Preserve WhatsApp integrations
+Preserve EmailJS integrations
+
+IMPLEMENT EXACT STRUCTURE:
+
+src/
+├── assets/
+│ ├── images/
+│ ├── icons/
+│ └── videos/
+├── components/
+│ ├── common/
+│ ├── layout/
+│ ├── home/
+│ ├── about/
+│ ├── services/
+│ ├── booking/
+│ ├── products/
+│ ├── contact/
+│ └── ui/
+├── layouts/
+│ └── MainLayout.jsx
+├── pages/
+│ ├── Home.jsx
+│ ├── About.jsx
+│ ├── Services.jsx
+│ ├── Booking.jsx
+│ ├── Products.jsx
+│ ├── Contact.jsx
+│ └── NotFound.jsx
+├── routes/
+│ └── AppRoutes.jsx
+├── hooks/
+├── utils/
+├── data/
+├── App.jsx
+├── main.jsx
+└── index.css
+
+ROUTING:
+Use React Router DOM only.
+
+Create centralized routing in:
+src/routes/AppRoutes.jsx
+
+Required routes:
+/
+/about
+/services
+/booking
+/products
+/contact
+*
+
+Also add:
+Redirect:
+/book → /booking
+
+LAYOUT TASKS:
+Create reusable:
+
+Navbar
+Footer
+ScrollToTop
+PageTransitions
+
+Move them into:
+src/components/layout/
+
+ANIMATION TASKS:
+Keep all existing:
+
+Framer Motion animations
+entrance effects
+hover effects
+floating effects
+page transitions
+scroll reveals
+
+PACKAGE CLEANUP:
+Remove:
+
+@tanstack/react-router
+@tanstack/react-start
+@tanstack/router-plugin
+routeTree.gen
+server/start configs
+
+Install/use:
+
+react-router-dom
+standard vite config
+@vitejs/plugin-react
+
+UPDATE:
+
+package.json
+vite.config.js
+App.jsx
+main.jsx
+index.html
+
+FINAL REQUIREMENTS:
+
+No broken imports
+No routing errors
+No TanStack dependency remaining
+Project must run successfully using:
+npm install
+npm run dev
+
+MOST IMPORTANT:
+Maintain the EXACT SAME website appearance and behavior after migration.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-20T14:49:38+05:30.
+</ADDITIONAL_METADATA>

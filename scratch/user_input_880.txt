@@ -1,0 +1,175 @@
+<USER_REQUEST>
+Completely enhance the Hero Section into a PREMIUM DARK MYSTICAL GALAXY EXPERIENCE while preserving the existing layout structure, responsiveness, branding colors, and functionality.
+
+IMPORTANT:
+- Do NOT redesign the page structure
+- Do NOT change section alignment
+- Do NOT break responsiveness
+- Only transform the hero atmosphere, background, motion effects, and immersive experience
+
+MAIN GOAL:
+The homepage hero should feel like:
+- a luxury astrology universe
+- mystical spiritual portal
+- cinematic cosmic experience
+- premium tarot consultation platform
+
+The hero must instantly create a:
+“WOW this feels magical and premium”
+experience.
+
+========================================
+1. FULL GALAXY BACKGROUND
+========================================
+
+Replace the current flat hero background with a rich cinematic galaxy environment.
+
+Create:
+- Deep space atmosphere
+- Rich galaxy textures
+- Dark mystical cosmic design
+- Purple + midnight blue + black gradients
+- Soft gold cosmic glow accents
+- Cinematic nebula clouds
+- Layered galaxy depth
+
+BACKGROUND FEEL:
+- luxurious
+- mystical
+- spiritual
+- cinematic
+- immersive
+
+Avoid:
+- flat black backgrounds
+- generic gradients
+- gaming style visuals
+
+========================================
+2. MOVING PARTICLES & GLOW EFFECTS
+========================================
+
+Add premium animated cosmic particles:
+- Tiny glowing stars
+- Floating mystical particles
+- Twinkling star animations
+- Soft glowing energy dots
+- Smooth drifting motion
+- Different particle sizes
+- Layered depth effect
+
+Add:
+- glow particles
+- subtle sparkle effects
+- ambient cosmic dust
+- soft particle trails
+
+MOTION STYLE:
+- smooth
+- slow
+- elegant
+- cinematic
+- calming
+
+========================================
+3. CINEMATIC HERO ATMOSPHERE
+========================================
+
+Add:
+- subtle cosmic fog
+- moving nebula layers
+- radial glow lighting
+- spiritual aura effect
+- cinematic bloom effect
+- soft center lighting behind hero text
+
+Create a divine cosmic focus around the heading area.
+
+====
+<truncated 705 bytes>
+mute easily
+
+IMPORTANT:
+- Music should NOT feel annoying
+- Volume must remain subtle
+- Mobile-friendly implementation
+- Respect browser autoplay policies
+
+MUSIC BUTTON STYLE:
+- Minimal floating icon
+- Glassmorphism design
+- Soft glow effect
+- Elegant hover animation
+
+========================================
+6. REMOVE PRELOADER
+========================================
+
+Remove any existing:
+- loading screen
+- preloader
+- initial splash animation
+
+The homepage should load directly and smoothly.
+
+========================================
+7. MOBILE OPTIMIZATION
+========================================
+
+Ensure:
+- smooth animations on mobile
+- optimized particles
+- responsive galaxy rendering
+- no lag
+- smooth scrolling
+- optimized FPS
+
+Reduce particle density automatically on smaller screens if needed.
+
+========================================
+8. PERFORMANCE OPTIMIZATION
+========================================
+
+Optimize everything for fast loading:
+- GPU accelerated animations
+- requestAnimationFrame loops
+- optimized canvas rendering
+- lazy loading where appropriate
+- lightweight assets
+- optimized image rendering
+
+Maintain:
+- fast first load
+- smooth performance
+- premium cinematic feel
+
+========================================
+9. HERO TYPOGRAPHY POLISH
+========================================
+
+Enhance typography for premium mystical branding:
+- Elegant luxury serif heading
+- Better line-height
+- Improved spacing
+- Softer text glow
+- Cinematic readability
+
+Use:
+- Cormorant Garamond for headings
+- Plus Jakarta Sans / Outfit for body text
+
+========================================
+10. FINAL EXPERIENCE
+========================================
+
+The Hero section should feel like:
+- entering a mystical astrology universe
+- premium spiritual consultation platform
+- cinematic cosmic experience
+- luxury spiritual brand
+
+The hero should feel ALIVE, immersive, magical, premium, spiritual, and visually unforgettable.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-05-22T15:23:28+05:30.
+</ADDITIONAL_METADATA>

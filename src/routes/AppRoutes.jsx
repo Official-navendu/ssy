@@ -11,23 +11,13 @@ const Booking = lazy(() => import("@/pages/Booking"));
 const Products = lazy(() => import("@/pages/Products"));
 const Contact = lazy(() => import("@/pages/Contact"));
 const StoneDetail = lazy(() => import("@/pages/StoneDetail"));
+const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const TermsConditions = lazy(() => import("@/pages/TermsConditions"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
-
-// Elegant, lightweight custom spinner matching the luxury spiritual theme
-function PageLoader() {
-  return (
-    <div className="min-h-[60vh] w-full flex flex-col items-center justify-center bg-transparent relative">
-      <div className="h-9 w-9 rounded-full border-2 border-gold/15 border-t-gold animate-spin" style={{ animationDuration: "1s" }} />
-      <span className="mt-4 font-display text-xs tracking-[0.25em] text-gold uppercase animate-pulse">
-        Loading alignment...
-      </span>
-    </div>
-  );
-}
 
 export function AppRoutes() {
   return (
-    <Suspense fallback={<PageLoader />}>
+    <Suspense fallback={null}>
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
@@ -39,6 +29,8 @@ export function AppRoutes() {
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/stones/:stoneId" element={<StoneDetail />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsConditions />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
