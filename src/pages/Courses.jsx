@@ -81,7 +81,7 @@ const coursesData = [
     price: 149,
     duration: "6 Weeks",
     image: courseManifestation,
-    auraColor: "from-blue-600/15 via-gold/10 to-background",
+    auraColor: "from-accent/20 via-gold/10 to-background",
     fullDescription: "Bridge behavioral science and high-frequency manifestation. This Neuro-Linguistic Programming (NLP) certification course empowers you to identify and rewrite subconscious scripts, dissolve deep scarcity patterns, and establish positive neurological anchors. By integrating classic clinical NLP systems with spiritual coaching, you will master the art of emotional resilience and goal alignment.",
     benefits: [
       "Reprogram persistent scarcity blocks & limiting loops",

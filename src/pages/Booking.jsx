@@ -105,7 +105,7 @@ export default function Booking() {
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               >
-                <div className="relative w-full max-w-4xl mx-auto rounded-3xl border border-gold/20 bg-[#080808]/80 backdrop-blur-md p-2 shadow-[0_20px_50px_rgba(0,0,0,0.85)] overflow-hidden">
+                <div className="relative w-full max-w-4xl mx-auto rounded-3xl border border-gold/20 bg-[#242228]/85 backdrop-blur-md p-2 shadow-[0_20px_50px_rgba(0,0,0,0.85)] overflow-hidden">
                   {/* Corner highlights */}
                   <div className="absolute top-4 left-4 w-4 h-4 border-t border-l border-gold/40 pointer-events-none" />
                   <div className="absolute top-4 right-4 w-4 h-4 border-t border-r border-gold/40 pointer-events-none" />

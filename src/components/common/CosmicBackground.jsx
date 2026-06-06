@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 export function CosmicBackground({ density = 95 }) {
   const canvasRef = useRef(null);
   const mouseRef = useRef({ x: 0, y: 0, targetX: 0, targetY: 0 });
+  const isVisibleRef = useRef(true);
 
   // Smooth mouse coordinates tracking for premium parallax
   useEffect(() => {
@@ -25,6 +26,7 @@ export function CosmicBackground({ density = 95 }) {
     if (!ctx) return;
 
     let animationId;
+    let isLooping = false;
     
     // Detect mobile device to apply adaptive performance targets
     const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
@@ -51,6 +53,24 @@ export function CosmicBackground({ density = 95 }) {
     };
 
     adjustScale();
+
+    // Intersection Observer to pause drawing loop when canvas goes offscreen
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          isVisibleRef.current = entry.isIntersecting;
+          if (entry.isIntersecting && !isLooping) {
+            isLooping = true;
+            animationId = requestAnimationFrame(draw);
+          }
+        });
+      },
+      { threshold: 0.01 }
+    );
+
+    if (canvas.parentElement) {
+      observer.observe(canvas.parentElement);
+    }
 
     // Cosmic Pools
     const bgStars = [];      // Dense deep starfield (Layer 1)
@@ -126,7 +146,7 @@ export function CosmicBackground({ density = 95 }) {
         wiggleFreq: Math.random() * 0.02 + 0.005,
         wiggleAmp: Math.random() * 0.35 + 0.1,
         alpha: Math.random() * 0.4 + 0.6,
-        color: Math.random() > 0.4 ? "212, 175, 55" : "147, 51, 234" // Gold or Violet
+        color: Math.random() > 0.4 ? "197, 160, 89" : "136, 19, 55" // Gold or Burgundy
       });
     }
 
@@ -142,7 +162,7 @@ export function CosmicBackground({ density = 95 }) {
         pulseSpeed: Math.random() * 0.003 + 0.001,
         phase: Math.random() * Math.PI * 2,
         alpha: Math.random() * 0.05 + 0.02,
-        color: Math.random() > 0.6 ? "109, 40, 217" : (Math.random() > 0.5 ? "212, 175, 55" : "29, 78, 216")
+        color: Math.random() > 0.6 ? "136, 19, 55" : (Math.random() > 0.5 ? "197, 160, 89" : "6, 95, 70")
       });
     }
 
@@ -177,7 +197,7 @@ export function CosmicBackground({ density = 95 }) {
     ];
 
     // Unicode symbols assets
-    const zodiacGlyphs = ["♈", "♉", "♊", "♋", "♌", "♍", "♎", "♏", "♐", "♑", "♒", "♓"];
+    const zodiacGlyphs = ["👁", "🌙", "⭐", "🔮", "🕯", "🪷", "⚖", "🗝", "🧭", "☀️", "👑", "🎴"];
     const moonPhases = ["🌑", "🌒", "🌓", "🌔", "🌕", "🌖", "🌗", "🌘"];
 
     const handleResize = () => {
@@ -208,6 +228,10 @@ export function CosmicBackground({ density = 95 }) {
 
     // Rendering Engine Loop
     const draw = () => {
+      if (!isVisibleRef.current) {
+        isLooping = false;
+        return;
+      }
       ctx.clearRect(0, 0, width, height);
       
       const time = Date.now() * 0.00022;
@@ -225,11 +249,11 @@ export function CosmicBackground({ density = 95 }) {
       // 1. DEEP SPACE BASE GRADIENT
       // ==========================================
       const bgGrad = ctx.createLinearGradient(0, 0, 0, height);
-      bgGrad.addColorStop(0, "#010103");
-      bgGrad.addColorStop(0.25, "#040209");
-      bgGrad.addColorStop(0.5, "#0a0414");
-      bgGrad.addColorStop(0.75, "#0d051c");
-      bgGrad.addColorStop(1, "#020104");
+      bgGrad.addColorStop(0, "#111315");
+      bgGrad.addColorStop(0.25, "#17161A");
+      bgGrad.addColorStop(0.5, "#1B1A1F");
+      bgGrad.addColorStop(0.75, "#161317");
+      bgGrad.addColorStop(1, "#111315");
       ctx.fillStyle = bgGrad;
       ctx.fillRect(0, 0, width, height);
 
@@ -242,28 +266,28 @@ export function CosmicBackground({ density = 95 }) {
       const nXa = width * 0.28 + Math.sin(time * 0.2) * 90;
       const nYa = height * 0.32 + Math.cos(time * 0.16) * 70;
       const rA = Math.max(width * (isMobile ? 0.45 : 0.58), isMobile ? 320 : 480);
-      drawRadialGlow(ctx, nXa, nYa, rA, "99, 10, 180", 0.45 + Math.sin(time * 0.3) * 0.07);
+      drawRadialGlow(ctx, nXa, nYa, rA, "106, 30, 47", 0.35 + Math.sin(time * 0.3) * 0.05);
 
       // B. Dreamy Golden Haze (Skipped on Mobile for rendering performance)
       if (!isMobile) {
         const nXb = width * 0.68 + Math.cos(time * 0.15) * 100;
         const nYb = height * 0.38 + Math.sin(time * 0.22) * 80;
         const rB = Math.max(width * 0.52, 430);
-        drawRadialGlow(ctx, nXb, nYb, rB, "212, 175, 55", 0.20 + Math.sin(time * 0.4) * 0.04);
+        drawRadialGlow(ctx, nXb, nYb, rB, "212, 175, 55", 0.16 + Math.sin(time * 0.4) * 0.03);
       }
 
       // C. Cosmic Midnight Blue Fog (Bottom-Right)
       const nXc = width * 0.78 + Math.sin(time * 0.12) * 110;
       const nYc = height * 0.68 + Math.cos(time * 0.24) * 80;
       const rC = Math.max(width * (isMobile ? 0.45 : 0.52), isMobile ? 320 : 440);
-      drawRadialGlow(ctx, nXc, nYc, rC, "18, 62, 195", 0.32 + Math.cos(time * 0.2) * 0.05);
+      drawRadialGlow(ctx, nXc, nYc, rC, "106, 30, 47", 0.25 + Math.cos(time * 0.2) * 0.04);
 
       // D. Amethyst Fog Aura (Top-Center behind heading - Skipped on Mobile)
       if (!isMobile) {
         const nXd = width * 0.5 + Math.cos(time * 0.18) * 50;
         const nYd = height * 0.16 + Math.sin(time * 0.11) * 35;
         const rD = Math.max(width * 0.48, 400);
-        drawRadialGlow(ctx, nXd, nYd, rD, "147, 51, 234", 0.30 + Math.sin(time * 0.3) * 0.05);
+        drawRadialGlow(ctx, nXd, nYd, rD, "230, 199, 122", 0.15 + Math.sin(time * 0.3) * 0.03);
       }
 
       // E. Center Portal Gold Bloom Glow (Directly behind astrolabe/heading)
@@ -272,7 +296,7 @@ export function CosmicBackground({ density = 95 }) {
 
       // F. Center Portal Purple/Indigo Glow
       const rF = Math.max(width * (isMobile ? 0.38 : 0.48), isMobile ? 240 : 410);
-      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rF, "109, 40, 217", 0.20 + Math.cos(time * 0.4) * 0.04);
+      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rF, "106, 30, 47", 0.18 + Math.cos(time * 0.4) * 0.03);
 
       // ==========================================
       // 3. ANEMIC CELESTIAL LIGHT RAYS
@@ -286,8 +310,8 @@ export function CosmicBackground({ density = 95 }) {
         for (let r = 0; r < rayCount; r++) {
           const rayAngle = (r * Math.PI) / 1.5;
           const rayGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, Math.max(width * 0.4, 300));
-          rayGrad.addColorStop(0, "rgba(212, 175, 55, 0.04)");
-          rayGrad.addColorStop(0.4, "rgba(109, 40, 217, 0.012)");
+          rayGrad.addColorStop(0, "rgba(197, 160, 89, 0.04)");
+          rayGrad.addColorStop(0.4, "rgba(136, 19, 55, 0.012)");
           rayGrad.addColorStop(1, "rgba(0, 0, 0, 0)");
           
           ctx.fillStyle = rayGrad;
@@ -683,14 +707,21 @@ export function CosmicBackground({ density = 95 }) {
 
       ctx.globalCompositeOperation = "source-over";
 
-      animationId = requestAnimationFrame(draw);
+      if (isVisibleRef.current) {
+        animationId = requestAnimationFrame(draw);
+      } else {
+        isLooping = false;
+      }
     };
 
+    // Draw will be initiated by the IntersectionObserver callback
+    isLooping = true;
     draw();
 
     return () => {
       window.removeEventListener("resize", handleResize);
       resizeObserver.disconnect();
+      observer.disconnect();
       cancelAnimationFrame(animationId);
     };
   }, [density]);

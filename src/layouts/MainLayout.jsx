@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
+import { VideoBubble } from "@/components/common/VideoBubble";
 import { MusicPlayer } from "@/components/common/MusicPlayer";
 import { PageTransitions } from "@/components/layout/PageTransitions";
 import { ScrollToTopOnNavigate } from "@/components/layout/ScrollToTopOnNavigate";
@@ -26,6 +27,7 @@ export function MainLayout() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <VideoBubble />
       <MusicPlayer />
       <ScrollToTop />
     </div>

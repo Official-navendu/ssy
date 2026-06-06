@@ -1,0 +1,220 @@
+<USER_REQUEST>
+MAJOR SERVICES PAGE CONTENT UPDATE
+
+IMPORTANT:
+Replace ALL existing services with ONLY the following 3 PREMIUM SIGNATURE SERVICES provided by the client.
+
+DO NOT summarize or shorten the content.
+DO NOT rewrite the client's wording unnecessarily.
+Preserve the exact meaning, structure, pricing, and premium positioning.
+
+Keep the EXISTING premium UI that is already built:
+- premium service cards
+- View Details popup
+- Purchase/Book button
+- premium animations
+- dark tarot theme
+- responsiveness
+
+Simply replace the services and enrich the popup experience.
+
+==================================================
+SERVICE 1
+==================================================
+
+1-On-1 Power Tarot Reading Session
+
+Duration:
+1 Hour
+
+Price:
+$200 including tax
+
+Card Summary:
+1 Hour Deep Clarity, Timing & Remedies
+
+View Details:
+When user clicks View Details, open a PREMIUM FULL SCREEN MODAL.
+
+MODAL DESIGN:
+- Large hero image
+- Premium tarot visuals
+- Gallery slider (4-5 realistic images)
+- Section dividers
+- Glassmorphism popup
+- Scrollable modal
+- Smooth animations
+
+DISPLAY THE CLIENT CONTENT EXACTLY.
+
+Structure inside popup:
+
+Hero Banner
+
+Session Overview
+
+What you receive
+
+Part 1
+Main Question & Focus
+
+Part 2
+Main Life Reading
+
+Part 3
+Timing & Prediction
+
+Part 4
+Remedies
+
+Part 5
+Energy Cleansing
+
+Part 6
+Final Guidance
+
+Areas Covered
+
+What You Receive
+
+After Session
+
+Who This Is For
+
+Session Format
+
+Investment
+
+Important Note
+
+Keep ALL bullet points.
+
+DO NOT REMOVE CONTENT.
+
+Purchase Button:
+Book This Session
+
+WhatsApp Message:
+Hello Shivani Spiritual Yatri,
+I would like to book the 1-On-1 Power Tarot Reading Session.
+
+==================================================
+SERVICE 2
+==================================================
+
+Advanced Aura Healing, Protection & Deep Healing Experience
+
+Price:
+$100
+
+Duration:
+60 Minutes
+
+Card Summary:
+Advanced Aura Healing, Protection & Deep Healing Experience
+
+Popup Layout:
+
+Large Hero Image
+
+Healing Images Gallery
+
+Session Overview
+
+What Makes This Session Powerful
+
+Groundin
+<truncated 1181 bytes>
+ormation Session
+
+WhatsApp Message:
+Hello Shivani Spiritual Yatri,
+I would like to book the Tarot + Healing + Chakra Diagnosis Premium Session.
+
+==================================================
+IMAGE REQUIREMENTS
+==================================================
+
+Generate NEW realistic premium images.
+
+Service 1:
+Luxury tarot reading.
+
+Service 2:
+Aura healing, Reiki, energy work.
+
+Service 3:
+Luxury chakra healing, tarot, crystals.
+
+Popup galleries:
+4-5 images each.
+
+Style:
+- realistic
+- cinematic
+- luxury
+- editorial
+- premium
+- feminine spiritual energy
+
+Avoid:
+- cartoon
+- fake AI faces
+- generic stock photos
+
+==================================================
+POPUP EXPERIENCE
+==================================================
+
+Current popup style is good.
+
+Upgrade it further.
+
+Add:
+- sticky close button
+- premium scroll indicator
+- image gallery
+- premium section separators
+- glassmorphism cards
+- animated reveal
+- premium badges
+
+Popup should feel like:
+Apple Product Page +
+Luxury SaaS +
+Premium Spiritual Platform
+
+==================================================
+REMOVE OLD SERVICES
+==================================================
+
+Delete ALL previous service cards.
+
+ONLY keep these 3 services.
+
+==================================================
+KEEP EXISTING FUNCTIONALITY
+==================================================
+
+DO NOT break:
+- WhatsApp
+- Calendly
+- animations
+- tarot theme
+- footer
+- navbar
+- responsiveness
+- mobile layout
+- booking flow
+
+==================================================
+FINAL EXPERIENCE
+==================================================
+
+The Services page should become a premium luxury offerings page featuring ONLY these three signature services.
+
+The cards should look exclusive and high-value, while the View Details popup should present the COMPLETE client content with premium visuals and immersive storytelling without losing any of the provided information.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-06T11:08:58+05:30.
+</ADDITIONAL_METADATA>
