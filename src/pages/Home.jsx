@@ -38,9 +38,9 @@ const serviceImages = {
 };
 
 const serviceAuras = {
-  "1on1-power-tarot": "from-[#D4AF37]/25 to-[#1B1A1F]/10",
-  "advanced-aura-healing": "from-[#6A1E2F]/20 via-[#1B1A1F]/15 to-[#D4AF37]/10",
-  "tarot-healing-chakra": "from-[#D4AF37]/20 via-[#6A1E2F]/15 to-[#111315]",
+  "1on1-power-tarot": "from-[#D8B67A]/25 to-[#242032]/10",
+  "advanced-aura-healing": "from-[#332845]/20 via-[#242032]/15 to-[#D8B67A]/10",
+  "tarot-healing-chakra": "from-[#D8B67A]/20 via-[#332845]/15 to-[#1A1722]",
 };
 
 const HERO_SLIDES = [
@@ -94,7 +94,7 @@ function renderHeading(heading) {
   if (heading.includes("Cosmic Clarity")) {
     return (
       <>
-        Unlock <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Cosmic Clarity</span>
+        Unlock <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Cosmic Clarity</span>
         <br /> Through Ancient Wisdom
       </>
     );
@@ -103,7 +103,7 @@ function renderHeading(heading) {
     return (
       <>
         Align Your Energy
-        <br /> With <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Divine Guidance</span>
+        <br /> With <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Divine Guidance</span>
       </>
     );
   }
@@ -111,7 +111,7 @@ function renderHeading(heading) {
     return (
       <>
         Discover Your Path
-        <br /> & <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Inner Power</span>
+        <br /> & <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Inner Power</span>
       </>
     );
   }
@@ -119,7 +119,7 @@ function renderHeading(heading) {
     return (
       <>
         Transform Your Journey
-        <br /> Through <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(212,175,55,0.25)]">Astrology & Tarot</span>
+        <br /> Through <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Astrology & Tarot</span>
       </>
     );
   }
@@ -497,17 +497,17 @@ export default function Home() {
         {/* Concentric Rotating Astrolabe & Celestial Rings Layer (z-[5]) */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30 sm:opacity-50 flex items-center justify-center z-[5] overflow-hidden">
           {/* Outer Gold Astrolabe Ring */}
-          <div className="absolute h-[380px] w-[380px] sm:h-[680px] sm:w-[680px] rounded-full border border-gold/10 animate-spin-slow" style={{ animationDuration: "50s" }} />
+          <div className="absolute h-[380px] w-[380px] sm:h-[680px] sm:w-[680px] rounded-full border border-gold/15 animate-spin-slow" style={{ animationDuration: "50s" }} />
           {/* Dashed Gold Orbit Ring */}
           <div className="absolute h-[320px] w-[320px] sm:h-[620px] sm:w-[620px] rounded-full border border-dashed border-gold/15 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "35s" }} />
-          {/* Purple Energy Ring */}
-          <div className="absolute h-[280px] w-[280px] sm:h-[520px] sm:w-[520px] rounded-full border border-purple/10 animate-spin-slow" style={{ animationDuration: "25s" }} />
+          {/* Sapphire Energy Ring */}
+          <div className="absolute h-[280px] w-[280px] sm:h-[520px] sm:w-[520px] rounded-full border border-sapphire/10 animate-spin-slow" style={{ animationDuration: "25s" }} />
           {/* Fine Outer Gold Ring */}
           <div className="absolute h-[240px] w-[240px] sm:h-[420px] sm:w-[420px] rounded-full border border-gold/5 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "60s" }} />
         </div>
 
         {/* Cinematic Dark Overlay Layer (z-10) */}
-        <div className="absolute inset-0 bg-black/35 z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-black/20 z-10 pointer-events-none" />
 
         {/* Hero Content Layer (z-20) */}
         <div className="relative z-20 mx-auto w-full max-w-7xl px-6 md:px-8">
@@ -516,8 +516,8 @@ export default function Home() {
             {/* LEFT COLUMN: Hero content */}
             <div className="col-span-1 lg:col-span-6 min-h-[340px] lg:min-h-[380px] flex flex-col justify-center relative">
               {/* Cinematic Divine Text Spotlights */}
-              <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple/15 blur-[100px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "8s" }} />
-              <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] bg-gold/8 blur-[80px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "12s" }} />
+              <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-sapphire/12 blur-[100px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "8s" }} />
+              <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] bg-gold/6 blur-[80px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "12s" }} />
 
               <AnimatePresence mode="wait">
                 <motion.div
@@ -563,13 +563,13 @@ export default function Home() {
                 className="relative w-full"
               >
                 {/* Glowing Aura behind the image showcase */}
-                <div className="absolute -inset-4 bg-gradient-to-tr from-purple/20 via-purple-deep/15 to-gold/10 rounded-2xl blur-3xl opacity-60 pointer-events-none" />
+                <div className="absolute -inset-4 bg-gradient-to-tr from-sapphire/15 via-[#151B26]/25 to-gold/8 rounded-2xl blur-3xl opacity-60 pointer-events-none" />
 
                 <div className="flex flex-col sm:flex-row gap-4 items-center w-full h-[320px] sm:h-[380px] lg:h-[410px]">
                   
                   {/* Large Main Image with Auto Carousel */}
-                  <div className="relative w-full sm:flex-1 h-[260px] sm:h-full rounded-2xl overflow-hidden border border-gold/30 shadow-[0_20px_50px_rgba(0,0,0,0.8)] bg-black/40 backdrop-blur-sm group">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent z-10 pointer-events-none" />
+                  <div className="relative w-full sm:flex-1 h-[260px] sm:h-full rounded-2xl overflow-hidden border border-gold/25 shadow-[0_20px_50px_rgba(0,0,0,0.7)] bg-[#0D1117]/40 backdrop-blur-sm group">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117]/85 via-[#0D1117]/20 to-transparent z-10 pointer-events-none" />
                     
                     <AnimatePresence mode="wait">
                       <motion.img
@@ -586,7 +586,7 @@ export default function Home() {
 
                     {/* Minimal Corner badge */}
                     <div className="absolute bottom-5 left-5 z-20 flex flex-col gap-0.5">
-                      <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold/90 text-glow-subtle bg-black/45 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold/15">
+                      <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gold/90 text-glow-subtle bg-[#151B26]/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold/15">
                         {HERO_SLIDES[activeSlide].label}
                       </span>
                     </div>
@@ -608,8 +608,8 @@ export default function Home() {
                           onClick={() => setActiveSlide(idx)}
                           className={`relative flex-1 sm:flex-initial sm:w-full sm:h-[22%] h-full rounded-xl overflow-hidden border transition-all duration-500 cursor-pointer group ${
                             isActive
-                              ? "border-gold bg-gold/15 shadow-[0_0_20px_rgba(212,175,55,0.4)] scale-105 z-20"
-                              : "border-gold/15 hover:border-gold/45 bg-black/45 hover:scale-102"
+                              ? "border-gold bg-gold/15 shadow-[0_0_20px_rgba(216,182,122,0.4)] scale-105 z-20"
+                              : "border-gold/15 hover:border-gold/45 bg-[#0D1117]/45 hover:scale-102"
                           }`}
                         >
                           <img
@@ -622,7 +622,7 @@ export default function Home() {
                           {isActive && (
                             <div className="absolute inset-0 bg-gold/5 backdrop-blur-[0.5px] mix-blend-overlay z-10" />
                           )}
-                          <div className="absolute inset-0 bg-black/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-1 text-[8px] font-bold text-gold text-center leading-tight uppercase tracking-widest z-20">
+                          <div className="absolute inset-0 bg-[#0D1117]/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-1 text-[8px] font-bold text-gold text-center leading-tight uppercase tracking-widest z-20">
                             {slide.label.split(" ")[0]}
                           </div>
                         </button>
@@ -644,7 +644,7 @@ export default function Home() {
           {trust.map((t, i) => (
             <Reveal key={t.label} delay={i * 0.08}>
               <div className="glass rounded-2xl p-6 text-center transition-all hover:-translate-y-1 hover:shadow-gold">
-                <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-gold/30 to-purple/30 text-gold">
+                <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-gold/30 to-sapphire/35 text-gold">
                   <t.icon className="h-5 w-5" />
                 </div>
                 <div className="mt-4 font-display text-3xl text-gradient-gold">{t.value}</div>
@@ -665,7 +665,7 @@ export default function Home() {
         <div className="mx-auto mt-14 grid max-w-7xl gap-8 px-6 sm:grid-cols-2 lg:grid-cols-3 md:px-8">
           {services.map((s, i) => {
             const imgPath = serviceImages[s.slug];
-            const auraColor = serviceAuras[s.slug] || "from-purple/20 to-gold/10";
+            const auraColor = serviceAuras[s.slug] || "from-sapphire/20 to-gold/10";
 
             return (
               <Reveal key={s.slug} delay={i * 0.06}>
@@ -677,24 +677,26 @@ export default function Home() {
                     scale: 1.01
                   }}
                   transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                  className="relative group rounded-[28px] overflow-hidden border border-[#d4af37]/25 bg-[#242228]/95 backdrop-blur-md shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-all duration-500 hover:border-[#d4af37]/70 hover:shadow-[0_20px_45px_rgba(212,175,55,0.12)] flex flex-col h-full"
+                  className={`relative group rounded-[28px] overflow-hidden transition-all duration-500 hover:shadow-gold hover:border-gold flex flex-col h-full ${
+                    i % 3 === 0 ? "card-gold/5" : (i % 3 === 1 ? "card-sapphire/5" : "card-glass")
+                  }`}
                   style={{ transformStyle: "preserve-3d", perspective: 1000 }}
                 >
                   {/* Subtle inner-card background glow (candle light effect) */}
                   <div className={`absolute -top-32 -left-32 h-64 w-64 rounded-full bg-gradient-to-br ${auraColor} blur-3xl opacity-10 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none`} />
-                  <div className="absolute -bottom-32 -right-32 h-64 w-64 rounded-full bg-gradient-to-tr from-[#d4af37]/5 to-transparent blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none" />
+                  <div className="absolute -bottom-32 -right-32 h-64 w-64 rounded-full bg-gradient-to-tr from-gold/5 to-transparent blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none" />
 
                   {/* Gold Corner Accents to simulate Tarot Card frames */}
-                  <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
-                  <div className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
-                  <div className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
-                  <div className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
+                  <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
+                  <div className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
+                  <div className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
+                  <div className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
 
                   {/* Card Frame Inner Line */}
-                  <div className="absolute inset-1.5 rounded-[24px] border border-[#d4af37]/10 pointer-events-none z-10" />
+                  <div className="absolute inset-1.5 rounded-[24px] border border-gold/10 pointer-events-none z-10" />
 
                   {/* Image Header */}
-                  <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-[#d4af37]/15">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-gold/15">
                     <img
                       src={imgPath}
                       alt={s.title}
@@ -703,12 +705,12 @@ export default function Home() {
                     />
                     
                     {/* Dark Vignette Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#242228] via-transparent to-black/20 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117] via-transparent to-black/20 pointer-events-none" />
                     
                     {/* Premium Badge */}
                     {s.badge && (
                       <div className="absolute top-4 left-4 z-20">
-                        <span className="rounded-full bg-[#d4af37]/15 border border-[#d4af37]/45 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-[#d4af37] shadow-[0_0_10px_rgba(212,175,55,0.15)] animate-pulse">
+                        <span className="rounded-full bg-gold/15 border border-gold/45 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-gold shadow-[0_0_10px_rgba(216,182,122,0.15)] animate-pulse">
                           {s.badge}
                         </span>
                       </div>
@@ -716,7 +718,7 @@ export default function Home() {
 
                     {/* Price Tag Overlay */}
                     <div className="absolute bottom-3 right-3 z-20">
-                      <span className="rounded-full bg-black/75 border border-[#d4af37]/25 px-3 py-1 text-[10px] font-semibold tracking-wider text-foreground">
+                      <span className="rounded-full bg-black/75 border border-gold/25 px-3 py-1 text-[10px] font-semibold tracking-wider text-foreground">
                         {s.price}
                       </span>
                     </div>
@@ -726,17 +728,17 @@ export default function Home() {
                   <div className="p-6 md:p-7 flex flex-col justify-between flex-1 relative z-20">
                     <div className="space-y-3 text-left">
                       {/* Meta duration info */}
-                      <div className="flex items-center gap-1.5 text-[10px] text-[#d4af37] font-semibold uppercase tracking-widest">
+                      <div className="flex items-center gap-1.5 text-[10px] text-gold font-semibold uppercase tracking-widest">
                         <Clock className="h-3.5 w-3.5" /> {s.duration}
                       </div>
 
                       {/* Card Title */}
-                      <h3 className="font-display text-lg md:text-xl text-foreground/95 group-hover:text-[#d4af37] transition-colors duration-300 uppercase tracking-wide leading-snug">
+                      <h3 className="font-display text-lg md:text-xl text-foreground/95 group-hover:text-gold transition-colors duration-300 uppercase tracking-wide leading-snug">
                         {s.title}
                       </h3>
 
                       {/* Tagline */}
-                      <p className="text-xs italic font-medium text-[#d4af37]/80 tracking-wide">
+                      <p className="text-xs italic font-medium text-gold/85 tracking-wide">
                         {s.short}
                       </p>
 
@@ -747,13 +749,13 @@ export default function Home() {
                     </div>
 
                     {/* Divider */}
-                    <div className="my-5 border-t border-[#d4af37]/10" />
+                    <div className="my-5 border-t border-gold/10" />
 
                     {/* Card Actions */}
                     <div className="flex flex-col gap-3">
                       <button
-                        onClick={() => navigate("/services", { state: { openService: s.slug } })}
-                        className="group w-full inline-flex items-center justify-center gap-2 rounded-full border border-[#d4af37]/35 bg-[#d4af37]/5 hover:bg-[#d4af37]/15 hover:border-[#d4af37]/75 py-2.5 text-xs font-semibold uppercase tracking-widest text-[#d4af37] cursor-pointer transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.05)]"
+                         onClick={() => navigate("/services", { state: { openService: s.slug } })}
+                        className="group w-full inline-flex items-center justify-center gap-2 rounded-full border border-gold/35 bg-gold/5 hover:bg-gold/15 hover:border-gold/75 py-2.5 text-xs font-semibold uppercase tracking-widest text-gold cursor-pointer transition-all duration-300 shadow-[0_0_10px_rgba(216,182,122,0.05)]"
                       >
                         View Details
                         <ChevronRight className="h-3.5 w-3.5" />
@@ -793,8 +795,8 @@ export default function Home() {
           <CosmicBackground density={35} />
         </div>
         <div className="absolute inset-0 bg-radial-gradient pointer-events-none opacity-25 z-0" />
-        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#6A1E2F]/10 blur-[100px] rounded-full -z-10 animate-pulse" />
-        <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#D4AF37]/5 blur-[90px] rounded-full -z-10 animate-pulse" />
+        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-sapphire/10 blur-[100px] rounded-full -z-10 animate-pulse" />
+        <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gold/3 blur-[90px] rounded-full -z-10 animate-pulse" />
 
         <div className="relative mx-auto max-w-6xl px-6 md:px-8 z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -802,7 +804,7 @@ export default function Home() {
             {/* LEFT SIDE: Interactive Tarot Card Spread */}
             <div className="lg:col-span-6 flex flex-col items-center justify-center min-h-[420px] relative">
               {/* Table Cloth Rim Glow */}
-              <div className="pointer-events-none absolute h-[280px] w-[280px] sm:h-[360px] sm:w-[360px] rounded-full border border-gold/10 bg-black/10 backdrop-blur-[2px] shadow-[inset_0_0_30px_rgba(212,175,55,0.05)] flex items-center justify-center -z-10 animate-spin-slow" style={{ animationDuration: '60s' }} />
+              <div className="pointer-events-none absolute h-[280px] w-[280px] sm:h-[360px] sm:w-[360px] rounded-full border border-gold/10 bg-black/10 backdrop-blur-[2px] shadow-[inset_0_0_30px_rgba(216,182,122,0.05)] flex items-center justify-center -z-10 animate-spin-slow" style={{ animationDuration: '60s' }} />
 
               <div className="relative w-full h-[320px] sm:h-[380px] flex items-center justify-center">
                 {[
@@ -827,7 +829,7 @@ export default function Home() {
                     >
                       {/* Back Face of Card */}
                       <div 
-                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[20px] border border-gold/30 bg-gradient-to-b from-[#242228] to-[#111315] p-3 shadow-[0_12px_28px_rgba(0,0,0,0.8)] hover:border-gold/60 transition-colors duration-300 select-none"
+                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[20px] border border-gold/30 bg-gradient-to-b from-[#151B26] to-[#0D1117] p-3 shadow-[0_12px_28px_rgba(0,0,0,0.8)] hover:border-gold/60 transition-colors duration-300 select-none"
                         style={{
                           backfaceVisibility: "hidden",
                           WebkitBackfaceVisibility: "hidden",
@@ -851,7 +853,7 @@ export default function Home() {
 
                       {/* Front Face of Card */}
                       <div 
-                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[20px] border border-gold/50 bg-gradient-to-b from-[#242228] via-[#1B1A1F] to-[#6A1E2F]/40 p-4 shadow-[0_15px_35px_rgba(212,175,55,0.15)] text-center select-none"
+                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[20px] border border-gold/50 bg-gradient-to-b from-[#0D1117] via-[#151B26] to-[#0D1117]/40 p-4 shadow-[0_15px_35px_rgba(216,182,122,0.15)] text-center select-none"
                         style={{
                           transform: "rotateY(180deg)",
                           backfaceVisibility: "hidden",
@@ -904,7 +906,7 @@ export default function Home() {
               </p>
 
               {/* Cycling Quote Display Box */}
-              <div className="h-16 flex items-center rounded-xl border border-gold/15 bg-[#1B1A1F]/60 px-5 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)]">
+              <div className="h-16 flex items-center rounded-xl border border-gold/15 bg-[#0D1117]/60 px-5 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)]">
                 <div className="flex items-center gap-3 w-full">
                   <Gem className="h-4.5 w-4.5 text-gold shrink-0 animate-pulse" />
                   <AnimatePresence mode="wait">
@@ -926,7 +928,7 @@ export default function Home() {
               <div className="pt-2">
                 <Link 
                   to="/booking" 
-                  className="group relative inline-flex items-center justify-center gap-2.5 rounded-full px-6 py-3 text-[11px] font-bold uppercase tracking-widest btn-premium-glow shadow-[0_0_15px_rgba(212,175,55,0.12)] hover:shadow-[0_0_25px_rgba(212,175,55,0.25)] transition-all cursor-pointer overflow-hidden"
+                  className="group relative inline-flex items-center justify-center gap-2.5 rounded-full px-6 py-3 text-[11px] font-bold uppercase tracking-widest btn-premium-glow shadow-[0_0_15px_rgba(216,182,122,0.12)] hover:shadow-[0_0_25px_rgba(216,182,122,0.25)] transition-all cursor-pointer overflow-hidden"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   Discover Your Spread
@@ -950,10 +952,10 @@ export default function Home() {
               className="relative mx-auto w-full max-w-md aspect-[4/5] group/about"
             >
               {/* Ambient Cosmic Aura Backlight */}
-              <div className="absolute -inset-4 bg-gradient-to-tr from-purple/40 via-purple-deep/30 to-gold/25 rounded-[2.5rem] blur-3xl opacity-60 group-hover/about:opacity-85 transition-opacity duration-700 pointer-events-none" />
+              <div className="absolute -inset-4 bg-gradient-to-tr from-sapphire/25 via-[#0D1117]/20 to-gold/20 rounded-[2.5rem] blur-3xl opacity-60 group-hover/about:opacity-85 transition-opacity duration-700 pointer-events-none" />
 
-              {/* Slow Spinning Gold-Purple Halo */}
-              <div className="absolute -inset-2 rounded-[2.5rem] bg-gradient-to-tr from-gold via-purple/50 to-gold/30 opacity-40 blur-md animate-spin-slow group-hover/about:opacity-60 transition-all duration-700 -z-10" />
+              {/* Slow Spinning Gold-Sapphire Halo */}
+              <div className="absolute -inset-2 rounded-[2.5rem] bg-gradient-to-tr from-gold via-sapphire/25 to-gold/20 opacity-40 blur-md animate-spin-slow group-hover/about:opacity-60 transition-all duration-700 -z-10" />
 
               {/* Glassmorphism Border Frame */}
               <div className="relative w-full h-full rounded-3xl overflow-hidden border border-gold/30 shadow-[0_20px_50px_rgba(0,0,0,0.7)] bg-background/20 backdrop-blur-sm transition-all duration-700 group-hover/about:border-gold/55 group-hover/about:shadow-gold/20">
@@ -967,7 +969,7 @@ export default function Home() {
                 />
 
                 {/* Elegant Dark Vignette Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-purple-deep/10 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-sapphire/8 pointer-events-none" />
                 
                 {/* Subtle Sparkle Overlays */}
                 <div className="absolute top-4 right-4 text-gold/30 animate-pulse">
@@ -1000,7 +1002,7 @@ export default function Home() {
       <section className="relative py-24 overflow-hidden border-t border-gold/10 bg-background/30">
         {/* Subtle decorative orbits/lights in bg */}
         <div className="pointer-events-none absolute left-10 top-1/2 w-80 h-80 rounded-full border border-gold/5 blur-[2px] -z-10" />
-        <div className="pointer-events-none absolute right-10 bottom-10 w-96 h-96 rounded-full border border-[#6A1E2F]/5 blur-[2px] -z-10" />
+        <div className="pointer-events-none absolute right-10 bottom-10 w-96 h-96 rounded-full border border-sapphire/5 blur-[2px] -z-10" />
 
         <div className="relative mx-auto max-w-6xl px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -1013,10 +1015,10 @@ export default function Home() {
                   style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}
                 >
                   {/* Subtle Glow Aura */}
-                  <div className="absolute -inset-4 bg-gradient-to-tr from-[#6A1E2F]/25 via-transparent to-[#D4AF37]/15 rounded-[2.5rem] blur-3xl opacity-60 group-hover/why-img:opacity-85 transition-opacity duration-700 pointer-events-none" />
+                  <div className="absolute -inset-4 bg-gradient-to-tr from-sapphire/25 via-transparent to-gold/15 rounded-[2.5rem] blur-3xl opacity-60 group-hover/why-img:opacity-85 transition-opacity duration-700 pointer-events-none" />
 
                   {/* Glassmorphic Frame with Luxury Corners, Border, Glow, Reflection */}
-                  <div className="relative w-full h-full rounded-[2rem] overflow-hidden border border-[#D4AF37]/35 shadow-[0_20px_50px_rgba(0,0,0,0.85)] hover:shadow-[0_0_35px_rgba(212,175,55,0.25)] bg-[#1B1A1F]/30 backdrop-blur-sm transition-all duration-700 group-hover/why-img:border-[#D4AF37]/60">
+                  <div className="relative w-full h-full rounded-[2rem] overflow-hidden border border-gold/35 shadow-[0_20px_50px_rgba(0,0,0,0.85)] hover:shadow-[0_0_35px_rgba(216,182,122,0.25)] bg-[#0D1117]/30 backdrop-blur-sm transition-all duration-700 group-hover/why-img:border-gold/60">
                     <img
                       src={whyChooseUsPremiumImg}
                       alt="Sacred Tarot Table Setting"
@@ -1063,9 +1065,11 @@ export default function Home() {
                   <Reveal key={idx} delay={idx * 0.05}>
                     <motion.div
                       whileHover={{ y: -3, scale: 1.01 }}
-                      className="group relative rounded-xl border border-gold/10 bg-[#242228]/35 p-5 transition-all duration-500 hover:border-gold/45 hover:bg-[#242228]/70 hover:shadow-[0_10px_25px_rgba(212,175,55,0.06)] flex gap-4 h-full backdrop-blur-md"
+                      className={`group relative rounded-xl p-5 transition-all duration-500 hover:scale-[1.02] flex gap-4 h-full ${
+                        idx % 3 === 0 ? "card-gold/5" : (idx % 3 === 1 ? "card-sapphire/5" : "card-glass")
+                      }`}
                     >
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#111315]/90 border border-gold/15 text-gold/80 group-hover:text-gold group-hover:border-gold/45 group-hover:scale-105 transition-all duration-500">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#0D1117]/90 border border-gold/15 text-gold/80 group-hover:text-gold group-hover:border-gold/45 group-hover:scale-105 transition-all duration-500">
                         <f.icon className="h-4 w-4" />
                       </div>
                       <div className="flex flex-col">
@@ -1103,7 +1107,9 @@ export default function Home() {
                   onClick={() => {
                     setActiveGalleryVideo(vid);
                   }}
-                  className="group relative rounded-2xl overflow-hidden border border-gold/15 bg-[#242228]/45 cursor-pointer shadow-lg transition-all duration-500 hover:border-gold/50 hover:shadow-[0_0_30px_rgba(212,175,55,0.25)] hover:-translate-y-2 flex flex-col h-full animate-float-slow"
+                  className={`group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:scale-[1.02] hover:-translate-y-2 flex flex-col h-full animate-float-slow ${
+                    idx % 3 === 0 ? "card-gold/5" : (idx % 3 === 1 ? "card-sapphire/5" : "card-glass")
+                  }`}
                   style={{ animationDelay: `${idx * 1.5}s` }}
                 >
                   {/* Decorative corner highlights */}
@@ -1168,11 +1174,10 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-
         </div>
       </section>
 
-      {/* VIDEO + TESTIMONIALS */}
+              {/* VIDEO + TESTIMONIALS */}
       <section className="relative py-20">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 md:px-8 items-center">
           <Reveal>
@@ -1181,11 +1186,11 @@ export default function Home() {
               transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
               className="relative w-full aspect-video md:aspect-[4/3] rounded-2xl group/testimonial-img"
             >
-              {/* Glowing Purple Aura */}
-              <div className="absolute -inset-4 bg-gradient-to-tr from-purple/30 to-gold/20 rounded-3xl blur-2xl opacity-60 group-hover/testimonial-img:opacity-85 transition-opacity duration-700 pointer-events-none" />
+              {/* Glowing Sapphire Aura */}
+              <div className="absolute -inset-4 bg-gradient-to-tr from-sapphire/20 to-gold/20 rounded-3xl blur-2xl opacity-60 group-hover/testimonial-img:opacity-85 transition-opacity duration-700 pointer-events-none" />
 
               {/* Luxury Frame */}
-              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-gold/35 shadow-[0_15px_40px_rgba(0,0,0,0.6)] bg-background/35 backdrop-blur-md transition-all duration-700 group-hover/testimonial-img:border-gold/60 group-hover/testimonial-img:shadow-gold/25">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-gold/35 shadow-[0_15px_40px_rgba(0,0,0,0.6)] bg-[#0D1117]/35 backdrop-blur-md transition-all duration-700 group-hover/testimonial-img:border-gold/60 group-hover/testimonial-img:shadow-gold/25">
                 <img
                   src={testimonialClientImg}
                   alt="Spiritual Yatri Testimonial Serenity"
@@ -1194,7 +1199,7 @@ export default function Home() {
                 />
                 
                 {/* Vignette Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/15 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0D1117]/90 via-[#0D1117]/15 to-transparent pointer-events-none" />
 
                 {/* Corner highlights */}
                 <div className="absolute top-4 left-4 w-3.5 h-3.5 border-t border-l border-gold/45 pointer-events-none" />
@@ -1229,7 +1234,7 @@ export default function Home() {
               >
                 {testimonials.map((t) => (
                   <SwiperSlide key={t.name}>
-                    <BentoCard className="glass rounded-2xl p-7 pb-12 bg-black/10">
+                    <BentoCard className="card-sapphire/5 rounded-2xl p-7 pb-12">
                       <Quote className="h-7 w-7 text-gold/60" />
                       <p className="mt-4 text-base leading-relaxed text-foreground/90">"{t.text}"</p>
                       <div className="mt-5 border-t border-gold/10 pt-4">
@@ -1246,10 +1251,10 @@ export default function Home() {
       </section>
 
       {/* CTA Full-Width Strip */}
-      <section className="relative w-full border-t border-b border-gold/15 bg-gradient-to-r from-black/80 via-[#1B1A1F]/95 to-black/80 py-16 md:py-20 overflow-hidden">
+      <section className="relative w-full border-t border-b border-gold/15 bg-gradient-to-r from-[#0D1117]/90 via-[#151B26]/95 to-[#0D1117]/90 py-16 md:py-20 overflow-hidden">
         {/* Background ambient spotlight glows */}
-        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple/8 blur-[110px] rounded-full -z-10 animate-pulse" />
-        <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gold/4 blur-[90px] rounded-full -z-10 animate-pulse" />
+        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-sapphire/8 blur-[110px] rounded-full -z-10 animate-pulse" />
+        <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gold/3 blur-[90px] rounded-full -z-10 animate-pulse" />
 
         {/* Rotating orbit rings layer (z-0) */}
         <div className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 opacity-[0.04] flex items-center justify-center z-0 select-none scale-125">
@@ -1264,7 +1269,7 @@ export default function Home() {
         </div>
 
         <div className="mx-auto max-w-7xl px-6 md:px-8 relative z-10">
-          <BentoCard className="w-full glass-strong p-8 md:p-12 bg-black/40 backdrop-blur-md" glowColor="rgba(212, 175, 55, 0.15)">
+          <BentoCard className="w-full card-gold/5 p-8 md:p-12 bg-gradient-to-b from-[#151B26] to-[#0D1117]" glowColor="rgba(216, 182, 122, 0.15)">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
               
               {/* LEFT SIDE: Heading & Subtitle */}
@@ -1285,7 +1290,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shrink-0 w-full sm:w-auto">
                 <Link 
                   to="/booking" 
-                  className="w-full sm:w-auto group inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 text-xs font-bold uppercase tracking-widest btn-premium-glow shadow-[0_0_20px_rgba(212,175,55,0.15)] hover:shadow-[0_0_30px_rgba(212,175,55,0.35)] transition-all cursor-pointer text-center"
+                  className="w-full sm:w-auto group inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 text-xs font-bold uppercase tracking-widest btn-premium-glow shadow-[0_0_20px_rgba(216,182,122,0.15)] hover:shadow-[0_0_30px_rgba(216,182,122,0.35)] transition-all cursor-pointer text-center"
                 >
                   Book A Consultation 
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -1319,7 +1324,7 @@ export default function Home() {
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 250 }}
-              className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-gold/30 bg-[#1B1A1F]/95 p-1 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)]"
+              className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-gold/30 bg-[#0D1117]/98 p-1 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)]"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Border corner accents */}
@@ -1329,7 +1334,7 @@ export default function Home() {
               <div className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-gold/40 pointer-events-none z-10" />
 
               {/* Header bar */}
-              <div className="flex items-center justify-between px-6 py-4 border-b border-gold/10 bg-[#111315]/90">
+              <div className="flex items-center justify-between px-6 py-4 border-b border-gold/10 bg-[#0D1117]/90">
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-gold animate-pulse" />
                   <h3 className="font-display text-xs md:text-sm font-semibold tracking-wider text-foreground uppercase">
@@ -1361,14 +1366,14 @@ export default function Home() {
               </div>
 
               {/* Control bar */}
-              <div className="flex flex-col gap-3 px-6 py-4 bg-[#111315]/95 border-t border-gold/10">
+              <div className="flex flex-col gap-3 px-6 py-4 bg-[#0D1117]/95 border-t border-gold/10">
                 {/* Progress bar */}
                 <div 
                   onClick={handleGalleryProgressBarClick}
                   className="group relative h-1.5 w-full cursor-pointer rounded-full bg-white/10 transition-all hover:h-2"
                 >
                   <div 
-                    className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-[#D4AF37] to-[#E6C77A]"
+                    className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-[#D8B67A] to-[#E8DCC8]"
                     style={{ width: `${galleryProgress}%` }}
                   />
                   {/* Scrubber knob */}
@@ -1383,7 +1388,7 @@ export default function Home() {
                   <div className="flex items-center gap-4">
                     <button
                       onClick={toggleGalleryPlay}
-                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#242228] border border-gold/25 hover:border-gold/65 text-gold transition-all duration-300 cursor-pointer"
+                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1B2230] border border-gold/25 hover:border-gold/65 text-gold transition-all duration-300 cursor-pointer"
                     >
                       {galleryVideoPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5 pl-0.5" />}
                     </button>
@@ -1402,7 +1407,7 @@ export default function Home() {
                   {/* Right controls: Mute/Unmute */}
                   <button
                     onClick={toggleGalleryMute}
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-[#242228] border border-gold/25 hover:border-gold/65 text-gold transition-all duration-300 cursor-pointer"
+                    className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1B2230] border border-gold/25 hover:border-gold/65 text-gold transition-all duration-300 cursor-pointer"
                   >
                     {galleryVideoMuted ? <VolumeX className="h-3.5 w-3.5" /> : <Volume2 className="h-3.5 w-3.5" />}
                   </button>

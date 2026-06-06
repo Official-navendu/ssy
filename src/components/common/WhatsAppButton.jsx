@@ -60,7 +60,7 @@ export function WhatsAppButton() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 15, scale: 0.95 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-4 w-[290px] sm:w-[320px] rounded-2xl glass border border-gold/30 bg-[#242228]/95 p-4 shadow-[0_15px_45px_rgba(0,0,0,0.85)] flex flex-col z-[91]"
+            className="mb-4 w-[290px] sm:w-[320px] rounded-2xl glass border border-gold/30 bg-[#151B26]/95 p-4 shadow-[0_15px_45px_rgba(0,0,0,0.85)] flex flex-col z-[91]"
           >
             {/* Header with Title and Exit */}
             <div className="flex justify-between items-start border-b border-gold/15 pb-3">
@@ -86,7 +86,7 @@ export function WhatsAppButton() {
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-1 rounded-full border border-gold/15 bg-[#111315]/80 hover:bg-gold/15 text-gold/80 hover:text-gold transition-all duration-300 cursor-pointer"
+                className="p-1 rounded-full border border-gold/15 bg-[#0D1117]/80 hover:bg-gold/15 text-gold/80 hover:text-gold transition-all duration-300 cursor-pointer"
                 aria-label="Close Whatsapp options"
               >
                 <X className="h-3.5 w-3.5" />
@@ -101,9 +101,9 @@ export function WhatsAppButton() {
                   <button
                     key={idx}
                     onClick={() => handleOptionClick(opt.message)}
-                    className="flex items-center gap-3 rounded-xl border border-gold/15 bg-[#111315]/50 px-3 py-2.5 text-left transition-all duration-300 hover:border-gold/45 hover:bg-gold/5 group hover:scale-[1.02] cursor-pointer"
+                    className="flex items-center gap-3 rounded-xl border border-gold/15 bg-[#151B26]/50 px-3 py-2.5 text-left transition-all duration-300 hover:border-gold/45 hover:bg-gold/5 group hover:scale-[1.02] cursor-pointer"
                   >
-                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#242228] border border-gold/10 text-gold/80 group-hover:text-gold transition-colors">
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#1B2230] border border-gold/10 text-gold/80 group-hover:text-gold transition-colors">
                       <IconComp className="h-4 w-4" />
                     </div>
                     <div className="flex flex-col overflow-hidden">
@@ -127,7 +127,7 @@ export function WhatsAppButton() {
         onClick={() => setIsOpen(!isOpen)}
         animate={{ y: [0, -5, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-        className="flex items-center gap-3 rounded-full glass border border-emerald-500/35 bg-gradient-to-br from-[#242228]/95 to-[#111315]/98 px-4 py-2.5 shadow-[0_8px_32px_rgba(0,0,0,0.65)] hover:border-emerald-500/75 hover:shadow-[0_0_30px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-pointer select-none group"
+        className="flex items-center gap-3 rounded-full glass border border-emerald-500/35 bg-gradient-to-br from-[#151B26]/95 to-[#0D1117]/98 px-4 py-2.5 shadow-[0_8px_32px_rgba(0,0,0,0.65)] hover:border-emerald-500/75 hover:shadow-[0_0_30px_rgba(16,185,129,0.3)] transition-all duration-300 cursor-pointer select-none group"
       >
         {/* WhatsApp Icon with Status Dot */}
         <div className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-400 group-hover:scale-105 transition-transform duration-300">

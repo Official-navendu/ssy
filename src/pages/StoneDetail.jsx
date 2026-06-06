@@ -212,24 +212,24 @@ export default function StoneDetail() {
         {/* Detailed Healing Grid */}
         <div className="grid gap-6 md:grid-cols-3 mt-16">
           
-          <div className="glass rounded-2xl p-7 border border-gold/10 hover:border-gold/35 transition-all">
-            <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-5 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+          <div className="card-plum rounded-2xl p-7 hover:border-gold/35 transition-all">
+            <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-5 shadow-[0_0_15px_rgba(216,182,122,0.2)]">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <h3 className="font-display text-xl text-gradient-gold mb-3">Physical Rejuvenation</h3>
             <p className="text-sm leading-relaxed text-muted-foreground/80">{stone.healing.physical}</p>
           </div>
 
-          <div className="glass rounded-2xl p-7 border border-gold/10 hover:border-gold/35 transition-all">
-            <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-5 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+          <div className="card-violet rounded-2xl p-7 hover:border-gold/35 transition-all">
+            <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-5 shadow-[0_0_15px_rgba(216,182,122,0.2)]">
               <Heart className="w-5 h-5" />
             </div>
             <h3 className="font-display text-xl text-gradient-gold mb-3">Emotional Calming</h3>
             <p className="text-sm leading-relaxed text-muted-foreground/80">{stone.healing.emotional}</p>
           </div>
 
-          <div className="glass rounded-2xl p-7 border border-gold/10 hover:border-gold/35 transition-all">
-            <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-5 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+          <div className="card-glass rounded-2xl p-7 hover:border-gold/35 transition-all">
+            <div className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-5 shadow-[0_0_15px_rgba(216,182,122,0.2)]">
               <Zap className="w-5 h-5" />
             </div>
             <h3 className="font-display text-xl text-gradient-gold mb-3">Spiritual Activation</h3>
@@ -252,7 +252,7 @@ export default function StoneDetail() {
             />
 
             <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center gap-4">
-              <Gem className="w-10 h-10 text-gold mb-2 shadow-[0_0_20px_rgba(212,175,55,0.4)] animate-bounce" />
+              <Gem className="w-10 h-10 text-gold mb-2 shadow-[0_0_20px_rgba(216,182,122,0.4)] animate-bounce" />
               <h2 className="font-display text-3xl md:text-4xl text-gradient-gold leading-tight">
                 Align Your Aura With {stone.name}
               </h2>

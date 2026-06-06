@@ -708,12 +708,12 @@ export default function Courses() {
         {/* Dynamic spinning coordinate overlays */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 z-[5]">
           <div className="h-[550px] w-[550px] rounded-full border border-gold/5 animate-spin-slow" />
-          <div className="absolute inset-16 rounded-full border border-purple/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
+          <div className="absolute inset-16 rounded-full border border-lavender/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           {/* Spotlight Backlights */}
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-purple/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-lavender/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px] bg-gold/5 blur-[90px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
 
           <motion.span
@@ -755,7 +755,7 @@ export default function Courses() {
                 onClick={() => setSelectedCategory(tab.id)}
                 className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                   selectedCategory === tab.id
-                    ? "bg-gold text-background shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                    ? "bg-gold text-background shadow-[0_0_15px_rgba(216,182,122,0.4)]"
                     : "border border-gold/20 hover:border-gold/55 text-foreground hover:bg-gold/5"
                 }`}
               >
@@ -786,13 +786,15 @@ export default function Courses() {
               layout
               className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
             >
-              {filteredCourses.map((course) => (
+              {filteredCourses.map((course, idx) => (
                 <Reveal key={course.id} delay={0.05}>
                   <motion.div
                     layout
                     className="h-full"
                   >
-                    <BentoCard className="course-card-premium group relative h-full rounded-2xl glass p-5 bg-card/5 flex flex-col justify-between">
+                    <BentoCard className={`course-card-premium group relative h-full rounded-2xl p-5 flex flex-col justify-between ${
+                      idx % 3 === 0 ? 'card-plum' : idx % 3 === 1 ? 'card-violet' : 'card-glass'
+                    }`}>
                       {/* Inner glowing aura */}
                       <div className={`absolute -inset-2 bg-gradient-to-tr ${course.auraColor} rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none -z-10`} />
 
@@ -809,7 +811,7 @@ export default function Courses() {
                           
                           {/* Certification Label */}
                           {course.isCertification && (
-                            <div className="absolute top-2.5 left-2.5 z-10 flex items-center gap-1 rounded-full border border-gold/40 bg-black/60 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider text-gold shadow-[0_0_10px_rgba(212,175,55,0.25)] animate-pulse">
+                            <div className="absolute top-2.5 left-2.5 z-10 flex items-center gap-1 rounded-full border border-gold/40 bg-black/60 px-2.5 py-1 text-[9px] font-bold uppercase tracking-wider text-gold shadow-[0_0_10px_rgba(216,182,122,0.25)] animate-pulse">
                               <Award className="h-3 w-3 text-gold" /> Certified
                             </div>
                           )}
@@ -850,7 +852,7 @@ export default function Courses() {
                           href={getWhatsAppUrl(course.title)}
                           target="_blank"
                           rel="noreferrer"
-                          className="group rounded-full btn-gold px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_15px_rgba(212,175,55,0.1)] hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all"
+                          className="group rounded-full btn-gold px-4 py-2.5 text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_15px_rgba(216,182,122,0.1)] hover:shadow-[0_0_20px_rgba(216,182,122,0.3)] transition-all"
                         >
                           Enroll Now <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                         </a>
@@ -910,7 +912,7 @@ export default function Courses() {
 
               <div className="relative">
                 {/* Header row */}
-                <div className="flex flex-wrap gap-2.5 items-center">
+                <div className="flex flex-wrap gap-2.5 items-center pr-12 md:pr-0">
                   <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/20 bg-gold/5 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.2em] text-gold w-fit">
                     <Clock className="h-3.5 w-3.5 text-gold" /> {activeCourse.duration} Program
                   </div>
@@ -918,7 +920,7 @@ export default function Courses() {
                     CAD ${activeCourse.price} Tuition
                   </div>
                   {activeCourse.isCertification && (
-                    <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/20 bg-gold/5 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.2em] text-gold w-fit shadow-[0_0_10px_rgba(212,175,55,0.15)] animate-pulse">
+                    <div className="inline-flex items-center gap-1.5 rounded-full border border-gold/20 bg-gold/5 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.2em] text-gold w-fit shadow-[0_0_10px_rgba(216,182,122,0.15)] animate-pulse">
                       <GraduationCap className="h-3.5 w-3.5 text-gold" /> Certified Curriculum
                     </div>
                   )}
@@ -962,7 +964,7 @@ export default function Courses() {
                   <div className="mt-3 grid gap-3 grid-cols-1 sm:grid-cols-2">
                     {activeCourse.modules.map((m, idx) => (
                       <div key={idx} className="flex gap-3 items-center p-3 rounded-xl border border-gold/10 bg-black/30 hover:border-gold/25 transition-all duration-300">
-                        <div className="h-8 w-8 rounded-full border border-gold/30 flex items-center justify-center font-display text-xs text-gold font-bold shadow-[0_0_8px_rgba(212,175,55,0.15)] shrink-0">
+                        <div className="h-8 w-8 rounded-full border border-gold/30 flex items-center justify-center font-display text-xs text-gold font-bold shadow-[0_0_8px_rgba(216,182,122,0.15)] shrink-0">
                           {m.num}
                         </div>
                         <span className="text-[11px] md:text-xs text-foreground/90 font-light tracking-wide leading-tight">{m.name}</span>
@@ -1129,7 +1131,7 @@ export default function Courses() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full max-w-3xl overflow-hidden rounded-3xl border-4 border-double border-gold p-6 md:p-12 shadow-[0_0_80px_rgba(212,175,55,0.25)] bg-black"
+              className="relative w-full max-w-3xl overflow-hidden rounded-3xl border-4 border-double border-gold p-4 md:p-12 shadow-[0_0_80px_rgba(216,182,122,0.25)] bg-black"
             >
               {/* Double corners */}
               <div className="absolute top-4 left-4 w-5 h-5 border-t-2 border-l-2 border-gold" />
@@ -1146,7 +1148,7 @@ export default function Courses() {
                 <X className="h-5 w-5" />
               </button>
 
-              <div className="relative z-10 border-2 border-gold/20 p-8 rounded-2xl flex flex-col items-center text-center">
+              <div className="relative z-10 border-2 border-gold/20 p-4 md:p-8 rounded-2xl flex flex-col items-center text-center">
                 {/* Internal Double corners */}
                 <div className="absolute top-3 left-3 w-4 h-4 border-t border-l border-gold/45" />
                 <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-gold/45" />
@@ -1159,17 +1161,17 @@ export default function Courses() {
                 </div>
 
                 <div className="text-[11px] uppercase tracking-[0.4em] text-gold font-bold">Shivani Spiritual Yatri Academy</div>
-                <h3 className="mt-4 font-display text-3xl md:text-5xl text-gradient-gold uppercase tracking-[0.2em] font-semibold border-b-2 border-gold/25 pb-2 px-12">
+                <h3 className="mt-4 font-display text-xl xs:text-2xl md:text-5xl text-gradient-gold uppercase tracking-[0.2em] font-semibold border-b-2 border-gold/25 pb-2 px-2 md:px-12">
                   Certificate of Attainment
                 </h3>
-                <p className="mt-5 text-[10px] md:text-[11px] uppercase tracking-widest text-muted-foreground/80 font-light">This certified credential is proudly conferred to</p>
+                <p className="mt-5 text-[9px] xs:text-[10px] md:text-xs uppercase tracking-widest text-muted-foreground/80 font-light">This certified credential is proudly conferred to</p>
                 
                 {/* Custom Cursive Name Display */}
-                <div className="mt-4 font-display italic text-gradient-gold text-3xl md:text-5xl tracking-wider font-semibold capitalize max-w-lg truncate px-4 pb-2">
+                <div className="mt-4 font-display italic text-gradient-gold text-2xl xs:text-3xl md:text-5xl tracking-wider font-semibold capitalize max-w-lg truncate px-4 pb-2">
                   {certName || "Jane Doe"}
                 </div>
                 
-                <p className="mt-4 text-[9px] md:text-[10px] uppercase tracking-widest text-muted-foreground/80 leading-relaxed font-light max-w-lg">
+                <p className="mt-4 text-[8px] xs:text-[9px] md:text-xs uppercase tracking-widest text-muted-foreground/80 leading-relaxed font-light max-w-lg">
                   having successfully finalized and satisfied all rigorous academic modules, attunements, and practitioner assessments in the specialized study of
                 </p>
                 

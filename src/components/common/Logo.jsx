@@ -10,8 +10,8 @@ export function Logo({ variant = "header", className = "" }) {
         {/* Breathing glowing aura behind logo */}
         <div className={`absolute inset-0 rounded-full blur-md opacity-40 transition-all duration-500 ${
           isFooter 
-            ? "bg-purple/15 group-hover:bg-purple/35 group-hover:scale-110" 
-            : "bg-purple/30 group-hover:bg-purple/50 group-hover:scale-110"
+            ? "bg-gold/10 group-hover:bg-gold/25 group-hover:scale-110" 
+            : "bg-gold/15 group-hover:bg-gold/30 group-hover:scale-110"
         } pointer-events-none`} />
         
         <svg 
@@ -23,13 +23,13 @@ export function Logo({ variant = "header", className = "" }) {
           {/* Definitions for Gradients and Shadows */}
           <defs>
             <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#F3E7C4" />
+              <stop offset="0%" stopColor="#F5F1E8" />
               <stop offset="50%" stopColor="#D4AF37" />
-              <stop offset="100%" stopColor="#AA7C11" />
+              <stop offset="100%" stopColor="#C7A85A" />
             </linearGradient>
-            <linearGradient id="logoPurple" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#C084FC" />
-              <stop offset="100%" stopColor="#7E22CE" />
+            <linearGradient id="logoSapphire" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#163B73" />
+              <stop offset="100%" stopColor="#0D1117" />
             </linearGradient>
             <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
               <feGaussianBlur stdDeviation="2.5" result="blur" />
@@ -92,7 +92,7 @@ export function Logo({ variant = "header", className = "" }) {
           {/* Lotus Petal Base (Vedic / Spiritual Awakening) */}
           <path 
             d="M36 68C36 68 40 60 50 60C60 60 64 68 64 68C64 68 58 71 50 71C42 71 36 68 36 68Z" 
-            fill="url(#logoPurple)" 
+            fill="url(#logoSapphire)" 
             className="opacity-75"
           />
           <path 

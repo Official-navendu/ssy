@@ -65,12 +65,12 @@ export default function Contact() {
         {/* Dynamic spinning coordinate overlays */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 z-[5]">
           <div className="h-[550px] w-[550px] rounded-full border border-gold/5 animate-spin-slow" />
-          <div className="absolute inset-16 rounded-full border border-purple/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
+          <div className="absolute inset-16 rounded-full border border-lavender/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           {/* Spotlight Backlights */}
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-purple/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-lavender/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px] bg-gold/5 blur-[90px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
 
           <motion.span
@@ -113,10 +113,10 @@ export default function Contact() {
               <a href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer"
                  className="group block relative overflow-hidden rounded-2xl glass p-6 transition-all duration-500 hover:-translate-y-1 hover:border-gold/45 hover:shadow-[0_12px_30px_rgba(212,175,55,0.08)] bg-card/10">
                 {/* Micro-light element inside cards */}
-                <div className="absolute -top-12 -right-12 h-24 w-24 rounded-full bg-purple/10 blur-xl opacity-40 group-hover:opacity-75 transition-opacity pointer-events-none" />
+                <div className="absolute -top-12 -right-12 h-24 w-24 rounded-full bg-lavender/10 blur-xl opacity-40 group-hover:opacity-75 transition-opacity pointer-events-none" />
                 
                 <div className="flex items-center gap-4">
-                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-gold/25 to-purple/25 text-gold border border-gold/20 shadow-[0_0_15px_rgba(212,175,55,0.1)] transition-transform duration-500 group-hover:scale-110">
+                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-gold/25 to-lavender/25 text-gold border border-gold/20 shadow-[0_0_15px_rgba(216,182,122,0.1)] transition-transform duration-500 group-hover:scale-110">
                     <c.icon className="h-5 w-5" />
                   </div>
                   <div>
@@ -137,7 +137,7 @@ export default function Contact() {
           <Reveal>
             <div className="group relative overflow-hidden rounded-3xl glass p-8 md:p-10 border border-gold/15 shadow-[0_20px_50px_rgba(0,0,0,0.6)] bg-card/10 flex flex-col justify-between h-full">
               {/* Soft purple-gold background highlights */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple/5 via-transparent to-gold/5 opacity-40 -z-10" />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-lavender/5 via-transparent to-gold/5 opacity-40 -z-10" />
               
               <div>
                 <h2 className="font-display text-3xl md:text-4xl text-gradient-gold">Send a Message</h2>
@@ -194,9 +194,9 @@ export default function Contact() {
 
           {/* Premium Dark Location Map Card */}
           <Reveal delay={0.1}>
-            <div className="group relative overflow-hidden rounded-3xl glass p-2 transition-all duration-500 hover:border-gold/30 hover:shadow-[0_15px_45px_rgba(212,175,55,0.08)] bg-card/10 flex flex-col justify-between h-full">
+            <div className="group relative overflow-hidden rounded-3xl glass p-2 transition-all duration-500 hover:border-gold/30 hover:shadow-[0_15px_45px_rgba(216,182,122,0.08)] bg-card/10 flex flex-col justify-between h-full">
               {/* Backlight Glow inside Card */}
-              <div className="absolute -inset-4 bg-gradient-to-tr from-purple/10 to-gold/5 rounded-3xl blur-3xl opacity-60 group-hover:opacity-85 transition-opacity duration-700 pointer-events-none" />
+              <div className="absolute -inset-4 bg-gradient-to-tr from-lavender/10 to-gold/5 rounded-3xl blur-3xl opacity-60 group-hover:opacity-85 transition-opacity duration-700 pointer-events-none" />
               
               <div className="relative z-10 h-full flex flex-col justify-between">
                 {/* Embedded Iframe Container */}
@@ -224,7 +224,7 @@ export default function Contact() {
                 {/* Visit info footer inside card */}
                 <div className="p-4 pt-1">
                   <div className="flex items-start gap-4">
-                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold/25 to-purple/25 text-gold border border-gold/20 shrink-0 shadow-[0_0_15px_rgba(212,175,55,0.15)] animate-pulse">
+                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold/25 to-lavender/25 text-gold border border-gold/20 shrink-0 shadow-[0_0_15px_rgba(216,182,122,0.15)] animate-pulse">
                       <MapPin className="h-5.5 w-5.5" />
                     </div>
                     <div>
@@ -253,10 +253,10 @@ export default function Contact() {
                   className="relative w-full max-w-[340px] lg:max-w-none group/faq-img"
                 >
                   {/* Purple aura glow behind illustration */}
-                  <div className="absolute -inset-4 bg-gradient-to-tr from-purple/35 to-gold/20 rounded-[2rem] blur-3xl opacity-60 group-hover/faq-img:opacity-85 transition-opacity duration-700 pointer-events-none" />
+                  <div className="absolute -inset-4 bg-gradient-to-tr from-lavender/35 to-gold/20 rounded-[2rem] blur-3xl opacity-60 group-hover/faq-img:opacity-85 transition-opacity duration-700 pointer-events-none" />
 
                   {/* Gold-purple rotating orbit border frame */}
-                  <div className="absolute -inset-2.5 rounded-[2rem] bg-gradient-to-br from-gold/30 via-purple/20 to-gold/15 blur-sm opacity-40 animate-spin-slow group-hover/faq-img:opacity-60 transition-all duration-700 -z-10" />
+                  <div className="absolute -inset-2.5 rounded-[2rem] bg-gradient-to-br from-gold/30 via-lavender/20 to-gold/15 blur-sm opacity-40 animate-spin-slow group-hover/faq-img:opacity-60 transition-all duration-700 -z-10" />
 
                   {/* Elegant Glass Border Frame */}
                   <div className="relative aspect-square w-full rounded-2xl overflow-hidden border border-gold/20 shadow-[0_15px_35px_rgba(0,0,0,0.55)] bg-background/25 backdrop-blur-md transition-all duration-700 group-hover/faq-img:border-gold/45 group-hover/faq-img:shadow-gold/15">
@@ -268,7 +268,7 @@ export default function Contact() {
                     />
 
                     {/* Dark Vignette Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-purple-deep/10 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-[#242032]/10 pointer-events-none" />
                     
                     {/* Gold Corner Highlights */}
                     <div className="absolute top-4 left-4 w-3.5 h-3.5 border-t border-l border-gold/45 pointer-events-none" />
@@ -363,7 +363,7 @@ export default function Contact() {
         )}
       </AnimatePresence>
 
-      <style>{`.input{width:100%;border:1px solid rgba(212,175,55,0.18);background:rgba(255,255,255,0.04);border-radius:12px;padding:11px 14px;font-size:14px;color:inherit;outline:none;transition:all .25s ease-in-out}.input:focus{border-color:#D4AF37;background:rgba(212,175,55,0.04);box-shadow:0 0 10px rgba(212,175,55,0.15)}`}</style>
+      <style>{`.input{width:100%;border:1px solid rgba(216,182,122,0.18);background:rgba(255,255,255,0.04);border-radius:12px;padding:11px 14px;font-size:14px;color:inherit;outline:none;transition:all .25s ease-in-out}.input:focus{border-color:#D8B67A;background:rgba(216,182,122,0.04);box-shadow:0 0 10px rgba(216,182,122,0.15)}`}</style>
     </>
   );
 }

@@ -407,11 +407,11 @@ export default function Services() {
                 stiffness: 75, 
                 damping: 20 
               }}
-              className="w-28 h-40 border border-[#d4af37]/30 rounded-[22px] bg-gradient-to-b from-[#242228]/50 to-[#111315]/70 backdrop-blur-xl p-1.5 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),_0_0_20px_rgba(212,175,55,0.12)] hover:border-[#d4af37]/60 transition-colors duration-300"
+              className="w-28 h-40 border border-gold/30 rounded-[22px] bg-gradient-to-b from-card/50 to-background/70 backdrop-blur-xl p-1.5 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),_0_0_20px_rgba(216,182,122,0.12)] hover:border-gold/60 transition-colors duration-300"
               style={{ transformStyle: "preserve-3d", perspective: 1000 }}
             >
-              <div className="w-full h-full border border-[#d4af37]/15 rounded-[16px] flex items-center justify-center bg-[#111315]/25">
-                <Moon className="h-6 w-6 text-[#E6C77A]/40" />
+              <div className="w-full h-full border border-gold/15 rounded-[16px] flex items-center justify-center bg-background/25">
+                <Moon className="h-6 w-6 text-gold-soft/40" />
               </div>
             </motion.div>
           </motion.div>
@@ -441,11 +441,11 @@ export default function Services() {
                 stiffness: 75, 
                 damping: 20 
               }}
-              className="w-28 h-40 border border-[#d4af37]/30 rounded-[22px] bg-gradient-to-b from-[#242228]/50 to-[#111315]/70 backdrop-blur-xl p-1.5 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),_0_0_20px_rgba(212,175,55,0.12)] hover:border-[#d4af37]/60 transition-colors duration-300"
+              className="w-28 h-40 border border-gold/30 rounded-[22px] bg-gradient-to-b from-card/50 to-background/70 backdrop-blur-xl p-1.5 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),_0_0_20px_rgba(216,182,122,0.12)] hover:border-gold/60 transition-colors duration-300"
               style={{ transformStyle: "preserve-3d", perspective: 1000 }}
             >
-              <div className="w-full h-full border border-[#d4af37]/15 rounded-[16px] flex items-center justify-center bg-[#111315]/25">
-                <Gem className="h-6 w-6 text-[#E6C77A]/40" />
+              <div className="w-full h-full border border-gold/15 rounded-[16px] flex items-center justify-center bg-background/25">
+                <Gem className="h-6 w-6 text-gold-soft/40" />
               </div>
             </motion.div>
           </motion.div>
@@ -513,24 +513,26 @@ export default function Services() {
                       scale: 1.01
                     }}
                     transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                    className="relative group rounded-[28px] overflow-hidden border border-[#d4af37]/25 bg-[#242228]/95 backdrop-blur-md shadow-[0_15px_35px_rgba(0,0,0,0.85)] transition-all duration-500 hover:border-[#d4af37]/70 hover:shadow-[0_20px_45px_rgba(212,175,55,0.12)] flex flex-col h-full"
+                    className={`relative group rounded-[28px] overflow-hidden border transition-all duration-500 hover:border-gold/75 hover:shadow-[0_20px_45px_rgba(216,182,122,0.18)] flex flex-col h-full ${
+                      i % 3 === 0 ? "card-plum" : i % 3 === 1 ? "card-violet" : "card-glass"
+                    }`}
                     style={{ transformStyle: "preserve-3d", perspective: 1000 }}
                   >
                     {/* Subtle inner-card background glow (candle light effect) */}
                     <div className={`absolute -top-32 -left-32 h-64 w-64 rounded-full bg-gradient-to-br ${auraColor} blur-3xl opacity-10 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none`} />
-                    <div className="absolute -bottom-32 -right-32 h-64 w-64 rounded-full bg-gradient-to-tr from-[#d4af37]/5 to-transparent blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none" />
+                    <div className="absolute -bottom-32 -right-32 h-64 w-64 rounded-full bg-gradient-to-tr from-gold/5 to-transparent blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none" />
 
                     {/* Gold Corner Accents to simulate Tarot Card frames */}
-                    <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
-                    <div className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
-                    <div className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
-                    <div className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-[#d4af37]/30 group-hover:border-[#d4af37]/70 transition-colors duration-500 pointer-events-none z-20" />
+                    <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
+                    <div className="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
+                    <div className="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
+                    <div className="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-gold/30 group-hover:border-gold/70 transition-colors duration-500 pointer-events-none z-20" />
 
                     {/* Card Frame Inner Line */}
-                    <div className="absolute inset-1.5 rounded-[24px] border border-[#d4af37]/10 pointer-events-none z-10" />
+                    <div className="absolute inset-1.5 rounded-[24px] border border-gold/10 pointer-events-none z-10" />
 
                     {/* Image Header */}
-                    <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-[#d4af37]/15">
+                    <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-gold/15">
                       <img
                         src={imgPath}
                         alt={s.title}
@@ -539,12 +541,12 @@ export default function Services() {
                       />
                       
                       {/* Dark Vignette Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#242228] via-transparent to-black/20 pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#242032] via-transparent to-black/20 pointer-events-none" />
                       
                       {/* Premium Badge */}
                       {s.badge && (
                         <div className="absolute top-4 left-4 z-20">
-                          <span className="rounded-full bg-[#d4af37]/15 border border-[#d4af37]/45 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-[#d4af37] shadow-[0_0_10px_rgba(212,175,55,0.15)] animate-pulse">
+                          <span className="rounded-full bg-gold/15 border border-gold/45 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-gold shadow-[0_0_10px_rgba(216,182,122,0.15)] animate-pulse">
                             {s.badge}
                           </span>
                         </div>
@@ -552,7 +554,7 @@ export default function Services() {
 
                       {/* Price Tag Overlay */}
                       <div className="absolute bottom-3 right-3 z-20">
-                        <span className="rounded-full bg-black/75 border border-[#d4af37]/25 px-3 py-1 text-[10px] font-semibold tracking-wider text-foreground">
+                        <span className="rounded-full bg-black/75 border border-gold/25 px-3 py-1 text-[10px] font-semibold tracking-wider text-foreground">
                           {s.price}
                         </span>
                       </div>
@@ -562,17 +564,17 @@ export default function Services() {
                     <div className="p-6 md:p-7 flex flex-col justify-between flex-1 relative z-20">
                       <div className="space-y-3">
                         {/* Meta duration info */}
-                        <div className="flex items-center gap-1.5 text-[10px] text-[#d4af37] font-semibold uppercase tracking-widest">
+                        <div className="flex items-center gap-1.5 text-[10px] text-gold font-semibold uppercase tracking-widest">
                           <Clock className="h-3.5 w-3.5" /> {s.duration}
                         </div>
 
                         {/* Card Title */}
-                        <h3 className="font-display text-lg md:text-xl text-foreground/95 group-hover:text-[#d4af37] transition-colors duration-300 uppercase tracking-wide leading-snug">
+                        <h3 className="font-display text-lg md:text-xl text-foreground/95 group-hover:text-gold transition-colors duration-300 uppercase tracking-wide leading-snug">
                           {s.title}
                         </h3>
 
                         {/* Tagline */}
-                        <p className="text-xs italic font-medium text-[#d4af37]/80 tracking-wide">
+                        <p className="text-xs italic font-medium text-gold/80 tracking-wide">
                           {s.short}
                         </p>
 
@@ -583,13 +585,13 @@ export default function Services() {
                       </div>
 
                       {/* Divider */}
-                      <div className="my-5 border-t border-[#d4af37]/10" />
+                      <div className="my-5 border-t border-gold/10" />
 
                       {/* Card Actions */}
                       <div className="flex flex-col gap-3">
                         <button
                           onClick={() => setSelectedService(s)}
-                          className="group w-full inline-flex items-center justify-center gap-2 rounded-full border border-[#d4af37]/35 bg-[#d4af37]/5 hover:bg-[#d4af37]/15 hover:border-[#d4af37]/75 py-2.5 text-xs font-semibold uppercase tracking-widest text-[#d4af37] cursor-pointer transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.05)]"
+                          className="group w-full inline-flex items-center justify-center gap-2 rounded-full border border-gold/35 bg-gold/5 hover:bg-gold/15 hover:border-gold/75 py-2.5 text-xs font-semibold uppercase tracking-widest text-gold cursor-pointer transition-all duration-300 shadow-[0_0_10px_rgba(216,182,122,0.05)]"
                         >
                           View Details
                           <ChevronRight className="h-3.5 w-3.5" />
@@ -616,14 +618,14 @@ export default function Services() {
         onMouseMove={handleDestinyMouseMove}
         onMouseEnter={() => setIsDestinyHovered(true)}
         onMouseLeave={() => setIsDestinyHovered(false)}
-        className="relative py-24 overflow-hidden border-t border-b border-gold/15 bg-gradient-to-b from-[#111315] via-[#242228] to-[#111315] velvet-table"
+        className="relative py-24 overflow-hidden border-t border-b border-gold/15 bg-gradient-to-b from-[#1A1722] via-[#242032] to-[#1A1722] velvet-table"
       >
         {/* Gold trim outline border of the table */}
-        <div className="absolute inset-x-8 inset-y-6 rounded-3xl border border-[#d4af37]/10 pointer-events-none z-10 hidden md:block" />
+        <div className="absolute inset-x-8 inset-y-6 rounded-3xl border border-gold/10 pointer-events-none z-10 hidden md:block" />
 
         {/* Gold mystical sacred geometry patterns background */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.05] bg-repeat mix-blend-color-dodge z-[1]" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 0 L120 60 L60 120 L0 60 Z' stroke='%23d4af37' fill='none' stroke-width='0.5'/%3E%3Ccircle cx='60' cy='60' r='20' stroke='%23d4af37' fill='none' stroke-width='0.5'/%3E%3Ccircle cx='60' cy='60' r='40' stroke='%23d4af37' fill='none' stroke-dasharray='3,3' stroke-width='0.5'/%3E%3Cpath d='M60 20 L60 100 M20 60 L100 60' stroke='%23d4af37' stroke-width='0.3'/%3E%3Cpath d='M30 30 L90 90 M30 90 L90 30' stroke='%23d4af37' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Cpolygon points='60,35 68,52 86,52 72,63 77,80 60,70 43,80 48,63 34,52 52,52' stroke='%23d4af37' fill='none' stroke-width='0.3'/%3E%3C/svg%3E")`
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M60 0 L120 60 L60 120 L0 60 Z' stroke='%23D8B67A' fill='none' stroke-width='0.5'/%3E%3Ccircle cx='60' cy='60' r='20' stroke='%23D8B67A' fill='none' stroke-width='0.5'/%3E%3Ccircle cx='60' cy='60' r='40' stroke='%23D8B67A' fill='none' stroke-dasharray='3,3' stroke-width='0.5'/%3E%3Cpath d='M60 20 L60 100 M20 60 L100 60' stroke='%23D8B67A' stroke-width='0.3'/%3E%3Cpath d='M30 30 L90 90 M30 90 L90 30' stroke='%23D8B67A' stroke-width='0.3' stroke-dasharray='2,2'/%3E%3Cpolygon points='60,35 68,52 86,52 72,63 77,80 60,70 43,80 48,63 34,52 52,52' stroke='%23D8B67A' fill='none' stroke-width='0.3'/%3E%3C/svg%3E")`
         }} />
 
         {/* Layered depth overlays & ambient cloud smoke */}
@@ -683,13 +685,13 @@ export default function Services() {
                 return (
                   <motion.div
                     key={idx}
-                    className="absolute rounded-full bg-gradient-to-tr from-[#6A1E2F] to-[#D4AF37] z-[3] pointer-events-none"
+                    className="absolute rounded-full bg-gradient-to-tr from-accent to-gold z-[3] pointer-events-none"
                     style={{
                       width: p.size,
                       height: p.size,
                       left: `${p.x}%`,
                       top: `${p.y}%`,
-                      boxShadow: "0 0 8px rgba(212,175,55,0.3)"
+                      boxShadow: "0 0 8px rgba(216,182,122,0.3)"
                     }}
                     animate={{
                       y: [0, -80, 0],
@@ -709,7 +711,7 @@ export default function Services() {
                 return (
                   <motion.div
                     key={idx}
-                    className="absolute rounded-full bg-[#E6C77A]/30 z-[3] pointer-events-none"
+                    className="absolute rounded-full bg-gold-soft/30 z-[3] pointer-events-none"
                     style={{
                       width: p.size,
                       height: p.size,
@@ -761,7 +763,7 @@ export default function Services() {
         {/* Cursor light spotlight */}
         {isDestinyHovered && (
           <div 
-            className="pointer-events-none absolute w-[350px] h-[350px] bg-[#d4af37]/5 blur-[85px] rounded-full -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300 z-[3]"
+            className="pointer-events-none absolute w-[350px] h-[350px] bg-gold/5 blur-[85px] rounded-full -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300 z-[3]"
             style={{
               left: destinyMousePos.rawX,
               top: destinyMousePos.rawY,
@@ -801,31 +803,31 @@ export default function Services() {
                     >
                       {/* Back Face of Card */}
                       <div 
-                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[22px] border border-[#d4af37]/30 bg-gradient-to-b from-[#242228] to-[#111315] p-3 shadow-[0_15px_35px_rgba(0,0,0,0.85)] hover:border-[#d4af37]/60 transition-colors duration-300"
+                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[22px] border border-gold/30 bg-gradient-to-b from-card to-background p-3 shadow-[0_15px_35px_rgba(0,0,0,0.85)] hover:border-gold/60 transition-colors duration-300"
                         style={{
                           backfaceVisibility: "hidden",
                           WebkitBackfaceVisibility: "hidden",
                         }}
                       >
                         {/* Corner Ornament Accents */}
-                        <div className="absolute top-2 left-2 w-2.5 h-2.5 border-t border-l border-[#d4af37]/35" />
-                        <div className="absolute top-2 right-2 w-2.5 h-2.5 border-t border-r border-[#d4af37]/35" />
-                        <div className="absolute bottom-2 left-2 w-2.5 h-2.5 border-b border-l border-[#d4af37]/35" />
-                        <div className="absolute bottom-2 right-2 w-2.5 h-2.5 border-b border-r border-[#d4af37]/35" />
-                        <div className="absolute inset-1 rounded-xl border border-[#d4af37]/5" />
+                        <div className="absolute top-2 left-2 w-2.5 h-2.5 border-t border-l border-gold/35" />
+                        <div className="absolute top-2 right-2 w-2.5 h-2.5 border-t border-r border-gold/35" />
+                        <div className="absolute bottom-2 left-2 w-2.5 h-2.5 border-b border-l border-gold/35" />
+                        <div className="absolute bottom-2 right-2 w-2.5 h-2.5 border-b border-r border-gold/35" />
+                        <div className="absolute inset-1 rounded-xl border border-gold/5" />
 
-                        <div className="h-9 w-9 sm:h-11 sm:w-11 rounded-full border border-[#d4af37]/25 flex items-center justify-center text-[#d4af37]/60 bg-black/20">
+                        <div className="h-9 w-9 sm:h-11 sm:w-11 rounded-full border border-gold/25 flex items-center justify-center text-gold/60 bg-black/20">
                           <Moon className="h-5 w-5 animate-pulse text-gold" />
                         </div>
-                        <div className="mt-3.5 w-full h-0.5 bg-gradient-to-r from-transparent via-[#d4af37]/20 to-transparent" />
-                        <span className="mt-3.5 text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-[#d4af37]/60 font-medium font-sans">
+                        <div className="mt-3.5 w-full h-0.5 bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
+                        <span className="mt-3.5 text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-gold/60 font-medium font-sans">
                           Tarot Reading
                         </span>
                       </div>
 
                       {/* Front Face of Card (Shown when flipped) */}
                       <div 
-                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[22px] border border-[#d4af37]/50 bg-gradient-to-b from-[#242228] via-[#1b1a1f] to-[#6a1e2f]/45 p-4 shadow-[0_20px_45px_rgba(212,175,55,0.18)] text-center"
+                        className="absolute inset-0 flex flex-col items-center justify-center rounded-[22px] border border-gold/50 bg-gradient-to-b from-card via-[#242032] to-[#332845]/45 p-4 shadow-[0_20px_45px_rgba(216,182,122,0.18)] text-center"
                         style={{
                           transform: "rotateY(180deg)",
                           backfaceVisibility: "hidden",
@@ -833,17 +835,17 @@ export default function Services() {
                         }}
                       >
                         {/* Corner Ornaments */}
-                        <div className="absolute top-2 left-2 w-2.5 h-2.5 border-t border-l border-[#d4af37]/45" />
-                        <div className="absolute top-2 right-2 w-2.5 h-2.5 border-t border-r border-[#d4af37]/45" />
-                        <div className="absolute bottom-2 left-2 w-2.5 h-2.5 border-b border-l border-[#d4af37]/45" />
-                        <div className="absolute bottom-2 right-2 w-2.5 h-2.5 border-b border-r border-[#d4af37]/45" />
-                        <div className="absolute inset-1 rounded-xl border border-[#d4af37]/5" />
+                        <div className="absolute top-2 left-2 w-2.5 h-2.5 border-t border-l border-gold/45" />
+                        <div className="absolute top-2 right-2 w-2.5 h-2.5 border-t border-r border-gold/45" />
+                        <div className="absolute bottom-2 left-2 w-2.5 h-2.5 border-b border-l border-gold/45" />
+                        <div className="absolute bottom-2 right-2 w-2.5 h-2.5 border-b border-r border-gold/45" />
+                        <div className="absolute inset-1 rounded-xl border border-gold/5" />
 
                         <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-gold animate-pulse" />
                         <h4 className="mt-3 sm:mt-4 font-display text-[11px] sm:text-xs text-gold uppercase tracking-wider">
                           The Oracle
                         </h4>
-                        <div className="mt-2 w-full h-0.5 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent" />
+                        <div className="mt-2 w-full h-0.5 bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
                         <p className="mt-4 text-[10px] sm:text-xs text-foreground font-serif leading-relaxed italic max-w-[130px] sm:max-w-[160px] pl-1 pr-1">
                           "{mysticalMessage}"
                         </p>
@@ -873,7 +875,7 @@ export default function Services() {
               </p>
 
               {/* Animated Changing Quote box */}
-              <div className="h-14 flex items-center bg-[#242228]/40 border border-gold/15 rounded-xl px-4 py-2.5 backdrop-blur-sm shadow-[0_5px_15px_rgba(0,0,0,0.3)] w-full max-w-sm select-none">
+              <div className="h-14 flex items-center bg-[#242032]/40 border border-gold/15 rounded-xl px-4 py-2.5 backdrop-blur-sm shadow-[0_5px_15px_rgba(0,0,0,0.3)] w-full max-w-sm select-none">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeQuoteIdx}
@@ -881,7 +883,7 @@ export default function Services() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 15 }}
                     transition={{ duration: 0.45, ease: "easeOut" }}
-                    className="flex items-center gap-2.5 text-[11px] sm:text-xs text-[#E6C77A] font-serif italic"
+                    className="flex items-center gap-2.5 text-[11px] sm:text-xs text-gold-soft font-serif italic"
                   >
                     <Sparkles className="h-3.5 w-3.5 text-gold animate-pulse shrink-0" />
                     <span>"{quotes[activeQuoteIdx]}"</span>
@@ -935,13 +937,15 @@ export default function Services() {
               { title: "Luxury Spiritual Experience", desc: "Premium guidance designed to elevate your life path.", icon: Heart, gridClass: "lg:col-span-2 col-span-1" }
             ].map((f, i) => (
               <Reveal key={f.title} delay={i * 0.05}>
-                <div className={`group relative h-full rounded-2xl glass p-6 border border-gold/15 transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/45 hover:shadow-[0_15px_30px_rgba(212,175,55,0.08)] flex flex-col justify-between bg-[#242228]/70 ${f.gridClass}`}>
+                <div className={`group relative h-full rounded-2xl p-6 border border-gold/15 transition-all duration-500 hover:-translate-y-2 hover:border-gold/45 hover:shadow-[0_15px_30px_rgba(216,182,122,0.08)] flex flex-col justify-between ${
+                  i % 3 === 0 ? "card-plum" : i % 3 === 1 ? "card-violet" : "card-glass"
+                } ${f.gridClass}`}>
                   {/* Glowing backdrop inside */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-[#d4af37]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
                   
                   <div>
-                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold/15 to-purple/15 text-gold border border-gold/25 shadow-[0_0_15px_rgba(212,175,55,0.05)] transition-all duration-500 group-hover:scale-115 group-hover:-translate-y-1">
-                      <f.icon className="h-5 w-5 text-[#d4af37]" />
+                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold/15 to-purple/15 text-gold border border-gold/25 shadow-[0_0_15px_rgba(216,182,122,0.05)] transition-all duration-500 group-hover:scale-115 group-hover:-translate-y-1">
+                      <f.icon className="h-5 w-5 text-gold" />
                     </div>
                     <h3 className="mt-5 font-display text-base leading-snug text-foreground/95 group-hover:text-gold transition-colors duration-300 uppercase tracking-wide">
                       {f.title}
@@ -958,26 +962,26 @@ export default function Services() {
       </section>
 
       {/* Premium CTA Full-Width Strip */}
-      <section className="relative w-full border-b border-gold/15 bg-gradient-to-r from-black/85 via-[#1B1A1F]/95 to-black/85 py-16 md:py-20 overflow-hidden">
+      <section className="relative w-full border-b border-gold/15 bg-gradient-to-r from-background/95 via-accent/90 to-background/95 py-16 md:py-20 overflow-hidden">
         {/* Background spotlights & glowing elements */}
-        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
-        <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#d4af37]/5 blur-[95px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
+        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-lavender/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+        <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gold/5 blur-[95px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
         
         {/* Floating Tarot symbols & Crystal lighting indicators in background */}
         <div className="pointer-events-none absolute left-10 top-10 text-gold/10 opacity-30 select-none animate-bounce" style={{ animationDuration: "8s" }}>
           <Moon className="h-14 w-14" />
         </div>
-        <div className="pointer-events-none absolute right-16 bottom-10 text-[#d4af37]/10 opacity-30 select-none animate-bounce" style={{ animationDuration: "11s", animationDelay: "2s" }}>
+        <div className="pointer-events-none absolute right-16 bottom-10 text-gold/10 opacity-30 select-none animate-bounce" style={{ animationDuration: "11s", animationDelay: "2s" }}>
           <Gem className="h-16 w-16" />
         </div>
 
         <div className="mx-auto max-w-6xl px-6 md:px-8 relative z-10">
-          <BentoCard className="w-full glass-strong p-8 md:p-12 bg-black/40 backdrop-blur-md border border-[#d4af37]/25" glowColor="rgba(212, 175, 55, 0.15)">
+          <BentoCard className="w-full glass-strong p-8 md:p-12 bg-[#242032]/40 backdrop-blur-md border border-gold/25" glowColor="rgba(216, 182, 122, 0.15)">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12">
               
               {/* LEFT SIDE: Heading & Subtitle */}
               <div className="flex-1 text-left space-y-4 max-w-3xl">
-                <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-3.5 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#d4af37] animate-pulse">
+                <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-3.5 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-gold animate-pulse">
                   <Sparkles className="h-3 w-3 text-gold" />
                   Sacred Alignment
                 </span>
@@ -993,7 +997,7 @@ export default function Services() {
               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shrink-0 w-full sm:w-auto">
                 <Link 
                   to="/booking" 
-                  className="w-full sm:w-auto group inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 text-xs font-bold uppercase tracking-widest btn-gold shadow-[0_0_20px_rgba(212,175,55,0.15)]"
+                  className="w-full sm:w-auto group inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 text-xs font-bold uppercase tracking-widest btn-gold shadow-[0_0_20px_rgba(216, 182, 122, 0.15)]"
                 >
                   Book A Consultation 
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -1032,7 +1036,7 @@ export default function Services() {
               exit={{ opacity: 0, scale: 0.98, y: 30 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               onScroll={handleScroll}
-              className="relative w-full h-full md:h-[90vh] md:max-w-5xl md:rounded-3xl border border-gold/30 bg-[#111315]/98 shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-y-auto z-10 scrollbar-thin scrollbar-thumb-gold/20 flex flex-col"
+              className="relative w-full h-full md:h-[90vh] md:max-w-5xl md:rounded-3xl border border-gold/30 bg-[#1A1722]/98 shadow-[0_25px_60px_rgba(0,0,0,0.95)] overflow-y-auto z-10 scrollbar-thin scrollbar-thumb-gold/20 flex flex-col"
             >
               {/* Premium Scroll Progress Bar */}
               <div 
@@ -1047,10 +1051,10 @@ export default function Services() {
               <div className="hidden md:block absolute bottom-4 right-4 w-4 h-4 border-b border-r border-gold/45 pointer-events-none z-30" />
 
               {/* Sticky Close Header */}
-              <div className="sticky top-0 z-40 w-full flex justify-end p-4 bg-gradient-to-b from-[#111315] to-transparent pointer-events-none">
+              <div className="sticky top-0 z-40 w-full flex justify-end p-4 bg-gradient-to-b from-[#1A1722] to-transparent pointer-events-none">
                 <button
                   onClick={() => setSelectedService(null)}
-                  className="p-3 rounded-full border border-gold/25 bg-[#242228]/80 hover:bg-gold/15 hover:border-gold/55 text-foreground transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.7)] pointer-events-auto cursor-pointer flex items-center justify-center gap-1.5"
+                  className="p-3 rounded-full border border-gold/25 bg-[#242032]/80 hover:bg-gold/15 hover:border-gold/55 text-foreground transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.7)] pointer-events-auto cursor-pointer flex items-center justify-center gap-1.5"
                   aria-label="Close modal"
                 >
                   <span className="text-[10px] uppercase tracking-widest font-semibold pl-1 text-gold">Close</span>
@@ -1067,7 +1071,7 @@ export default function Services() {
                     alt={selectedService.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#111315] via-[#111315]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A1722] via-[#1A1722]/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
                     <div className="flex flex-wrap items-center gap-2">
                       {selectedService.badge && (
@@ -1082,7 +1086,7 @@ export default function Services() {
                         {selectedService.price}
                       </span>
                     </div>
-                    <h2 className="mt-3 font-display text-2xl md:text-4.5xl text-gradient-gold uppercase tracking-wider leading-tight">
+                    <h2 className="mt-3 font-display text-xl xs:text-2xl md:text-4.5xl text-gradient-gold uppercase tracking-wider leading-tight">
                       {selectedService.title}
                     </h2>
                   </div>
@@ -1115,7 +1119,7 @@ export default function Services() {
                     
                     {/* Header Details */}
                     <div className="glass p-6 md:p-8 rounded-2xl relative border border-gold/15">
-                      <div className="absolute -top-3 left-6 rounded-full bg-[#111315] border border-gold/20 px-3 py-0.5 text-[9px] uppercase tracking-wider text-gold font-bold">
+                      <div className="absolute -top-3 left-6 rounded-full bg-background border border-gold/20 px-3 py-0.5 text-[9px] uppercase tracking-wider text-gold font-bold">
                         1-On-1 Power Tarot Reading Session
                       </div>
                       <h4 className="text-sm md:text-base font-semibold text-gold tracking-wide uppercase mt-2">
@@ -1630,7 +1634,7 @@ export default function Services() {
                   <div className="mt-10 space-y-10">
                     {/* Header Details */}
                     <div className="glass p-6 md:p-8 rounded-2xl relative border border-gold/15">
-                      <div className="absolute -top-3 left-6 rounded-full bg-[#111315] border border-gold/20 px-3 py-0.5 text-[9px] uppercase tracking-wider text-gold font-bold">
+                      <div className="absolute -top-3 left-6 rounded-full bg-background border border-gold/20 px-3 py-0.5 text-[9px] uppercase tracking-wider text-gold font-bold">
                         Advanced Aura Healing, Protection & Deep Healing Experience
                       </div>
                       <h4 className="text-sm md:text-base font-semibold text-gold tracking-wide uppercase mt-2">
@@ -1840,7 +1844,9 @@ export default function Services() {
                             a: "Some clients feel shifts in one session, while deeper or long-term blockages may require multiple sessions."
                           }
                         ].map((faq, idx) => (
-                          <div key={idx} className="glass p-5 rounded-xl border border-gold/5 bg-[#242228]/30">
+                          <div key={idx} className={`p-5 rounded-xl border border-gold/5 ${
+                            idx % 3 === 0 ? "card-plum" : idx % 3 === 1 ? "card-violet" : "card-glass"
+                          }`}>
                             <h4 className="text-xs font-semibold text-foreground flex items-center gap-2">
                               <HelpCircle className="h-3.5 w-3.5 text-gold" /> {faq.q}
                             </h4>
@@ -1872,7 +1878,7 @@ export default function Services() {
                   <div className="mt-10 space-y-10">
                     {/* Header Details */}
                     <div className="glass p-6 md:p-8 rounded-2xl relative border border-gold/15">
-                      <div className="absolute -top-3 left-6 rounded-full bg-[#111315] border border-gold/20 px-3 py-0.5 text-[9px] uppercase tracking-wider text-gold font-bold">
+                      <div className="absolute -top-3 left-6 rounded-full bg-background border border-gold/20 px-3 py-0.5 text-[9px] uppercase tracking-wider text-gold font-bold">
                         💎 THE MOST HIGHLY DEMANDED & RECOMMENDED PREMIUM SERVICE 💎✦
                       </div>
                       <h4 className="text-sm md:text-base font-semibold text-gold tracking-wide uppercase mt-2">
@@ -2193,7 +2199,9 @@ export default function Services() {
                             a: "A: Yes. The PDF (affirmation, mantras, full diet plan, exercises, chakra report) is delivered within 24 hours. The custom manifestation music, custom meditation music, and actual crystals are shipped to you after your session 📦"
                           }
                         ].map((faq, idx) => (
-                          <div key={idx} className="glass p-5 rounded-xl border border-gold/5 bg-[#242228]/30">
+                          <div key={idx} className={`p-5 rounded-xl border border-gold/5 ${
+                            idx % 3 === 0 ? "card-plum" : idx % 3 === 1 ? "card-violet" : "card-glass"
+                          }`}>
                             <h4 className="text-xs font-semibold text-foreground flex items-center gap-2">
                               <HelpCircle className="h-3.5 w-3.5 text-gold" /> {faq.q}
                             </h4>
@@ -2251,7 +2259,7 @@ export default function Services() {
                 <div className="mt-12 pt-6 border-t border-gold/10 flex flex-wrap gap-4 justify-end">
                   <button
                     onClick={() => setSelectedService(null)}
-                    className="rounded-full border border-gold/25 bg-transparent hover:bg-[#242228] hover:border-gold/50 px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-foreground cursor-pointer transition-colors"
+                    className="rounded-full border border-gold/25 bg-transparent hover:bg-card hover:border-gold/50 px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-foreground cursor-pointer transition-colors"
                   >
                     Close Details
                   </button>

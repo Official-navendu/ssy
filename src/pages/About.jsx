@@ -62,13 +62,13 @@ export default function About() {
             >
               {/* Concentric Celestial Orbit Line Behind */}
               <div className="absolute inset-[-30px] rounded-full border border-gold/10 animate-spin-slow pointer-events-none -z-20" style={{ animationDuration: "60s" }} />
-              <div className="absolute inset-[-15px] rounded-full border border-purple/15 animate-spin-slow pointer-events-none -z-20" style={{ animationDirection: "reverse", animationDuration: "40s" }} />
+              <div className="absolute inset-[-15px] rounded-full border border-sapphire/15 animate-spin-slow pointer-events-none -z-20" style={{ animationDirection: "reverse", animationDuration: "40s" }} />
 
               {/* Cinematic Nebula Glow Backdrop */}
-              <div className="absolute -inset-6 bg-gradient-to-br from-purple/50 via-purple-deep/40 to-gold/30 rounded-[3rem] blur-3xl opacity-70 group-hover/about-story:opacity-90 transition-opacity duration-1000 pointer-events-none" />
+              <div className="absolute -inset-6 bg-gradient-to-br from-sapphire/25 via-[#151B26]/30 to-gold/20 rounded-[3rem] blur-3xl opacity-70 group-hover/about-story:opacity-90 transition-opacity duration-1000 pointer-events-none" />
 
               {/* Halo Frame Outer Border */}
-              <div className="absolute -inset-2.5 rounded-[2.5rem] bg-gradient-to-br from-gold/40 via-purple/30 to-gold/20 blur-md opacity-50 group-hover/about-story:opacity-75 transition-all duration-700 -z-10" />
+              <div className="absolute -inset-2.5 rounded-[2.5rem] bg-gradient-to-br from-gold/30 via-sapphire/20 to-gold/20 blur-md opacity-50 group-hover/about-story:opacity-75 transition-all duration-700 -z-10" />
 
               {/* Main Glassmorphism Editorial Frame */}
               <div className="relative w-full h-full rounded-[2rem] overflow-hidden border border-gold/25 shadow-[0_25px_60px_rgba(0,0,0,0.8)] bg-background/30 backdrop-blur-md transition-all duration-700 group-hover/about-story:border-gold/50 group-hover/about-story:shadow-gold/30">
@@ -159,9 +159,9 @@ export default function About() {
             ].map((p, i) => (
               <Reveal key={p.title} delay={i * 0.1}>
                 <div className="group relative h-full rounded-2xl glass p-8 border border-gold/15 transition-all duration-500 hover:-translate-y-1 hover:border-gold/40 hover:shadow-gold flex flex-col justify-between">
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple/5 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-sapphire/5 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
                   <div>
-                    <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-gold/25 to-purple/25 text-gold border border-gold/20 shadow-[0_0_15px_rgba(212,175,55,0.1)] transition-transform duration-500 group-hover:scale-110">
+                    <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-gold/25 to-sapphire/25 text-gold border border-gold/20 shadow-[0_0_15px_rgba(212,175,55,0.1)] transition-transform duration-500 group-hover:scale-110">
                       <p.icon className="h-5.5 w-5.5" />
                     </div>
                     <h3 className="mt-6 font-display text-xl tracking-wide text-foreground group-hover:text-gold transition-colors duration-300">
@@ -248,7 +248,7 @@ export default function About() {
           </div>
 
           <div className="mt-14 grid gap-8 md:grid-cols-4 relative">
-            <div className="hidden md:block absolute top-[52px] left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-gold/10 via-purple/20 to-gold/10 -z-10" />
+            <div className="hidden md:block absolute top-[52px] left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-gold/10 via-sapphire/15 to-gold/10 -z-10" />
             
             {[
               { step: "01", title: "Sacred Spacing", desc: "Before you connect, Shivani purifies the physical room and virtual dashboard using sacred sound baths and white sage, locking in a protected, confidential environment." },
@@ -297,7 +297,7 @@ export default function About() {
           </div>
           
           <div className="relative mt-14 pl-8 md:pl-0">
-            <div className="absolute left-3 top-0 bottom-0 w-px bg-gradient-to-b from-gold via-purple to-transparent md:left-1/2" />
+            <div className="absolute left-3 top-0 bottom-0 w-px bg-gradient-to-b from-gold via-sapphire to-transparent md:left-1/2" />
             {timeline.map((m, i) => (
               <motion.div
                 key={m.year}

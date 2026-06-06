@@ -70,13 +70,13 @@ export default function Booking() {
         <div className="mx-auto max-w-6xl px-6 md:px-8">
           {/* Booking Modality Switcher */}
           <div className="flex justify-center mb-10">
-            <div className="inline-flex rounded-full border border-gold/20 bg-black/40 p-1.5 backdrop-blur-sm shadow-[0_8px_32px_0_rgba(8,8,8,0.2)]">
+            <div className="inline-flex rounded-full border border-gold/20 bg-[#1A1722]/40 p-1.5 backdrop-blur-sm shadow-[0_8px_32px_0_rgba(8,8,8,0.2)]">
               <button
                 type="button"
                 onClick={() => setActiveTab("calendly")}
                 className={`rounded-full px-6 py-2.5 text-xs font-semibold uppercase tracking-widest transition-all duration-300 cursor-pointer ${
                   activeTab === "calendly"
-                    ? "bg-gold text-background shadow-[0_0_15px_rgba(212,175,55,0.35)]"
+                    ? "bg-gold text-background shadow-[0_0_15px_rgba(216,182,122,0.35)]"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -87,7 +87,7 @@ export default function Booking() {
                 onClick={() => setActiveTab("form")}
                 className={`rounded-full px-6 py-2.5 text-xs font-semibold uppercase tracking-widest transition-all duration-300 cursor-pointer ${
                   activeTab === "form"
-                    ? "bg-gold text-background shadow-[0_0_15px_rgba(212,175,55,0.35)]"
+                    ? "bg-gold text-background shadow-[0_0_15px_rgba(216,182,122,0.35)]"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -105,7 +105,7 @@ export default function Booking() {
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               >
-                <div className="relative w-full max-w-4xl mx-auto rounded-3xl border border-gold/20 bg-[#242228]/85 backdrop-blur-md p-2 shadow-[0_20px_50px_rgba(0,0,0,0.85)] overflow-hidden">
+                <div className="relative w-full max-w-4xl mx-auto rounded-3xl border border-gold/20 bg-[#242032]/85 backdrop-blur-md p-2 shadow-[0_20px_50px_rgba(0,0,0,0.85)] overflow-hidden">
                   {/* Corner highlights */}
                   <div className="absolute top-4 left-4 w-4 h-4 border-t border-l border-gold/40 pointer-events-none" />
                   <div className="absolute top-4 right-4 w-4 h-4 border-t border-r border-gold/40 pointer-events-none" />
@@ -145,7 +145,7 @@ export default function Booking() {
                             type="button"
                             key={key}
                             onClick={() => { setSelectedDate(key); setValue("date", key); }}
-                            className={`rounded-xl border p-2.5 text-center transition-all ${
+                            className={`rounded-xl border p-1.5 sm:p-2.5 text-center transition-all ${
                               isSel
                                 ? "border-gold bg-gold text-background shadow-gold"
                                 : "border-gold/15 bg-white/5 text-foreground/85 hover:border-gold/50"
@@ -239,7 +239,7 @@ export default function Booking() {
         </div>
       </section>
 
-      <style>{`.input{width:100%;border:1px solid rgba(212,175,55,0.18);background:rgba(255,255,255,0.04);border-radius:12px;padding:11px 14px;font-size:14px;color:inherit;outline:none;transition:all .2s}.input:focus{border-color:#D4AF37;background:rgba(212,175,55,0.04)}`}</style>
+      <style>{`.input{width:100%;border:1px solid rgba(216,182,122,0.18);background:rgba(255,255,255,0.04);border-radius:12px;padding:11px 14px;font-size:14px;color:inherit;outline:none;transition:all .2s}.input:focus{border-color:#D8B67A;background:rgba(216,182,122,0.04)}`}</style>
 
       <AnimatePresence>
         {success && (
@@ -251,10 +251,10 @@ export default function Booking() {
             <motion.div
               initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-md rounded-3xl glass-strong p-8 text-center shadow-purple"
+              className="relative w-full max-w-md rounded-3xl glass-strong p-8 text-center shadow-sapphire"
             >
               <button onClick={() => setSuccess(false)} className="absolute right-4 top-4 text-muted-foreground hover:text-foreground"><X className="h-5 w-5" /></button>
-              <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-gold to-purple">
+              <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-gold to-gold-soft">
                 <Check className="h-8 w-8 text-background" />
               </div>
               <h3 className="mt-5 font-display text-3xl text-gradient-gold">Appointment Confirmed</h3>

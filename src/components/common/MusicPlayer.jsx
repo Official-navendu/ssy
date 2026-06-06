@@ -237,13 +237,13 @@ export function MusicPlayer() {
 
       <motion.div
         layout
-        className="flex items-center gap-3 rounded-full glass border border-gold/30 bg-[#242228]/85 backdrop-blur-md px-3.5 py-2 shadow-[0_8px_32px_0_rgba(0,0,0,0.55)] hover:border-gold/60 transition-colors duration-300 cursor-pointer"
+        className="flex items-center gap-3 rounded-full glass border border-gold/30 bg-[#151B26]/85 backdrop-blur-md px-3.5 py-2 shadow-[0_8px_32px_0_rgba(0,0,0,0.55)] hover:border-gold/60 transition-colors duration-300 cursor-pointer"
       >
         {/* Slowly Rotating Tarot/Chakra Icon */}
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          className="relative flex h-8 w-8 items-center justify-center rounded-full bg-[#111315]/50 border border-gold/15 text-gold"
+          className="relative flex h-8 w-8 items-center justify-center rounded-full bg-[#0D1117]/50 border border-gold/15 text-gold"
         >
           {/* Soft breathing pulse rings when playing */}
           {isPlaying && !isMuted && (
@@ -282,7 +282,7 @@ export function MusicPlayer() {
               {/* Play/Pause Button */}
               <button
                 onClick={handleTogglePlay}
-                className="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-[#111315]/80 border border-gold/20 hover:border-gold/60 hover:bg-gold/10 text-gold transition-all duration-300 cursor-pointer"
+                className="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-[#0D1117]/80 border border-gold/20 hover:border-gold/60 hover:bg-gold/10 text-gold transition-all duration-300 cursor-pointer"
                 aria-label={isPlaying ? "Pause Ambience" : "Play Ambience"}
               >
                 {isPlaying ? <Pause className="h-3 w-3" /> : <Play className="h-3 w-3 pl-0.5" />}
@@ -291,7 +291,7 @@ export function MusicPlayer() {
               {/* Mute/Unmute Button */}
               <button
                 onClick={handleToggleMute}
-                className="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-[#111315]/80 border border-gold/20 hover:border-gold/60 hover:bg-gold/10 text-gold transition-all duration-300 cursor-pointer"
+                className="flex h-7.5 w-7.5 items-center justify-center rounded-full bg-[#0D1117]/80 border border-gold/20 hover:border-gold/60 hover:bg-gold/10 text-gold transition-all duration-300 cursor-pointer"
                 aria-label={isMuted ? "Unmute Ambience" : "Mute Ambience"}
               >
                 {isMuted ? <VolumeX className="h-3 w-3" /> : <Volume2 className="h-3 w-3" />}

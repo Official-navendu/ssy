@@ -146,7 +146,8 @@ export function CosmicBackground({ density = 95 }) {
         wiggleFreq: Math.random() * 0.02 + 0.005,
         wiggleAmp: Math.random() * 0.35 + 0.1,
         alpha: Math.random() * 0.4 + 0.6,
-        color: Math.random() > 0.4 ? "197, 160, 89" : "136, 19, 55" // Gold or Burgundy
+        // Gold (210, 175, 55), Moonlight Blue (30, 80, 150), or Sapphire Blue (22, 59, 115)
+        color: Math.random() > 0.6 ? "210, 175, 55" : (Math.random() > 0.5 ? "22, 59, 115" : "15, 107, 90")
       });
     }
 
@@ -162,7 +163,8 @@ export function CosmicBackground({ density = 95 }) {
         pulseSpeed: Math.random() * 0.003 + 0.001,
         phase: Math.random() * Math.PI * 2,
         alpha: Math.random() * 0.05 + 0.02,
-        color: Math.random() > 0.6 ? "136, 19, 55" : (Math.random() > 0.5 ? "197, 160, 89" : "6, 95, 70")
+        // Sapphire Blue (22, 59, 115), Gold Mist (210, 175, 55), or Emerald (15, 107, 90)
+        color: Math.random() > 0.65 ? "22, 59, 115" : (Math.random() > 0.55 ? "210, 175, 55" : "15, 107, 90")
       });
     }
 
@@ -249,11 +251,11 @@ export function CosmicBackground({ density = 95 }) {
       // 1. DEEP SPACE BASE GRADIENT
       // ==========================================
       const bgGrad = ctx.createLinearGradient(0, 0, 0, height);
-      bgGrad.addColorStop(0, "#111315");
-      bgGrad.addColorStop(0.25, "#17161A");
-      bgGrad.addColorStop(0.5, "#1B1A1F");
-      bgGrad.addColorStop(0.75, "#161317");
-      bgGrad.addColorStop(1, "#111315");
+      bgGrad.addColorStop(0, "#0D1117");       // Primary Background
+      bgGrad.addColorStop(0.25, "#151B26");    // Secondary Background
+      bgGrad.addColorStop(0.5, "#1B2230");     // Surface Background
+      bgGrad.addColorStop(0.75, "#151B26");
+      bgGrad.addColorStop(1, "#0D1117");
       ctx.fillStyle = bgGrad;
       ctx.fillRect(0, 0, width, height);
 
@@ -262,41 +264,41 @@ export function CosmicBackground({ density = 95 }) {
       // ==========================================
       ctx.globalCompositeOperation = "screen";
 
-      // A. Deep Royal Indigo Cloud (Left-Center)
+      // A. Deep Sapphire Blue Cloud (Left-Center)
       const nXa = width * 0.28 + Math.sin(time * 0.2) * 90;
       const nYa = height * 0.32 + Math.cos(time * 0.16) * 70;
       const rA = Math.max(width * (isMobile ? 0.45 : 0.58), isMobile ? 320 : 480);
-      drawRadialGlow(ctx, nXa, nYa, rA, "106, 30, 47", 0.35 + Math.sin(time * 0.3) * 0.05);
+      drawRadialGlow(ctx, nXa, nYa, rA, "22, 59, 115", 0.35 + Math.sin(time * 0.3) * 0.05); // Sapphire
 
       // B. Dreamy Golden Haze (Skipped on Mobile for rendering performance)
       if (!isMobile) {
         const nXb = width * 0.68 + Math.cos(time * 0.15) * 100;
         const nYb = height * 0.38 + Math.sin(time * 0.22) * 80;
         const rB = Math.max(width * 0.52, 430);
-        drawRadialGlow(ctx, nXb, nYb, rB, "212, 175, 55", 0.16 + Math.sin(time * 0.4) * 0.03);
+        drawRadialGlow(ctx, nXb, nYb, rB, "210, 175, 55", 0.16 + Math.sin(time * 0.4) * 0.03); // Gold Mist
       }
 
-      // C. Cosmic Midnight Blue Fog (Bottom-Right)
+      // C. Soft Emerald Glow (Bottom-Right - kept very subtle, low opacity)
       const nXc = width * 0.78 + Math.sin(time * 0.12) * 110;
       const nYc = height * 0.68 + Math.cos(time * 0.24) * 80;
       const rC = Math.max(width * (isMobile ? 0.45 : 0.52), isMobile ? 320 : 440);
-      drawRadialGlow(ctx, nXc, nYc, rC, "106, 30, 47", 0.25 + Math.cos(time * 0.2) * 0.04);
+      drawRadialGlow(ctx, nXc, nYc, rC, "15, 107, 90", 0.12 + Math.cos(time * 0.2) * 0.02); // Emerald
 
-      // D. Amethyst Fog Aura (Top-Center behind heading - Skipped on Mobile)
+      // D. Moonlight Blue Aura (Top-Center behind heading - Skipped on Mobile)
       if (!isMobile) {
         const nXd = width * 0.5 + Math.cos(time * 0.18) * 50;
         const nYd = height * 0.16 + Math.sin(time * 0.11) * 35;
         const rD = Math.max(width * 0.48, 400);
-        drawRadialGlow(ctx, nXd, nYd, rD, "230, 199, 122", 0.15 + Math.sin(time * 0.3) * 0.03);
+        drawRadialGlow(ctx, nXd, nYd, rD, "22, 59, 115", 0.15 + Math.sin(time * 0.3) * 0.03); // Sapphire
       }
 
       // E. Center Portal Gold Bloom Glow (Directly behind astrolabe/heading)
       const rE = Math.max(width * (isMobile ? 0.35 : 0.45), isMobile ? 220 : 380);
-      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rE, "212, 175, 55", 0.14 + Math.sin(time * 0.5) * 0.03);
+      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rE, "210, 175, 55", 0.14 + Math.sin(time * 0.5) * 0.03); // Gold Mist
 
-      // F. Center Portal Purple/Indigo Glow
+      // F. Center Portal Sapphire Glow
       const rF = Math.max(width * (isMobile ? 0.38 : 0.48), isMobile ? 240 : 410);
-      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rF, "106, 30, 47", 0.18 + Math.cos(time * 0.4) * 0.03);
+      drawRadialGlow(ctx, cx + mouse.x * 0.08, cy + mouse.y * 0.08, rF, "22, 59, 115", 0.18 + Math.cos(time * 0.4) * 0.03); // Sapphire
 
       // ==========================================
       // 3. ANEMIC CELESTIAL LIGHT RAYS
@@ -310,8 +312,8 @@ export function CosmicBackground({ density = 95 }) {
         for (let r = 0; r < rayCount; r++) {
           const rayAngle = (r * Math.PI) / 1.5;
           const rayGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, Math.max(width * 0.4, 300));
-          rayGrad.addColorStop(0, "rgba(197, 160, 89, 0.04)");
-          rayGrad.addColorStop(0.4, "rgba(136, 19, 55, 0.012)");
+          rayGrad.addColorStop(0, "rgba(210, 175, 55, 0.04)");
+          rayGrad.addColorStop(0.4, "rgba(22, 59, 115, 0.012)");
           rayGrad.addColorStop(1, "rgba(0, 0, 0, 0)");
           
           ctx.fillStyle = rayGrad;
@@ -337,7 +339,7 @@ export function CosmicBackground({ density = 95 }) {
 
       const ringPulse = 0.02 + Math.abs(Math.sin(time * 0.5)) * 0.035;
       const wheelRotation = time * 0.018; // Very slow majestic rotate
-      ctx.strokeStyle = `rgba(212, 175, 55, ${ringPulse})`;
+      ctx.strokeStyle = `rgba(210, 175, 55, ${ringPulse})`;
       ctx.lineWidth = 0.65;
 
       // Draw Concentric Rings
@@ -355,7 +357,7 @@ export function CosmicBackground({ density = 95 }) {
 
       // Small astrolabe tick-marks inside outer ring R3 for premium instrument detail
       ctx.save();
-      ctx.strokeStyle = `rgba(212, 175, 55, ${ringPulse * 0.8})`;
+      ctx.strokeStyle = `rgba(210, 175, 55, ${ringPulse * 0.8})`;
       ctx.rotate(wheelRotation * 0.4);
       for (let t = 0; t < 60; t++) {
         const tickAngle = (t * Math.PI) / 30;
@@ -368,7 +370,7 @@ export function CosmicBackground({ density = 95 }) {
 
       // Draw outer dotted ring (rotating slowly in reverse)
       ctx.save();
-      ctx.strokeStyle = `rgba(212, 175, 55, ${ringPulse + 0.025})`;
+      ctx.strokeStyle = `rgba(210, 175, 55, ${ringPulse + 0.025})`;
       ctx.setLineDash([2, 5]);
       ctx.rotate(-wheelRotation * 1.5);
       ctx.beginPath();
@@ -387,7 +389,7 @@ export function CosmicBackground({ density = 95 }) {
 
       // Draw seed of life sacred geometry pattern inside central R1 ring
       const seedR = R1 * 0.35; // Radius of circles
-      ctx.strokeStyle = "rgba(212, 175, 55, 0.03)";
+      ctx.strokeStyle = "rgba(210, 175, 55, 0.03)";
       ctx.lineWidth = 0.55;
       
       // Central circle
@@ -415,7 +417,7 @@ export function CosmicBackground({ density = 95 }) {
         ctx.translate(gx, gy);
         ctx.rotate(glyphAngle + Math.PI / 2); // Align symbol perpendicular to center
         ctx.font = isMobile ? "9px sans-serif" : "12px 'Cormorant Garamond', serif";
-        ctx.fillStyle = "rgba(212, 175, 55, 0.16)";
+        ctx.fillStyle = "rgba(210, 175, 55, 0.14)"; // Elegant Gold
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillText(glyph, 0, 0);
@@ -425,7 +427,7 @@ export function CosmicBackground({ density = 95 }) {
       // Draw Outer orbiting Moon Phases (Skipped on mobile to preserve CPU performance)
       if (!isMobile) {
         const R5 = 280; // Moon orbit radius
-        ctx.strokeStyle = "rgba(244, 239, 230, 0.015)";
+        ctx.strokeStyle = "rgba(245, 241, 232, 0.015)"; // Warm Ivory
         ctx.beginPath();
         ctx.arc(0, 0, R5, 0, Math.PI * 2);
         ctx.stroke();
@@ -437,7 +439,7 @@ export function CosmicBackground({ density = 95 }) {
           const my = Math.sin(phaseAngle) * R5;
 
           ctx.font = "13px 'Cormorant Garamond', serif";
-          ctx.fillStyle = "rgba(244, 239, 230, 0.13)";
+          ctx.fillStyle = "rgba(245, 241, 232, 0.11)"; // Warm Ivory
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
           ctx.fillText(phase, mx, my);
@@ -450,7 +452,7 @@ export function CosmicBackground({ density = 95 }) {
       // 5. ZODIAC CONSTELLATIONS LAYOUT DRAWING
       // ==========================================
       ctx.save();
-      ctx.strokeStyle = "rgba(212, 175, 55, 0.045)";
+      ctx.strokeStyle = "rgba(210, 175, 55, 0.045)"; // Elegant Gold
       ctx.lineWidth = 0.55;
 
       constellations.forEach((constel) => {
@@ -473,7 +475,7 @@ export function CosmicBackground({ density = 95 }) {
         // Draw nodes
         screenStars.forEach((star, index) => {
           const pulse = 0.35 + Math.abs(Math.sin(time * 1.5 + index)) * 0.65;
-          ctx.fillStyle = `rgba(244, 239, 230, ${pulse * 0.55})`;
+          ctx.fillStyle = `rgba(245, 241, 232, ${pulse * 0.55})`;
           ctx.beginPath();
           ctx.arc(star.x, star.y, 1.4, 0, Math.PI * 2);
           ctx.fill();
@@ -481,7 +483,7 @@ export function CosmicBackground({ density = 95 }) {
           // Lens flare aura (Only on desktop)
           if (!isMobile) {
             const grad = ctx.createRadialGradient(star.x, star.y, 0, star.x, star.y, 5);
-            grad.addColorStop(0, `rgba(212, 175, 55, ${pulse * 0.25})`);
+            grad.addColorStop(0, `rgba(210, 175, 55, ${pulse * 0.25})`);
             grad.addColorStop(1, "rgba(0, 0, 0, 0)");
             ctx.fillStyle = grad;
             ctx.beginPath();
@@ -506,11 +508,11 @@ export function CosmicBackground({ density = 95 }) {
         const py = (star.y + mouse.y * 0.04 + height) % height;
 
         if (star.colorType === "gold") {
-          ctx.fillStyle = `rgba(240, 215, 122, ${currentAlpha * 0.85})`;
+          ctx.fillStyle = `rgba(210, 175, 55, ${currentAlpha * 0.85})`; // Gold
         } else if (star.colorType === "blue") {
-          ctx.fillStyle = `rgba(147, 197, 253, ${currentAlpha * 0.75})`;
+          ctx.fillStyle = `rgba(30, 80, 150, ${currentAlpha * 0.75})`; // Moonlight Blue
         } else {
-          ctx.fillStyle = `rgba(244, 239, 230, ${currentAlpha * 0.8})`;
+          ctx.fillStyle = `rgba(245, 241, 232, ${currentAlpha * 0.8})`; // Warm Ivory
         }
 
         // Draw fast rectangle to prevent GPU overhead of standard trigonometry
@@ -527,7 +529,7 @@ export function CosmicBackground({ density = 95 }) {
         const px = (star.x + mouse.x * 0.09 + width) % width;
         const py = (star.y + mouse.y * 0.09 + height) % height;
 
-        ctx.fillStyle = star.colorType === "gold" ? `rgba(240, 215, 122, ${currentAlpha})` : `rgba(255, 255, 255, ${currentAlpha})`;
+        ctx.fillStyle = star.colorType === "gold" ? `rgba(210, 175, 55, ${currentAlpha})` : `rgba(245, 241, 232, ${currentAlpha})`; // Gold or Warm Ivory
 
         ctx.beginPath();
         ctx.arc(px, py, star.size, 0, Math.PI * 2);
@@ -538,7 +540,7 @@ export function CosmicBackground({ density = 95 }) {
           ctx.save();
           ctx.translate(px, py);
           ctx.rotate(time * 0.15 + star.phase);
-          ctx.strokeStyle = star.colorType === "gold" ? `rgba(240, 215, 122, ${currentAlpha * 0.35})` : `rgba(255, 255, 255, ${currentAlpha * 0.32})`;
+          ctx.strokeStyle = star.colorType === "gold" ? `rgba(210, 175, 55, ${currentAlpha * 0.35})` : `rgba(245, 241, 232, ${currentAlpha * 0.32})`;
           ctx.lineWidth = 0.65;
 
           ctx.beginPath();
@@ -553,7 +555,7 @@ export function CosmicBackground({ density = 95 }) {
 
           // Soft circular halo
           const flareGlow = ctx.createRadialGradient(px, py, 0, px, py, star.size * 5.5);
-          flareGlow.addColorStop(0, star.colorType === "gold" ? `rgba(212, 175, 55, ${currentAlpha * 0.22})` : `rgba(255, 255, 255, ${currentAlpha * 0.18})`);
+          flareGlow.addColorStop(0, star.colorType === "gold" ? `rgba(210, 175, 55, ${currentAlpha * 0.22})` : `rgba(245, 241, 232, ${currentAlpha * 0.18})`);
           flareGlow.addColorStop(1, "rgba(0, 0, 0, 0)");
           ctx.fillStyle = flareGlow;
           ctx.beginPath();
@@ -596,9 +598,9 @@ export function CosmicBackground({ density = 95 }) {
           ss.x - Math.cos(ss.angle) * ss.len,
           ss.y - Math.sin(ss.angle) * ss.len
         );
-        gradient.addColorStop(0, `rgba(240, 215, 122, ${ss.opacity * 0.85})`);
-        gradient.addColorStop(0.3, `rgba(212, 175, 55, ${ss.opacity * 0.35})`);
-        gradient.addColorStop(1, "rgba(212, 175, 55, 0)");
+        gradient.addColorStop(0, `rgba(226, 198, 117, ${ss.opacity * 0.85})`); // Champagne Gold
+        gradient.addColorStop(0.3, `rgba(210, 175, 55, ${ss.opacity * 0.35})`); // Primary Gold
+        gradient.addColorStop(1, "rgba(210, 175, 55, 0)");
 
         ctx.strokeStyle = gradient;
         ctx.lineWidth = isMobile ? 0.95 : 1.35;
@@ -671,10 +673,10 @@ export function CosmicBackground({ density = 95 }) {
             const distSq = dx * dx + dy * dy;
 
             if (distSq < maxDistSq) {
-              const dist = Math.sqrt(distSq); // Only invoke math.sqrt for very close elements
-              const lineAlpha = (1 - dist / maxDist) * 0.045 * Math.min(pulseAlpha, p2.alpha);
-              ctx.strokeStyle = `rgba(212, 175, 55, ${lineAlpha})`;
-              ctx.lineWidth = 0.5;
+              const dist = Math.sqrt(distSq);
+              const lineAlpha = (1 - dist / maxDist) * 0.08 * (p.alpha * p2.alpha);
+              ctx.strokeStyle = `rgba(210, 175, 55, ${lineAlpha})`; // Elegant Gold
+              ctx.lineWidth = 0.45;
               ctx.beginPath();
               ctx.moveTo(px, py);
               ctx.lineTo(p2x, p2y);
@@ -736,10 +738,10 @@ export function CosmicBackground({ density = 95 }) {
       
       {/* High-end micro dotted alignment grid overlay */}
       <div
-        className="absolute inset-0 opacity-[0.012]"
+        className="absolute inset-0 opacity-[0.008]"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgba(212,175,55,0.18) 1.2px, transparent 1.2px)",
+            "radial-gradient(circle, rgba(210,175,55,0.08) 1.2px, transparent 1.2px)",
           backgroundSize: "48px 48px",
         }}
       />

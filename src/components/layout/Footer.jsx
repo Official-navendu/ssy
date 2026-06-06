@@ -19,9 +19,9 @@ function TikTokIcon({ className = "h-4.5 w-4.5" }) {
 
 export function Footer() {
   return (
-    <footer className="relative mt-24 border-t border-gold/15 bg-[#080808]/90 py-16 overflow-hidden">
+    <footer className="relative mt-24 border-t border-gold/15 bg-[#0D1117]/95 py-16 overflow-hidden">
       {/* Decorative background aura spotlights */}
-      <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-purple/5 blur-[120px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "12s" }} />
+      <div className="pointer-events-none absolute left-1/3 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-[#163B73]/5 blur-[120px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "12s" }} />
       <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[250px] h-[250px] bg-gold/3 blur-[90px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "15s" }} />
 
       <div className="mx-auto max-w-7xl px-6 md:px-8">
@@ -30,41 +30,41 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 items-start">
           
           {/* COLUMN 1: BRAND SECTION */}
-          <div className="flex flex-col text-left space-y-5">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-5">
             <Link to="/" className="group inline-block w-fit">
-              <Logo variant="footer" className="justify-start" />
+              <Logo variant="footer" className="justify-center md:justify-start" />
             </Link>
             <p className="text-xs leading-relaxed text-muted-foreground/90 font-light tracking-wide max-w-sm">
               Shivani Spiritual Yatri offers spiritual guidance, energy healing, tarot consultation, manifestation coaching, and transformational learning experiences designed to bring clarity, balance, and alignment into life.
             </p>
             
             {/* Glowing Social Media Links */}
-            <div className="flex gap-3.5 pt-2">
+            <div className="flex gap-3.5 pt-2 justify-center md:justify-start">
               {[
                 {
-  icon: Instagram,
-  href: "https://www.instagram.com/shivani_spiritual_yatri?igsh=aHU1ZzczbHFyajhq&utm_source=qr",
-  label: "Instagram",
-  glow: "hover:shadow-[0_0_15px_rgba(212,175,55,0.45)] hover:border-gold"
-},
-{
-  icon: TikTokIcon,
-  href: "https://www.tiktok.com/@shivani_spiritual_yatri",
-  label: "TikTok",
-  glow: "hover:shadow-[0_0_15px_rgba(192,132,252,0.45)] hover:border-purple"
-},
-{
-  icon: Youtube,
-  href: "https://www.youtube.com/@Shivani_Spirtual_Yatri",
-  label: "YouTube",
-  glow: "hover:shadow-[0_0_15px_rgba(212,175,55,0.45)] hover:border-gold"
-},
-{
-  icon: Mail,
-  href: "mailto:Shivanispiritualyatri666@gmail.com",
-  label: "Gmail",
-  glow: "hover:shadow-[0_0_15px_rgba(192,132,252,0.45)] hover:border-purple"
-}
+                  icon: Instagram,
+                  href: "https://www.instagram.com/shivani_spiritual_yatri?igsh=aHU1ZzczbHFyajhq&utm_source=qr",
+                  label: "Instagram",
+                  glow: "hover:shadow-[0_0_15px_rgba(216,182,122,0.45)] hover:border-gold"
+                },
+                {
+                  icon: TikTokIcon,
+                  href: "https://www.tiktok.com/@rose_spiritual_yatri",
+                  label: "TikTok",
+                  glow: "hover:shadow-[0_0_15px_rgba(22,59,115,0.45)] hover:border-[#163B73]"
+                },
+                {
+                  icon: Youtube,
+                  href: "https://www.youtube.com/@Shivani_Spirtual_Yatri",
+                  label: "YouTube",
+                  glow: "hover:shadow-[0_0_15px_rgba(216,182,122,0.45)] hover:border-gold"
+                },
+                {
+                  icon: Mail,
+                  href: "mailto:Shivanispiritualyatri666@gmail.com",
+                  label: "Gmail",
+                  glow: "hover:shadow-[0_0_15px_rgba(22,59,115,0.45)] hover:border-[#163B73]"
+                }
               ].map((soc) => (
                 <a
                   key={soc.label}
@@ -81,9 +81,9 @@ export function Footer() {
           </div>
 
           {/* COLUMN 2: QUICK LINKS */}
-          <div className="flex flex-col text-left">
-            <h4 className="font-display text-sm uppercase tracking-[0.2em] text-gold font-medium border-b border-gold/10 pb-2 mb-4">Quick Links</h4>
-            <nav className="flex flex-col gap-3 text-xs tracking-wider font-light">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <h4 className="font-display text-sm uppercase tracking-[0.2em] text-gold font-medium border-b border-gold/10 pb-2 mb-4 w-full md:w-auto text-center md:text-left">Quick Links</h4>
+            <nav className="flex flex-col items-center md:items-start gap-3 text-xs tracking-wider font-light w-full">
               {[
                 { to: "/", label: "Home" },
                 { to: "/about", label: "About" },
@@ -102,9 +102,9 @@ export function Footer() {
           </div>
 
           {/* COLUMN 3: RESOURCES */}
-          <div className="flex flex-col text-left">
-            <h4 className="font-display text-sm uppercase tracking-[0.2em] text-gold font-medium border-b border-gold/10 pb-2 mb-4">Resources</h4>
-            <nav className="flex flex-col gap-3 text-xs tracking-wider font-light">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <h4 className="font-display text-sm uppercase tracking-[0.2em] text-gold font-medium border-b border-gold/10 pb-2 mb-4 w-full md:w-auto text-center md:text-left">Resources</h4>
+            <nav className="flex flex-col items-center md:items-start gap-3 text-xs tracking-wider font-light w-full">
               {[
                 { to: "/courses", label: "Courses" },
                 { to: "/products", label: "Products" },
@@ -123,10 +123,10 @@ export function Footer() {
           </div>
 
           {/* COLUMN 4: CONTACT INFO */}
-          <div className="flex flex-col text-left space-y-4">
-            <h4 className="font-display text-sm uppercase tracking-[0.2em] text-gold font-medium border-b border-gold/10 pb-2 mb-4">Contact Us</h4>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-4 w-full">
+            <h4 className="font-display text-sm uppercase tracking-[0.2em] text-gold font-medium border-b border-gold/10 pb-2 mb-4 w-full md:w-auto text-center md:text-left">Contact Us</h4>
             
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 w-full max-w-sm">
               {/* Phone card */}
               <div className="flex items-start gap-3.5 p-3 rounded-xl border border-gold/10 bg-white/3 backdrop-blur-sm transition-all hover:border-gold/25">
                 <Phone className="h-4 w-4 text-gold shrink-0 mt-0.5 animate-pulse" />

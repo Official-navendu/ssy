@@ -119,7 +119,7 @@ export function VideoBubble() {
             y: { duration: 5.5, repeat: Infinity, ease: "easeInOut" },
             scale: { type: "spring", stiffness: 300, damping: 15 }
           }}
-          className="relative flex h-14 w-14 items-center justify-center rounded-full cursor-pointer select-none bg-black/40 backdrop-blur-sm group"
+          className="relative flex h-14 w-14 items-center justify-center rounded-full cursor-pointer select-none bg-[#0D1117]/40 backdrop-blur-sm group"
         >
           {/* Slowly Rotating Outer Golden Ring */}
           <motion.div
@@ -133,7 +133,7 @@ export function VideoBubble() {
           <div className="absolute inset-0 rounded-full bg-amber-500/10 blur-sm scale-110 group-hover:bg-gold/15 group-hover:blur-md transition-all duration-500 pointer-events-none" />
 
           {/* Inner Crystal Orb Container */}
-          <div className="relative w-full h-full rounded-full overflow-hidden border border-gold/40 shadow-[0_0_15px_rgba(212,175,55,0.25)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-shadow duration-500">
+          <div className="relative w-full h-full rounded-full overflow-hidden border border-gold/40 shadow-[0_0_15px_rgba(216,182,122,0.25)] group-hover:shadow-[0_0_25px_rgba(216,182,122,0.5)] transition-shadow duration-500">
             <video
               ref={bubbleVideoRef}
               src={videoUrl}
@@ -144,7 +144,7 @@ export function VideoBubble() {
               className="w-full h-full object-cover scale-110 pointer-events-none group-hover:scale-100 transition-transform duration-700"
             />
             {/* Holographic overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-purple-deep/15 via-transparent to-gold/10 mix-blend-overlay pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-sapphire/15 via-transparent to-gold/10 mix-blend-overlay pointer-events-none" />
           </div>
         </motion.div>
       </div>
@@ -168,17 +168,17 @@ export function VideoBubble() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full max-w-lg rounded-2xl glass border border-gold/35 bg-[#242228]/95 overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.95)] z-10 flex flex-col"
+              className="relative w-full max-w-lg rounded-2xl glass border border-gold/35 bg-[#151B26]/95 overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.95)] z-10 flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Top Bar with Title and Close Button */}
-              <div className="flex justify-between items-center px-5 py-4 border-b border-gold/15 bg-[#111315]/40 select-none">
+              <div className="flex justify-between items-center px-5 py-4 border-b border-gold/15 bg-[#0D1117]/40 select-none">
                 <span className="font-display text-sm font-semibold tracking-wider text-gradient-gold uppercase">
                   Spiritual Sanctuary Ritual
                 </span>
                 <button
                   onClick={handleClose}
-                  className="p-1.5 rounded-full border border-gold/15 bg-[#111315]/80 hover:bg-gold/15 text-gold/80 hover:text-gold transition-all duration-300 cursor-pointer flex items-center justify-center"
+                  className="p-1.5 rounded-full border border-gold/15 bg-[#0D1117]/80 hover:bg-gold/15 text-gold/80 hover:text-gold transition-all duration-300 cursor-pointer flex items-center justify-center"
                   aria-label="Close video player"
                 >
                   <X className="h-4 w-4" />
@@ -225,7 +225,7 @@ export function VideoBubble() {
               </div>
 
               {/* Custom Control Panel */}
-              <div className="px-5 py-4 bg-[#1b1a1f] flex flex-col gap-3.5 select-none border-t border-gold/15">
+              <div className="px-5 py-4 bg-[#0D1117] flex flex-col gap-3.5 select-none border-t border-gold/15">
                 
                 {/* Progress Bar slider */}
                 <div className="flex items-center gap-3 w-full">
@@ -236,7 +236,7 @@ export function VideoBubble() {
                   <div 
                     ref={progressContainerRef}
                     onClick={handleProgressBarClick}
-                    className="h-1.5 flex-1 rounded-full bg-[#111315] border border-gold/10 relative cursor-pointer group"
+                    className="h-1.5 flex-1 rounded-full bg-[#1A1722] border border-gold/10 relative cursor-pointer group"
                   >
                     <div 
                       className="h-full rounded-full bg-gradient-to-r from-gold to-gold-soft relative transition-all duration-100" 
@@ -258,7 +258,7 @@ export function VideoBubble() {
                     {/* Play Button */}
                     <button
                       onClick={togglePlay}
-                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#111315] border border-gold/20 hover:border-gold/60 text-gold hover:bg-gold/5 transition-all cursor-pointer"
+                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1B2230] border border-gold/25 hover:border-gold/60 text-gold hover:bg-gold/5 transition-all cursor-pointer"
                       aria-label={isPlaying ? "Pause video" : "Play video"}
                     >
                       {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4 pl-0.5" />}
@@ -267,7 +267,7 @@ export function VideoBubble() {
                     {/* Mute Button */}
                     <button
                       onClick={toggleMute}
-                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#111315] border border-gold/20 hover:border-gold/60 text-gold hover:bg-gold/5 transition-all cursor-pointer"
+                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1B2230] border border-gold/25 hover:border-gold/60 text-gold hover:bg-gold/5 transition-all cursor-pointer"
                       aria-label={isMuted ? "Unmute video" : "Mute video"}
                     >
                       {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}

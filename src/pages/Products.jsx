@@ -23,10 +23,10 @@ const productImages = {
 };
 
 const productAuras = {
-  "amethyst-bracelet": "from-purple/25 via-purple-deep/10 to-gold/5",
-  "rose-quartz-stone": "from-rose-500/15 via-gold/10 to-transparent",
-  "protection-kit": "from-gold/15 via-purple/10 to-transparent",
-  "tarot-deck": "from-gold/20 via-purple-deep/15 to-purple/5",
+  "amethyst-bracelet": "from-lavender/25 via-[#242032]/10 to-gold/5",
+  "rose-quartz-stone": "from-[#C89C8A]/15 via-gold/10 to-transparent",
+  "protection-kit": "from-gold/15 via-lavender/10 to-transparent",
+  "tarot-deck": "from-gold/20 via-[#242032]/15 to-lavender/5",
 };
 
 export default function ProductsPage() {
@@ -66,12 +66,12 @@ export default function ProductsPage() {
         {/* Dynamic spinning coordinate overlays */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 z-[5]">
           <div className="h-[550px] w-[550px] rounded-full border border-gold/5 animate-spin-slow" />
-          <div className="absolute inset-16 rounded-full border border-purple/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
+          <div className="absolute inset-16 rounded-full border border-lavender/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           {/* Spotlight Backlights */}
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-purple/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-lavender/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px] bg-gold/5 blur-[90px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
 
           <motion.span
@@ -112,7 +112,9 @@ export default function ProductsPage() {
               
               return (
                 <Reveal key={p.slug} delay={i * 0.05}>
-                  <BentoCard className="group glass p-7 md:p-9 bg-card/10 flex flex-col justify-between h-full">
+                   <BentoCard className={`group p-7 md:p-9 flex flex-col justify-between h-full ${
+                    i % 3 === 0 ? "card-plum" : (i % 3 === 1 ? "card-violet" : "card-glass")
+                  }`}>
                     {/* Subtle inner-card background glow */}
                     <div className={`absolute -top-24 -left-24 h-56 w-56 rounded-full bg-gradient-to-br ${auraColor} blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none`} />
                     
@@ -120,7 +122,7 @@ export default function ProductsPage() {
                       <div>
                         {/* Visual Image container with 16:10 aspect ratio */}
                         <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border border-gold/20 shadow-[0_10px_25px_rgba(0,0,0,0.45)] bg-background/20 backdrop-blur-sm transition-all duration-700 group-hover:border-gold/45 group-hover:shadow-gold/15 mb-6">
-                          {/* Ambient Shadow & Aura Backlight */}
+                           {/* Ambient Shadow & Aura Backlight */}
                           <div className={`absolute -inset-2 bg-gradient-to-tr ${auraColor} rounded-3xl blur-2xl opacity-60 group-hover:opacity-85 transition-opacity duration-700 pointer-events-none`} />
                           
                           <img
@@ -131,7 +133,7 @@ export default function ProductsPage() {
                           />
                           
                           {/* Dark Vignette Overlay */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-purple-deep/10 pointer-events-none" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-[#242032]/10 pointer-events-none" />
                           
                           {/* Gold Corner Highlights */}
                           <div className="absolute top-3.5 left-3.5 w-3 h-3 border-t border-l border-gold/45 pointer-events-none" />
@@ -214,10 +216,10 @@ export default function ProductsPage() {
             <motion.div
               initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-lg rounded-3xl glass-strong p-8 max-h-[90vh] overflow-y-auto border border-gold/25 shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
+              className="relative w-full max-w-lg rounded-3xl glass-strong p-5 sm:p-8 max-h-[90vh] overflow-y-auto border border-gold/25 shadow-[0_20px_50px_rgba(0,0,0,0.6)]"
             >
               <button onClick={() => setOpenProduct(null)} className="absolute right-4 top-4 text-muted-foreground hover:text-foreground transition-colors"><X className="h-5 w-5" /></button>
-              <h3 className="font-display text-2.5xl text-gradient-gold">Inquire: {openProduct}</h3>
+              <h3 className="font-display text-xl sm:text-2.5xl text-gradient-gold pr-10">Inquire: {openProduct}</h3>
               <p className="mt-1 text-xs text-muted-foreground">Send your inquiry via WhatsApp — Shivani will coordinate with you personally.</p>
 
               <form onSubmit={handleSubmit(onSubmit)} className="mt-6 space-y-4">
@@ -265,7 +267,7 @@ export default function ProductsPage() {
         )}
       </AnimatePresence>
 
-      <style>{`.input{width:100%;border:1px solid rgba(212,175,55,0.18);background:rgba(255,255,255,0.04);border-radius:12px;padding:11px 14px;font-size:14px;color:inherit;outline:none;transition:all .25s ease-in-out}.input:focus{border-color:#D4AF37;background:rgba(212,175,55,0.04);box-shadow:0 0 10px rgba(212,175,55,0.15)}`}</style>
+      <style>{`.input{width:100%;border:1px solid rgba(216,182,122,0.18);background:rgba(255,255,255,0.04);border-radius:12px;padding:11px 14px;font-size:14px;color:inherit;outline:none;transition:all .25s ease-in-out}.input:focus{border-color:#D8B67A;background:rgba(216,182,122,0.04);box-shadow:0 0 10px rgba(216,182,122,0.15)}`}</style>
     </>
   );
 }
