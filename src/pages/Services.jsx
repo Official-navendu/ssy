@@ -41,9 +41,9 @@ const serviceGalleries = {
 };
 
 const serviceAuras = {
-  "1on1-power-tarot": "from-purple/25 to-purple-deep/10",
-  "advanced-aura-healing": "from-purple/20 via-purple-deep/15 to-gold/10",
-  "tarot-healing-chakra": "from-gold/20 via-purple/15 to-background",
+  "1on1-power-tarot": "from-sapphire/20 to-gold/5",
+  "advanced-aura-healing": "from-sapphire/20 via-emerald/15 to-gold/10",
+  "tarot-healing-chakra": "from-gold/20 via-sapphire/15 to-background",
 };
 
 export default function Services() {
@@ -452,19 +452,19 @@ export default function Services() {
 
           {/* Crystal / Sparkle Particles floating */}
           <div className="absolute top-1/3 left-[20%] w-1.5 h-1.5 bg-gold rounded-full opacity-35 animate-ping" style={{ animationDuration: "3s" }} />
-          <div className="absolute bottom-1/3 right-[22%] w-2 h-2 bg-purple-400 rounded-full opacity-25 animate-ping" style={{ animationDuration: "4s", animationDelay: "1s" }} />
+          <div className="absolute bottom-1/3 right-[22%] w-2 h-2 bg-gold rounded-full opacity-25 animate-ping" style={{ animationDuration: "4s", animationDelay: "1s" }} />
           <div className="absolute top-1/4 right-[30%] w-1 h-1 bg-gold rounded-full opacity-40 animate-ping" style={{ animationDuration: "2.5s" }} />
         </div>
 
         {/* Dynamic spinning coordinate overlays */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 z-[5]">
           <div className="h-[550px] w-[550px] rounded-full border border-gold/5 animate-spin-slow" />
-          <div className="absolute inset-16 rounded-full border border-purple/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
+          <div className="absolute inset-16 rounded-full border border-sapphire/10 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           {/* Spotlight Backlights */}
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-purple/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-sapphire/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px] bg-gold/5 blur-[90px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
 
           <motion.span
@@ -501,7 +501,7 @@ export default function Services() {
           <div className="grid gap-8 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => {
               const imgPath = serviceImages[s.slug];
-              const auraColor = serviceAuras[s.slug] || "from-purple/20 to-gold/10";
+              const auraColor = serviceAuras[s.slug] || "from-sapphire/20 to-gold/10";
               
               return (
                 <Reveal key={s.slug} delay={i * 0.05}>
@@ -908,7 +908,7 @@ export default function Services() {
       {/* Why Choose Shivani Spiritual Yatri Bento Section */}
       <section className="py-24 relative overflow-hidden bg-background/50 border-b border-gold/10">
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-1/3 left-10 w-64 h-64 bg-purple-900/5 rounded-full blur-[100px]" />
+          <div className="absolute top-1/3 left-10 w-64 h-64 bg-sapphire/5 rounded-full blur-[100px]" />
           <div className="absolute bottom-1/3 right-10 w-80 h-80 bg-amber-900/5 rounded-full blur-[120px]" />
         </div>
 
@@ -944,7 +944,7 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
                   
                   <div>
-                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold/15 to-purple/15 text-gold border border-gold/25 shadow-[0_0_15px_rgba(216,182,122,0.05)] transition-all duration-500 group-hover:scale-115 group-hover:-translate-y-1">
+                    <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-gold/15 to-sapphire/25 text-gold border border-gold/25 shadow-[0_0_15px_rgba(216,182,122,0.05)] transition-all duration-500 group-hover:scale-115 group-hover:-translate-y-1">
                       <f.icon className="h-5 w-5 text-gold" />
                     </div>
                     <h3 className="mt-5 font-display text-base leading-snug text-foreground/95 group-hover:text-gold transition-colors duration-300 uppercase tracking-wide">
@@ -964,7 +964,7 @@ export default function Services() {
       {/* Premium CTA Full-Width Strip */}
       <section className="relative w-full border-b border-gold/15 bg-gradient-to-r from-background/95 via-accent/90 to-background/95 py-16 md:py-20 overflow-hidden">
         {/* Background spotlights & glowing elements */}
-        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-lavender/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+        <div className="pointer-events-none absolute left-1/4 top-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-sapphire/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
         <div className="pointer-events-none absolute right-1/4 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gold/5 blur-[95px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
         
         {/* Floating Tarot symbols & Crystal lighting indicators in background */}
@@ -2108,7 +2108,7 @@ export default function Services() {
                     </div>
 
                     {/* How This Works For You */}
-                    <div className="glass p-6 rounded-xl border border-gold/10 bg-gradient-to-br from-gold/5 via-transparent to-purple/5">
+                    <div className="glass p-6 rounded-xl border border-gold/10 bg-gradient-to-br from-gold/5 via-transparent to-sapphire/5">
                       <h4 className="text-xs font-semibold text-gold tracking-widest uppercase border-b border-gold/10 pb-2 mb-3">
                         HOW THIS WORKS FOR YOU
                       </h4>

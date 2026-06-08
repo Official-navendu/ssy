@@ -19,7 +19,7 @@ const stonesData = {
     element: "Wind / Spirit",
     zodiac: "Pisces, Aquarius, Sagittarius",
     origin: "Brazil, Uruguay, Madagascar",
-    color: "139, 92, 246", // Purple
+    color: "100, 80, 160", // Muted dusty amethyst
     image: amethystImg,
     healing: {
       physical: "Soothes nervous system imbalances, alleviates tension headaches, and promotes deep, restful sleep states free from night terrors.",
@@ -35,7 +35,7 @@ const stonesData = {
     element: "Water",
     zodiac: "Taurus, Libra, Scorpio",
     origin: "South Africa, Brazil, Madagascar",
-    color: "244, 114, 182", // Pink
+    color: "200, 150, 160", // Soft luxury champagne-pink/blush
     image: roseQuartzImg,
     healing: {
       physical: "Supports heart health, stimulates cellular rejuvenation, and cleanses the circulatory system of heavy physical stresses.",
@@ -51,7 +51,7 @@ const stonesData = {
     element: "Fire",
     zodiac: "Aries, Leo, Gemini, Virgo",
     origin: "Brazil, Madagascar, Congo",
-    color: "234, 179, 8", // Gold
+    color: "210, 175, 55", // Rich Gold
     image: citrineImg,
     healing: {
       physical: "Boosts metabolic functionality, aids digestive pathways, and combats chronic lethargy by delivering raw physical vitality.",
@@ -67,7 +67,7 @@ const stonesData = {
     element: "Earth",
     zodiac: "Capricorn, Scorpio, Libra",
     origin: "Brazil, Africa, United States",
-    color: "107, 114, 128", // Silver/Grey
+    color: "27, 34, 48", // Deep Slate/Navy
     image: blackTourmalineImg,
     healing: {
       physical: "Neutralizes electromagnetic frequencies (EMFs) from devices, strengthens adrenal glands, and relieves spinal tension.",

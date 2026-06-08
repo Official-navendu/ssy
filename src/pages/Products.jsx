@@ -23,10 +23,10 @@ const productImages = {
 };
 
 const productAuras = {
-  "amethyst-bracelet": "from-lavender/25 via-[#242032]/10 to-gold/5",
+  "amethyst-bracelet": "from-sapphire/20 via-[#151B26]/10 to-gold/5",
   "rose-quartz-stone": "from-[#C89C8A]/15 via-gold/10 to-transparent",
-  "protection-kit": "from-gold/15 via-lavender/10 to-transparent",
-  "tarot-deck": "from-gold/20 via-[#242032]/15 to-lavender/5",
+  "protection-kit": "from-gold/15 via-sapphire/10 to-transparent",
+  "tarot-deck": "from-gold/20 via-[#151B26]/15 to-sapphire/5",
 };
 
 export default function ProductsPage() {
@@ -66,12 +66,12 @@ export default function ProductsPage() {
         {/* Dynamic spinning coordinate overlays */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 z-[5]">
           <div className="h-[550px] w-[550px] rounded-full border border-gold/5 animate-spin-slow" />
-          <div className="absolute inset-16 rounded-full border border-lavender/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
+          <div className="absolute inset-16 rounded-full border border-sapphire/10 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           {/* Spotlight Backlights */}
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-lavender/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-sapphire/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px] bg-gold/5 blur-[90px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
 
           <motion.span
@@ -108,7 +108,7 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {products.map((p, i) => {
               const imgPath = productImages[p.slug];
-              const auraColor = productAuras[p.slug] || "from-purple/20 to-gold/10";
+              const auraColor = productAuras[p.slug] || "from-sapphire/20 to-gold/10";
               
               return (
                 <Reveal key={p.slug} delay={i * 0.05}>

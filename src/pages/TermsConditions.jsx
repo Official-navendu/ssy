@@ -15,7 +15,7 @@ export default function TermsConditions() {
 
       <section className="pb-24 relative overflow-hidden">
         {/* Ambient backlight */}
-        <div className="pointer-events-none absolute left-1/2 top-1/4 -translate-x-1/2 w-[350px] h-[350px] bg-purple/5 blur-[120px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "12s" }} />
+        <div className="pointer-events-none absolute left-1/2 top-1/4 -translate-x-1/2 w-[350px] h-[350px] bg-sapphire/5 blur-[120px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "12s" }} />
 
         <div className="mx-auto max-w-4xl px-6 md:px-8">
           <Reveal>

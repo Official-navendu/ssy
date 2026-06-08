@@ -42,7 +42,7 @@ const coursesData = [
     price: 99,
     duration: "4 Weeks",
     image: courseNumerology,
-    auraColor: "from-gold/15 via-purple/15 to-purple-deep/10",
+    auraColor: "from-gold/15 via-sapphire/15 to-background",
     fullDescription: "Delve into the mathematical choreography of the universe. The Numerology Mastery course is a premium, beautifully structured guide that teaches you to calculate and translate life paths, destiny numbers, and energetic dates. By understanding Chaldean and Pythagorean layouts, you will align birth signatures and suggest precise name corrections to harmonize clients' professional and domestic vibrations.",
     benefits: [
       "Chaldean & Pythagorean grid systems mastery",
@@ -120,7 +120,7 @@ const coursesData = [
     price: 199,
     duration: "8 Weeks",
     image: courseChakra,
-    auraColor: "from-purple/20 via-purple-deep/10 to-gold/5",
+    auraColor: "from-sapphire/20 via-emerald/10 to-gold/5",
     fullDescription: "Master Usui Reiki, a traditional Japanese method of channeling universal life-force energy. This detailed Grand Master certification path covers Level 1 (self-healing), Level 2 (distance healing & symbols), and the Master Level. Led by Shivani, you will learn to dissolve auric toxins, balance the seven primary chakras, and set up a professional spiritual healing clinic.",
     benefits: [
       "Full Usui Reiki Master attunement",
@@ -159,7 +159,7 @@ const coursesData = [
     price: 149,
     duration: "6 Weeks",
     image: courseChakra,
-    auraColor: "from-purple-deep/20 via-purple/15 to-gold/10",
+    auraColor: "from-emerald/20 via-sapphire/15 to-gold/10",
     fullDescription: "Master non-contact energy medicine. Pranic Healing is an ancient, highly systematic science that utilizes life force (Prana) to accelerate the body's natural capacity to heal. Through this certification, you will learn to scan the energy field, cleanse diseased or congested etheric energy, and project fresh Prana to restore overall vitality.",
     benefits: [
       "Non-contact energetic scanning and cleaning systems",
@@ -198,7 +198,7 @@ const coursesData = [
     price: 199,
     duration: "6 Weeks",
     image: courseAstrology,
-    auraColor: "from-purple/20 via-purple-deep/15 to-gold/10",
+    auraColor: "from-sapphire/20 via-emerald/15 to-gold/10",
     fullDescription: "Cross the celestial threshold to the Akashic Field — the cosmic library holding the vibration of every soul's history, choices, and agreements. Under Shivani's expert guidance, you will master the sacred prayers and invocation protocols to access the Akasha safely, retrieve past life alignments, and rewrite old energetic contracts.",
     benefits: [
       "Attain sacred invocation prayers to enter the Akasha",
@@ -276,7 +276,7 @@ const coursesData = [
     price: 99,
     duration: "4 Weeks",
     image: courseProtection,
-    auraColor: "from-gold/15 via-purple/15 to-purple-deep/10",
+    auraColor: "from-gold/15 via-sapphire/15 to-background",
     fullDescription: "Connect with the high-vibrational, compassionate frequencies of the Angelic Realms. This premium certification course provides detailed initiations to communicate with Archangels (Michael, Raphael, Gabriel, and Uriel), decode angel numbers, perform deep angelic cord-cutting, and channel angelic rays for comprehensive space clearing.",
     benefits: [
       "Full angelic frequency attunement",
@@ -315,7 +315,7 @@ const coursesData = [
     price: 199,
     duration: "6 Weeks",
     image: courseTarot,
-    auraColor: "from-purple/25 to-purple-deep/10",
+    auraColor: "from-sapphire/20 to-[#151B26]",
     fullDescription: "Everyone possesses latent psychic abilities. This professional-grade course is designed to awaken your inner spiritual eye, training you in the four primary clairs (Clairvoyance, Clairaudience, Clairsentience, and Claircognizance). Learn to establish safe contact with your personal Spirit Guides, read energetic fields, and practice mediumship safely.",
     benefits: [
       "Awaken and strengthen the 4 primary psychic senses",
@@ -354,7 +354,7 @@ const coursesData = [
     price: 149,
     duration: "6 Weeks",
     image: courseTarot,
-    auraColor: "from-purple/20 via-purple-deep/10 to-gold/5",
+    auraColor: "from-sapphire/20 via-emerald/10 to-gold/5",
     fullDescription: "Become a professional, certified Tarot Reader. Under the expert guidance of Shivani, this curriculum takes you on a comprehensive journey through all 78 Major and Minor Arcana cards of the Rider-Waite deck. Learn to read through direct cosmic channeling, construct intuitive spreads, and establish a high-end consultation practice.",
     benefits: [
       "In-depth guide to all 78 Major & Minor cards",
@@ -393,7 +393,7 @@ const coursesData = [
     price: 99,
     duration: "4 Weeks",
     image: courseManifestation,
-    auraColor: "from-gold/20 via-purple/15 to-background",
+    auraColor: "from-gold/20 via-sapphire/15 to-background",
     fullDescription: "Manifestation is an exact energetic science. This course demystifies the Laws of Attraction, Vibration, and Assumption. You will master specific techniques such as scripting, creative visualization, and energetic cord-clearing to align your everyday vibrations with your highest goals, dissolving repetitive blocks forever.",
     benefits: [
       "Master the Laws of Attraction, Vibration & Assumption",
@@ -471,7 +471,7 @@ const coursesData = [
     price: 99,
     duration: "4 Weeks",
     image: courseProtection,
-    auraColor: "from-purple/20 via-purple-deep/15 to-gold/10",
+    auraColor: "from-sapphire/20 via-emerald/15 to-gold/10",
     fullDescription: "Discover the deep alchemical power of Ho’oponopono — the traditional Hawaiian art of reconciliation and forgiveness. Under the guidance of Shivani, this course teaches you to take absolute responsibility for your energy space, cleansing the subconscious of ancient, painful memories and blocks to achieve alignment.",
     benefits: [
       "Dissolve persistent guilt, stress, and anxiety",
@@ -510,7 +510,7 @@ const coursesData = [
     price: 99,
     duration: "4 Weeks",
     image: courseNumerology,
-    auraColor: "from-gold/15 via-purple/15 to-purple-deep/10",
+    auraColor: "from-gold/15 via-sapphire/15 to-background",
     fullDescription: "Unlock the instant verbal and numeric keys to reality adjustments. This unique curriculum demystifies Switchwords (direct verbal prompts that trigger the subconscious) and Angel Numbers (numeric indicators of guidance). Master the art of scripting custom switch-phrases and activating Grabovoi numbers to balance finances, health, and partnerships.",
     benefits: [
       "Master the science of verbal Switchwords",
@@ -549,7 +549,7 @@ const coursesData = [
     price: 99,
     duration: "4 Weeks",
     image: courseChakra,
-    auraColor: "from-purple/20 via-purple-deep/15 to-gold/10",
+    auraColor: "from-sapphire/20 via-emerald/15 to-gold/10",
     fullDescription: "Find your quiet center. This course is an experiential guide to mastering 12 classical Vedic and Zen meditation techniques. Under the guidance of Shivani, you will learn to trace energy pathways (Prana), practice breathing controls (Pranayama), protect your auric field, and anchor in pure, quiet divine consciousness.",
     benefits: [
       "Master 12 authentic meditation methods",
@@ -588,7 +588,7 @@ const coursesData = [
     price: 199,
     duration: "8 Weeks",
     image: courseKundli,
-    auraColor: "from-gold/15 via-purple/15 to-purple-deep/10",
+    auraColor: "from-gold/15 via-sapphire/15 to-background",
     fullDescription: "Become an accredited Life Coach equipped with spiritual insights. This intensive certification combines classic psychological assessment models, active listening methods, and goal-setting systems with Vedic esoteric wisdom. Master client consultation frameworks, discover how to guide seekers out of crisis, and build a successful coaching business.",
     benefits: [
       "Master professional coaching and assessment frameworks",
@@ -627,7 +627,7 @@ const coursesData = [
     price: 149,
     duration: "6 Weeks",
     image: courseAstrology,
-    auraColor: "from-purple/20 via-purple-deep/15 to-gold/10",
+    auraColor: "from-sapphire/20 via-emerald/15 to-gold/10",
     fullDescription: "Unlock the vibrational frequencies of the mineral kingdom. In this hands-on certification course, you will learn to select, clean, charge, and program crystals (such as quartz, amethyst, and tourmaline). Master the art of designing sacred crystal layout grids to balance health, attract wealth, and shield spaces.",
     benefits: [
       "Learn to scan and feel crystal energetic pulses",
@@ -708,12 +708,12 @@ export default function Courses() {
         {/* Dynamic spinning coordinate overlays */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-35 z-[5]">
           <div className="h-[550px] w-[550px] rounded-full border border-gold/5 animate-spin-slow" />
-          <div className="absolute inset-16 rounded-full border border-lavender/8 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
+          <div className="absolute inset-16 rounded-full border border-sapphire/10 animate-spin-slow" style={{ animationDirection: "reverse", animationDuration: "50s" }} />
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           {/* Spotlight Backlights */}
-          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-lavender/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] bg-sapphire/10 blur-[110px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "10s" }} />
           <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px] bg-gold/5 blur-[90px] rounded-full -z-10 animate-pulse" style={{ animationDuration: "14s" }} />
 
           <motion.span

@@ -24,7 +24,7 @@ const stones = [
       "Third Eye & Crown Chakra alignment"
     ],
     image: amethystImg,
-    color: "139, 92, 246", // Violet
+    color: "100, 80, 160", // Muted dusty amethyst
     slug: "/stones/amethyst"
   },
   {
@@ -38,7 +38,7 @@ const stones = [
       "Compassionate relationship harmony"
     ],
     image: roseQuartzImg,
-    color: "244, 114, 182", // Pink
+    color: "200, 150, 160", // Soft luxury champagne-pink/blush
     slug: "/stones/rose-quartz"
   },
   {
@@ -52,7 +52,7 @@ const stones = [
       "Solar Plexus & creativity expansion"
     ],
     image: citrineImg,
-    color: "234, 179, 8", // Gold
+    color: "210, 175, 55", // Rich Gold
     slug: "/stones/citrine"
   },
   {
@@ -66,7 +66,7 @@ const stones = [
       "Root Chakra & absolute physical grounding"
     ],
     image: blackTourmalineImg,
-    color: "107, 114, 128", // Platinum grey-silver
+    color: "27, 34, 48", // Deep Slate/Navy
     slug: "/stones/black-tourmaline"
   }
 ];
