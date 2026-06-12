@@ -13,6 +13,7 @@ const Contact = lazy(() => import("@/pages/Contact"));
 const StoneDetail = lazy(() => import("@/pages/StoneDetail"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const TermsConditions = lazy(() => import("@/pages/TermsConditions"));
+const Remedies = lazy(() => import("@/pages/Remedies"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
 export function AppRoutes() {
@@ -28,6 +29,7 @@ export function AppRoutes() {
           <Route path="/book" element={<Navigate to="/booking" replace />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/remedies" element={<Remedies />} />
           <Route path="/stones/:stoneId" element={<StoneDetail />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />

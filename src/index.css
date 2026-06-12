@@ -407,3 +407,57 @@
 .animate-candle-flicker {
   animation: candleFlicker 4s ease-in-out infinite;
 }
+
+/* Card shine sweep reflection */
+.card-shine-sweep {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  z-index: 10;
+}
+.group:hover .card-shine-sweep {
+  animation: sweep-card 1.2s ease-in-out forwards;
+}
+
+@keyframes sweep-card {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* Button Shimmer Shine effect */
+.btn-shine {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  z-index: 2;
+}
+.group\/btn:hover .btn-shine,
+.group\/modal-btn:hover .btn-shine {
+  animation: shimmer-sweep 1s ease-in-out forwards;
+}
+
+@keyframes shimmer-sweep {
+  0% { left: -150%; }
+  100% { left: 200%; }
+}
+

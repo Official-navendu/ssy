@@ -108,8 +108,7 @@ export function Footer() {
               {[
                 { to: "/courses", label: "Courses" },
                 { to: "/products", label: "Products" },
-                { to: "/privacy-policy", label: "Privacy Policy" },
-                { to: "/terms-and-conditions", label: "Terms & Conditions" }
+                { to: "/remedies", label: "Remedies" }
               ].map((link) => (
                 <Link 
                   key={link.to} 

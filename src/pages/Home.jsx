@@ -47,10 +47,10 @@ const HERO_SLIDES = [
   {
     id: 0,
     img: heroAstrologyImg,
-    label: "Celestial Intelligence",
-    heading: "Unlock Cosmic Clarity Through Ancient Wisdom",
-    subtitle: "Map your custom birth blueprint, explore planetary transits, and align your life path with the choreography of the cosmos.",
-    ctaText: "Explore Birth Chart",
+    label: "Overview",
+    heading: "Find Clarity, Healing & Direction For Your Life",
+    subtitle: "Personalized one-on-one guidance designed to help you gain clarity, overcome emotional and energetic blockages, understand your current situation, and move forward with confidence through intuitive tarot insights, healing practices, and transformational support.",
+    ctaText: "Book Consultation",
     ctaLink: "/booking",
     secCtaText: "Explore Services",
     secCtaLink: "/services"
@@ -58,68 +58,87 @@ const HERO_SLIDES = [
   {
     id: 1,
     img: heroTarotImg,
-    label: "Intuitive Divination",
-    heading: "Align Your Energy With Divine Guidance",
-    subtitle: "Gain immediate intuitive answers, decode hidden energetic path currents, and secure crystal clarity through premium tarot spreads.",
-    ctaText: "Book Tarot Spread",
+    label: "Tarot Reading",
+    heading: "1-On-1 Power Tarot Reading Session",
+    subtitle: "Deep clarity, timing guidance, relationship insights, remedies, and practical direction for your most important life questions.",
+    ctaText: "Book Consultation",
     ctaLink: "/booking",
-    secCtaText: "See Offerings",
+    secCtaText: "Explore Services",
     secCtaLink: "/services"
   },
   {
     id: 2,
     img: heroHealingImg,
-    label: "Energetic Restoration",
-    heading: "Discover Your Spiritual Path & Inner Power",
-    subtitle: "Purify your aura, dissolve heavy emotional blocks, and awaken your inner vital force through deep, custom chakra alignment.",
-    ctaText: "Align Your Energy",
+    label: "Energy Healing",
+    heading: "Advanced Aura Healing & Energy Protection",
+    subtitle: "Restore energetic balance, release emotional heaviness, strengthen your aura, and reconnect with inner peace.",
+    ctaText: "Book Consultation",
     ctaLink: "/booking",
-    secCtaText: "Healing Guide",
+    secCtaText: "Explore Services",
     secCtaLink: "/services"
   },
   {
     id: 3,
     img: heroPortalImg,
-    label: "Sacred Transformation",
-    heading: "Transform Your Journey Through Astrology & Tarot",
-    subtitle: "Step across the celestial threshold of self-realization, merging centuries-old Vedic lineage with modern spiritual alchemy.",
-    ctaText: "Begin Alchemy",
+    label: "Chakra Healing",
+    heading: "Chakra Diagnosis & Alignment",
+    subtitle: "Identify energetic imbalances, understand blocked chakras, and receive guidance for restoring harmony and flow.",
+    ctaText: "Book Consultation",
     ctaLink: "/booking",
-    secCtaText: "Explore Courses",
-    secCtaLink: "/courses"
+    secCtaText: "Explore Services",
+    secCtaLink: "/services"
+  },
+  {
+    id: 4,
+    img: heroAstrologyImg,
+    label: "Premium Session",
+    heading: "Premium Transformation Experience",
+    subtitle: "A complete private experience combining tarot reading, healing, chakra diagnosis, and personalized guidance.",
+    ctaText: "Book Consultation",
+    ctaLink: "/booking",
+    secCtaText: "Explore Services",
+    secCtaLink: "/services"
   }
 ];
 
 function renderHeading(heading) {
-  if (heading.includes("Cosmic Clarity")) {
+  if (heading.includes("Clarity, Healing")) {
     return (
       <>
-        Unlock <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Cosmic Clarity</span>
-        <br /> Through Ancient Wisdom
+        Find <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Clarity, Healing</span>
+        <br /> & Direction For Your Life
       </>
     );
   }
-  if (heading.includes("Divine Guidance")) {
+  if (heading.includes("Power Tarot")) {
     return (
       <>
-        Align Your Energy
-        <br /> With <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Divine Guidance</span>
+        1-On-1 <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Power Tarot Reading</span>
+        <br /> Session
       </>
     );
   }
-  if (heading.includes("Inner Power")) {
+  if (heading.includes("Aura Healing")) {
     return (
       <>
-        Discover Your Path
-        <br /> & <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Inner Power</span>
+        Advanced <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Aura Healing</span>
+        <br /> & Energy Protection
       </>
     );
   }
-  if (heading.includes("Astrology & Tarot")) {
+  if (heading.includes("Chakra Diagnosis")) {
     return (
       <>
-        Transform Your Journey
-        <br /> Through <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Astrology & Tarot</span>
+        <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Chakra Diagnosis</span>
+        <br /> & Alignment
+      </>
+    );
+  }
+  if (heading.includes("Transformation Experience")) {
+    return (
+      <>
+        Premium <span className="text-gradient-cosmic text-shadow-[0_0_35px_rgba(216,182,122,0.25)]">Transformation</span>
+        <br /> Experience
       </>
     );
   }
@@ -528,12 +547,13 @@ export default function Home() {
                   transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
                   className="flex flex-col items-start text-left"
                 >
-                  <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.3em] text-gold text-glow-subtle">
-                    <Sparkles className="h-3.5 w-3.5 animate-pulse text-gold" />
-                    {HERO_SLIDES[activeSlide].label}
+                  <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/5 px-4 py-1.5 text-[9px] sm:text-[11px] font-semibold uppercase tracking-[0.15em] sm:tracking-[0.3em] text-gold text-glow-subtle text-center whitespace-normal">
+                    <Sparkles className="h-3.5 w-3.5 shrink-0 animate-pulse text-gold" />
+                    Private Spiritual Guidance • Tarot • Healing • Transformation
                   </span>
 
-                  <h1 className="mt-4 font-display text-2.5xl leading-[1.35] md:text-3.5xl lg:text-[2.45rem] tracking-[0.08em] font-medium text-glow-portal text-foreground uppercase">
+
+                  <h1 className="mt-4 font-display text-2xl leading-[1.35] md:text-3xl lg:text-[2.2rem] tracking-[0.08em] font-medium text-glow-portal text-foreground uppercase">
                     {renderHeading(HERO_SLIDES[activeSlide].heading)}
                   </h1>
 
@@ -552,6 +572,11 @@ export default function Home() {
                   </div>
                 </motion.div>
               </AnimatePresence>
+
+              {/* Trust Statement */}
+              <div className="mt-6 text-[10px] sm:text-xs tracking-wider text-muted-foreground/60 uppercase font-light font-sans text-glow-subtle">
+                Private Sessions Available Worldwide • Personalized Guidance • Confidential Consultations
+              </div>
             </div>
 
             {/* RIGHT COLUMN: Premium Image Showcase */}
@@ -579,7 +604,7 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 1.08 }}
                         animate={{ opacity: 1, scale: 1.02 }}
                         exit={{ opacity: 0, scale: 0.98 }}
-                        transition={{ duration: 1.8, ease: [0.25, 1, 0.5, 1] }}
+                        transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
                         className="w-full h-full object-cover"
                       />
                     </AnimatePresence>
@@ -598,7 +623,7 @@ export default function Home() {
                     <div className="absolute bottom-4 right-4 w-3.5 h-3.5 border-b border-r border-gold/45 pointer-events-none z-20" />
                   </div>
 
-                  {/* 4 Smaller Side Images */}
+                  {/* 5 Smaller Side Images */}
                   <div className="flex flex-row sm:flex-col gap-3 w-full sm:w-[90px] md:w-[100px] shrink-0 justify-between h-[70px] sm:h-full">
                     {HERO_SLIDES.map((slide, idx) => {
                       const isActive = idx === activeSlide;
@@ -606,7 +631,7 @@ export default function Home() {
                         <button
                           key={slide.id}
                           onClick={() => setActiveSlide(idx)}
-                          className={`relative flex-1 sm:flex-initial sm:w-full sm:h-[22%] h-full rounded-xl overflow-hidden border transition-all duration-500 cursor-pointer group ${
+                          className={`relative flex-1 sm:flex-initial sm:w-full sm:h-[18%] h-full rounded-xl overflow-hidden border transition-all duration-500 cursor-pointer group ${
                             isActive
                               ? "border-gold bg-gold/15 shadow-[0_0_20px_rgba(216,182,122,0.4)] scale-105 z-20"
                               : "border-gold/15 hover:border-gold/45 bg-[#0D1117]/45 hover:scale-102"

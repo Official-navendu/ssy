@@ -1,0 +1,192 @@
+<USER_REQUEST>
+Update the Products page on the website.
+
+IMPORTANT:
+
+I will provide the complete product content below.
+
+Remove ALL existing products currently displayed on the Products page.
+
+Replace them completely with my new products.
+
+Do NOT keep old product data.
+
+Do NOT mix old and new products.
+
+Use ONLY the content I provide.
+
+==================================================
+
+PRODUCTS PAGE UPDATE
+
+Update the Products page using my content.
+
+I will provide:
+
+• Product names.
+
+• Product descriptions.
+
+• Product details.
+
+• Images (if applicable).
+
+• Pricing (if applicable).
+
+Use the information exactly as provided.
+
+Do not rewrite.
+
+Do not shorten.
+
+Do not summarize.
+
+Maintain the original meaning and structure.
+
+==================================================
+
+PAGE INTRODUCTION
+
+Above the products grid, add a premium introductory paragraph.
+
+Use the content I provide below.
+
+Keep premium typography.
+
+Maintain website styling.
+
+Good spacing.
+
+Responsive layout.
+
+==================================================
+
+PRODUCT GRID
+
+Current layout:
+
+2 cards per row.
+
+Update to:
+
+Desktop:
+4 cards per row.
+
+Large Tablet:
+3 cards per row.
+
+Tablet:
+2 cards per row.
+
+Mobile:
+1 card per row.
+
+Keep the existing premium card styling.
+
+Maintain hover effects.
+
+Maintain animations.
+
+Keep image quality high.
+
+==================================================
+
+PRODUCT CARD
+
+Each product card should contain:
+
+Premium image.
+
+Category badge.
+
+Product title.
+
+Short description.
+
+View Details button.
+
+Get Guidance button.
+
+Maintain the existing premium design language.
+
+==================================================
+
+VIEW DETAILS
+
+Clicking View Details should open a premium popup.
+
+The popup should include:
+
+Large product image.
+
+Product title.
+
+Category.
+
+Complete product content exactly as provided.
+
+Proper formatting.
+
+Premium typography.
+
+Smooth scrolling.
+
+Close button.
+
+
+<truncated 20969 bytes>
+ear: Wear on the left hand for emotional healing and balance.  
+Zodiac sign: Scorpio, Virgo  
+Available forms: Bracelet, tumble, raw stone, palm stone
+---
+29. Labradorite
+This is for intuition, transformation, spiritual protection, and third eye chakra support. Labradorite is known as a mystical and protective crystal.
+Chakra: Third eye chakra and crown chakra  
+Benefits:
+•	Supports spiritual protection.
+•	Enhances intuition.
+•	Helps with transformation.
+•	Strengthens the aura.
+•	Supports higher spiritual awareness.
+How it works: Labradorite strengthens the aura and supports intuitive growth.  
+Which hand to wear: Wear on the left hand for intuition and inner guidance.  
+Zodiac sign: Pisces, Scorpio  
+Available forms: Bracelet, tumble, raw stone, palm stone
+---
+30. Moonstone Bracelet
+This is for intuition, feminine energy, and emotional harmony. Moonstone bracelets are often worn for daily intuitive support.
+Chakra: Sacral chakra and third eye chakra  
+Benefits:
+•	Supports intuition.
+•	Helps emotional balance.
+•	Connects to feminine energy.
+•	Supports new beginnings.
+•	Can be worn daily.
+How it works: Moonstone helps keep emotional energy soft and balanced while supporting inner guidance.  
+Which hand to wear: Wear on the left hand for receiving intuition and emotional support.  
+Zodiac sign: Cancer, Pisces  
+Available forms: Bracelet, tumble bracelet, bead bracelet
+---
+Crystal forms available
+•	Bracelets.
+•	Tumbles.
+•	Raw stones.
+•	Palm stones.
+•	Towers.
+•	Points.
+•	Pendants.
+•	Clusters.
+•	Pocket stones.
+•	Charging plates.
+Crystal care
+Crystals can be cleansed with moonlight, sound, intention, prayer, or Selenite. They can be charged by holding them with intention, placing them on an altar, or keeping them with Clear Quartz or Selenite.
+Important note
+Crystal healing is a spiritual practice and not a replacement for medical diagnosis or treatment.
+---
+
+---
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-12T06:26:53+05:30.
+</ADDITIONAL_METADATA>

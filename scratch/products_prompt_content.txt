@@ -1,0 +1,1 @@
+I will create a script `scratch/extract_products_prompt.js` to find the original product content prompt from `transcript.jsonl` and write it to `scratch/products_prompt_content.txt`. This will allow me to inspect the exact product details provided by the user.
