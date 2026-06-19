@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Phone, Mail, MapPin, MessageCircle, Instagram, Facebook, Youtube,
-  ChevronDown, Send, Check, Sparkles,
+  ChevronDown, Send, Check, Sparkles, AlertCircle, X, MessageSquare
 } from "lucide-react";
 import { CosmicBackground } from "@/components/common/CosmicBackground";
 import { Reveal } from "@/components/common/Reveal";
 import { SITE } from "@/utils/site";
+import { sendEmailParams } from "@/utils/emailService";
 
 import serviceAstrologyImg from "@/assets/images/service_astrology.webp";
 
@@ -37,21 +37,32 @@ const contactFaqs = [
 ];
 
 export default function Contact() {
-  const [sent, setSent] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [openFaq, setOpenFaq] = useState(0);
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
 
   const onSubmit = async (data) => {
+    setErrorMsg("");
+    const payload = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone || "Not provided",
+      message: data.message,
+    };
+
     try {
-      if (SITE.emailjs.publicKey !== "your_public_key") {
-        await emailjs.send(SITE.emailjs.serviceId, SITE.emailjs.templateId, data, { publicKey: SITE.emailjs.publicKey });
+      const result = await sendEmailParams("CONTACT_FORM", payload);
+      if (result.success) {
+        setSuccess(true);
+        reset();
       } else {
-        await new Promise((r) => setTimeout(r, 600));
+        setErrorMsg(result.error || "Could not submit message. Please try WhatsApp.");
       }
-      setSent(true);
-      reset();
-      setTimeout(() => setSent(false), 4500);
-    } catch (e) { console.error(e); alert("Could not send. Try WhatsApp."); }
+    } catch (err) {
+      console.error("Submission error:", err);
+      setErrorMsg("An unexpected system exception occurred. Please try WhatsApp.");
+    }
   };
 
   return (
@@ -351,14 +362,78 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Success Notification */}
+      {/* Success Modal */}
       <AnimatePresence>
-        {sent && (
+        {success && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
-            className="fixed bottom-24 left-1/2 z-[110] -translate-x-1/2 glass-strong rounded-full px-5 py-3 text-sm shadow-gold flex items-center gap-2 border border-gold/30"
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] grid place-items-center bg-background/80 backdrop-blur-md px-4"
+            onClick={() => setSuccess(false)}
           >
-            <Check className="h-4 w-4 text-gold" /> Message sent — blessings on your day
+            <motion.div
+              initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-md rounded-3xl glass-strong p-8 text-center shadow-sapphire"
+            >
+              <button onClick={() => setSuccess(false)} className="absolute right-4 top-4 text-muted-foreground hover:text-foreground"><X className="h-5 w-5" /></button>
+              <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-gold to-gold-soft">
+                <Check className="h-8 w-8 text-background" />
+              </div>
+              <h3 className="mt-5 font-display text-3xl text-gradient-gold">Message Sent</h3>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                Your message has been received with gratitude. Shivani will read it and reply personally within 24 hours.
+              </p>
+              <div className="mt-5 flex items-center justify-center gap-2 text-xs uppercase tracking-[0.25em] text-gold">
+                <Sparkles className="h-3 w-3 animate-pulse" /> Cosmic blessings on your journey
+              </div>
+              <button onClick={() => setSuccess(false)} className="mt-6 rounded-full btn-gold px-6 py-2.5 text-sm font-semibold">
+                Close
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Error Modal */}
+      <AnimatePresence>
+        {errorMsg && (
+          <motion.div
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] grid place-items-center bg-background/80 backdrop-blur-md px-4"
+            onClick={() => setErrorMsg("")}
+          >
+            <motion.div
+              initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-md rounded-3xl border border-red-500/25 bg-[#1C1A22] p-8 text-center shadow-lg shadow-red-500/5"
+            >
+              <button onClick={() => setErrorMsg("")} className="absolute right-4 top-4 text-muted-foreground hover:text-foreground"><X className="h-5 w-5" /></button>
+              <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-red-500/10 border border-red-500/35">
+                <AlertCircle className="h-8 w-8 text-red-500 animate-pulse" />
+              </div>
+              <h3 className="mt-5 font-display text-3xl text-red-400">Submission Failed</h3>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                {errorMsg}
+              </p>
+              <div className="mt-6 flex flex-col gap-3">
+                <button 
+                  onClick={() => {
+                    setErrorMsg("");
+                  }} 
+                  className="w-full rounded-full btn-gold py-2.5 text-sm font-semibold cursor-pointer"
+                >
+                  Retry Submission
+                </button>
+                <a
+                  href={`https://wa.me/${SITE.whatsapp}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full rounded-full bg-white/5 border border-gold/20 hover:bg-gold/10 hover:border-gold py-2.5 text-sm font-semibold text-gold transition-all cursor-pointer flex items-center justify-center gap-2"
+                >
+                  <MessageSquare className="h-4 w-4" /> Message on WhatsApp
+                </a>
+              </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -26,6 +26,7 @@ import heroAstrologyImg from "@/assets/images/hero_astrology.png";
 import heroTarotImg from "@/assets/images/hero_tarot.png";
 import heroHealingImg from "@/assets/images/hero_healing.png";
 import heroPortalImg from "@/assets/images/hero_portal.png";
+import heroPremiumImg from "@/assets/images/hero_premium.png";
 
 import serviceTarot from "@/assets/images/service_tarot.png";
 import serviceHealing from "@/assets/images/service_healing.png";
@@ -90,7 +91,7 @@ const HERO_SLIDES = [
   },
   {
     id: 4,
-    img: heroAstrologyImg,
+    img: heroPremiumImg,
     label: "Premium Session",
     heading: "Premium Transformation Experience",
     subtitle: "A complete private experience combining tarot reading, healing, chakra diagnosis, and personalized guidance.",

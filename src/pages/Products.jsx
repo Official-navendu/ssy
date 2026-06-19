@@ -25,6 +25,16 @@ import fluorite from "@/assets/images/fluorite.png";
 import carnelian from "@/assets/images/carnelian.png";
 import moonstone from "@/assets/images/moonstone.png";
 import selenite from "@/assets/images/selenite.png";
+import tigersEye from "@/assets/images/tigers_eye.png";
+import redJasper from "@/assets/images/red_jasper.png";
+import lapisLazuli from "@/assets/images/lapis_lazuli.png";
+import sodalite from "@/assets/images/sodalite.png";
+import smokyQuartz from "@/assets/images/smoky_quartz.png";
+import howlite from "@/assets/images/howlite.png";
+import malachite from "@/assets/images/malachite.png";
+import obsidian from "@/assets/images/obsidian.png";
+import blueLaceAgate from "@/assets/images/blue_lace_agate.png";
+import amazonite from "@/assets/images/amazonite.png";
 
 const PRODUCTS = [
   {
@@ -362,7 +372,7 @@ const PRODUCTS = [
     name: "Tiger’s Eye",
     category: "Courage & Power",
     price: "39",
-    image: pyrite,
+    image: tigersEye,
     auraColor: "from-amber-600/20 via-yellow-600/10 to-transparent",
     tagline: "Courage, balance, confidence, & grounding",
     description: "This is for courage, balance, confidence, and grounding. Tiger’s Eye is known for protective and empowering energy.",
@@ -384,7 +394,7 @@ const PRODUCTS = [
     name: "Red Jasper",
     category: "Grounding",
     price: "35",
-    image: carnelian,
+    image: redJasper,
     auraColor: "from-red-600/20 via-rose-600/10 to-transparent",
     tagline: "Grounding, strength, stability, & root chakra support",
     description: "This is for grounding, strength, stability, and root chakra support. Red Jasper is a steady and protective stone.",
@@ -406,7 +416,7 @@ const PRODUCTS = [
     name: "Lapis Lazuli",
     category: "Wisdom & Truth",
     price: "45",
-    image: fluorite,
+    image: lapisLazuli,
     auraColor: "from-blue-800/20 via-indigo-800/10 to-transparent",
     tagline: "Truth, wisdom, communication, & throat chakra support",
     description: "This is for truth, wisdom, communication, and throat chakra support. Lapis Lazuli is a powerful stone for expression and insight.",
@@ -428,7 +438,7 @@ const PRODUCTS = [
     name: "Sodalite",
     category: "Communication",
     price: "35",
-    image: fluorite,
+    image: sodalite,
     auraColor: "from-indigo-600/20 via-blue-600/10 to-transparent",
     tagline: "Communication, clarity, calmness, & throat chakra support",
     description: "This is for communication, clarity, calmness, and throat chakra support. Sodalite is a helpful stone for peaceful expression.",
@@ -450,7 +460,7 @@ const PRODUCTS = [
     name: "Smoky Quartz",
     category: "Grounding & Release",
     price: "39",
-    image: hematite,
+    image: smokyQuartz,
     auraColor: "from-stone-600/25 via-stone-500/10 to-transparent",
     tagline: "Grounding, release, protection, & root chakra support",
     description: "This is for grounding, release, protection, and root chakra support. Smoky Quartz is a calming stone that helps release heavy energy.",
@@ -472,7 +482,7 @@ const PRODUCTS = [
     name: "Howlite",
     category: "Calm & Peace",
     price: "35",
-    image: clearQuartz,
+    image: howlite,
     auraColor: "from-zinc-200/20 via-neutral-100/10 to-transparent",
     tagline: "Calmness, patience, emotional peace, & crown chakra support",
     description: "This is for calmness, patience, emotional peace, and crown chakra support. Howlite is a gentle stone for quieting the mind.",
@@ -494,7 +504,7 @@ const PRODUCTS = [
     name: "Malachite",
     category: "Transformation",
     price: "49",
-    image: greenAventurine,
+    image: malachite,
     auraColor: "from-emerald-700/20 via-green-600/10 to-transparent",
     tagline: "Transformation, heart healing, protection, & emotional release",
     description: "This is for transformation, heart healing, protection, and emotional release. Malachite is a strong crystal for deep change.",
@@ -516,7 +526,7 @@ const PRODUCTS = [
     name: "Obsidian",
     category: "Protection & Grounding",
     price: "39",
-    image: blackTourmaline,
+    image: obsidian,
     auraColor: "from-neutral-950/30 via-neutral-900/15 to-transparent",
     tagline: "Protection, grounding, truth, & clearing heavy energy",
     description: "This is for protection, grounding, truth, and clearing heavy energy. Obsidian is a strong stone for deep energetic cleansing.",
@@ -538,7 +548,7 @@ const PRODUCTS = [
     name: "Blue Lace Agate",
     category: "Communication",
     price: "45",
-    image: fluorite,
+    image: blueLaceAgate,
     auraColor: "from-sky-400/20 via-blue-300/10 to-transparent",
     tagline: "Calm communication, peace, & throat chakra support",
     description: "This is for calm communication, peace, and throat chakra support. Blue Lace Agate is a soft and soothing stone.",
@@ -560,7 +570,7 @@ const PRODUCTS = [
     name: "Amazonite",
     category: "Truth & Calm",
     price: "39",
-    image: greenAventurine,
+    image: amazonite,
     auraColor: "from-teal-400/20 via-cyan-400/10 to-transparent",
     tagline: "Truth, calm communication, emotional balance, & throat chakra support",
     description: "This is for truth, calm communication, emotional balance, and throat chakra support. Amazonite is a soothing stone for honest expression.",
@@ -582,7 +592,7 @@ const PRODUCTS = [
     name: "Onyx",
     category: "Protection & Strength",
     price: "39",
-    image: blackTourmaline,
+    image: obsidian,
     auraColor: "from-neutral-900/30 via-slate-800/15 to-transparent",
     tagline: "Grounding, strength, protection, & root chakra support",
     description: "This is for grounding, strength, protection, and root chakra support. Onyx is a strong and steady stone.",
@@ -626,7 +636,7 @@ const PRODUCTS = [
     name: "Unakite",
     category: "Healing & Balance",
     price: "35",
-    image: greenAventurine,
+    image: fluorite,
     auraColor: "from-green-500/15 via-rose-400/10 to-transparent",
     tagline: "Emotional healing, balance, heart chakra support, & gentle growth",
     description: "This is for emotional healing, balance, heart chakra support, and gentle growth. Unakite is a soft stone for healing and renewal.",

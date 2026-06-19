@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, Check, Clock, Sparkles, X } from "lucide-react";
+import { Calendar, Check, Clock, Sparkles, X, AlertCircle, MessageSquare } from "lucide-react";
 import { PageHero } from "@/components/common/PageHero";
 import { Reveal } from "@/components/common/Reveal";
 import { services } from "@/data/data";
 import { SITE } from "@/utils/site";
+import { sendEmailParams } from "@/utils/emailService";
 
 const TIME_SLOTS = ["09:00", "10:30", "12:00", "14:00", "15:30", "17:00", "18:30"];
 
@@ -14,6 +14,7 @@ export default function Booking() {
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
   const [success, setSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [activeTab, setActiveTab] = useState("calendly");
 
@@ -32,27 +33,31 @@ export default function Booking() {
   const onSubmit = async (data) => {
     if (!selectedDate || !selectedTime) return;
     setSubmitting(true);
-    const payload = { ...data, date: selectedDate, time: selectedTime };
+    setErrorMsg("");
+
+    const payload = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      service: data.service,
+      message: data.message || "No additional message.",
+      date: selectedDate,
+      time: selectedTime,
+    };
+
     try {
-      if (SITE.emailjs.publicKey !== "your_public_key") {
-        await emailjs.send(
-          SITE.emailjs.serviceId,
-          SITE.emailjs.templateId,
-          payload,
-          { publicKey: SITE.emailjs.publicKey }
-        );
+      const result = await sendEmailParams("BOOKING_FORM", payload);
+      if (result.success) {
+        setSuccess(true);
+        reset();
+        setSelectedDate("");
+        setSelectedTime("");
       } else {
-        // Demo mode — simulate send
-        await new Promise((r) => setTimeout(r, 800));
-        console.log("[Demo] Booking submitted:", payload);
+        setErrorMsg(result.error || "Could not confirm booking. Please try WhatsApp instead.");
       }
-      setSuccess(true);
-      reset();
-      setSelectedDate("");
-      setSelectedTime("");
     } catch (err) {
-      console.error(err);
-      alert("Could not send booking. Please try WhatsApp instead.");
+      console.error("Submission crash:", err);
+      setErrorMsg("An unexpected system exception occurred. Please try WhatsApp.");
     } finally {
       setSubmitting(false);
     }
@@ -267,6 +272,49 @@ export default function Booking() {
               <button onClick={() => setSuccess(false)} className="mt-6 rounded-full btn-gold px-6 py-2.5 text-sm font-semibold">
                 Close
               </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {errorMsg && (
+          <motion.div
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] grid place-items-center bg-background/80 backdrop-blur-md px-4"
+            onClick={() => setErrorMsg("")}
+          >
+            <motion.div
+              initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-md rounded-3xl border border-red-500/25 bg-[#1C1A22] p-8 text-center shadow-lg shadow-red-500/5"
+            >
+              <button onClick={() => setErrorMsg("")} className="absolute right-4 top-4 text-muted-foreground hover:text-foreground"><X className="h-5 w-5" /></button>
+              <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-red-500/10 border border-red-500/35">
+                <AlertCircle className="h-8 w-8 text-red-500 animate-pulse" />
+              </div>
+              <h3 className="mt-5 font-display text-3xl text-red-400">Submission Failed</h3>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                {errorMsg}
+              </p>
+              <div className="mt-6 flex flex-col gap-3">
+                <button 
+                  onClick={() => {
+                    setErrorMsg("");
+                  }} 
+                  className="w-full rounded-full btn-gold py-2.5 text-sm font-semibold cursor-pointer"
+                >
+                  Retry Submission
+                </button>
+                <a
+                  href={`https://wa.me/${SITE.whatsapp}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-full rounded-full bg-white/5 border border-gold/20 hover:bg-gold/10 hover:border-gold py-2.5 text-sm font-semibold text-gold transition-all cursor-pointer flex items-center justify-center gap-2"
+                >
+                  <MessageSquare className="h-4 w-4" /> Message on WhatsApp
+                </a>
+              </div>
             </motion.div>
           </motion.div>
         )}
