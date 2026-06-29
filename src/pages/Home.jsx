@@ -23,8 +23,8 @@ import galleryTarot4 from "@/assets/images/gallery_tarot_4.png";
 
 // Import premium spiritual image showcase assets
 import heroAstrologyImg from "@/assets/images/hero_astrology.png";
-import heroTarotImg from "@/assets/images/hero_tarot.png";
-import heroHealingImg from "@/assets/images/hero_healing.png";
+import heroTarotImg from "@/assets/images/hero_tarot.jpg";
+import heroHealingImg from "@/assets/images/hero_healing.jpg";
 import heroPortalImg from "@/assets/images/hero_portal.png";
 import heroPremiumImg from "@/assets/images/hero_premium.png";
 
